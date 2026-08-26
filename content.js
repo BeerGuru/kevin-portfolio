@@ -308,16 +308,24 @@ window.PORTFOLIO_CONTENT = {
   },
   "testimonials": [
     {
-      "quote": "I had the pleasure of working closely with Kevin on various sales-driving projects during his time at Verizon, and he is a standout team player who showed up for any challenge with a positive attitude. Kevin brings a strong and proactive problem-solving mindset to everything he takes on. He's extremely detail-oriented and thorough in his discovery throughout his creation process. When contributing to complex initiatives and collaborating across teams, Kevin always makes an immediate positive impact on both project progress and working team culture.",
-      "attribution": "Ali Maidment, Director Experience Management, Verizon (CX Partner)"
+      "quote": "I had the pleasure of working closely with Kevin on a number of high impact projects, where he consistently turned complex, ambiguous customer friction points into elegant, intuitive CX solutions. He doesn't just advocate for users, he builds clear business cases, aligns cross-functional stakeholders seamlessly, and delivers on initiatives that make a tangible difference.",
+      "attribution": "Dennis Shapov, Head of Consumer Plan Perks & Content, Verizon"
+    },
+       {
+      "quote": "Kevin is an excellent strategic design leader and incredible colleague. He’s extremely sharp, creative, and customer-obsessed. He brings a clear strategic vision and a relentless drive for results. I had the pleasure to see firsthand how well he navigates ambiguity, addresses structural challenges, and wrangles & aligns groups of stakeholders around a shared outcome. He does it all with good humor, understanding, and professionalism. From a legal standpoint, Kevin is an amazing partner. He’s quick to spot potential issues, work through them, and balance ambitious targets with disciplined execution. His partnership, creativity, and constructive pushback consistently improved customer experiences and elevated the work of those around him.",
+      "attribution": "Nicholas Buell, Strategic Legal, Compliance, and Business Advisor, Verizon"
+    },
+    {
+      "quote": "Kevin is an exemplary human; curious, supportive, and collaborative—traits that also happen to be critical to being a designer and design strategist. He always brought positive energy and attitude to help move work forward, and was good at productivity identifying challenges to be worked through. His early involvement in new strategic initiatives helped accelerate the path to market, and I always appreciated his partnership.",
+      "attribution": "Alexa Curtis, Associate VP - Experience Design, Verizon"
     },
     {
       "quote": "Kevin was an absolute cornerstone of our team during our nearly 10 years working together at Verizon. As a Principal Designer, his strength lies in his holistic approach to product development. He can design wireframes and interfaces with the best of them, but more importantly, he understands the end-to-end product architecture and how business logic directly shapes the end-user experience. On top of his incredible design talent, Kevin is an outstanding communicator and collaborator who bridges the gap effortlessly between design, business, and tech stakeholders. He brings clarity, strong problem-solving, and continuous positivity to every effort. I’d jump at the chance to work with Kevin again!",
       "attribution": "Travis Roberts, Principal UX/UI Designer and Illustrator, Verizon"
     },
     {
-      "quote": "Kevin is an exemplary human; curious, supportive, and collaborative—traits that also happen to be critical to being a designer and design strategist. He always brought positive energy and attitude to help move work forward, and was good at productivity identifying challenges to be worked through. His early involvement in new strategic initiatives helped accelerate the path to market, and I always appreciated his partnership.",
-      "attribution": "Alexa Curtis, Associate VP - Experience Design, Verizon"
+      "quote": "I had the pleasure of working closely with Kevin on various sales-driving projects during his time at Verizon, and he is a standout team player who showed up for any challenge with a positive attitude. Kevin brings a strong and proactive problem-solving mindset to everything he takes on. He's extremely detail-oriented and thorough in his discovery throughout his creation process. When contributing to complex initiatives and collaborating across teams, Kevin always makes an immediate positive impact on both project progress and working team culture.",
+      "attribution": "Ali Maidment, Director Experience Management, Verizon (CX Partner)"
     },
     {
       "quote": "Over several years and numerous projects, I have consistently valued having Kevin on my project teams. He routinely exceeds expectations, taking care not only to excel in his own responsibilities but also to develop a comprehensive understanding of each project’s broader goal. Kevin is a huge asset to any working team and companies should be knocking down his door to snatch him up.",
