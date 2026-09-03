@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n \"Live Server\\\\|liveServer\\\\|Live Preview\" .vscode/settings.json)",
+      "Bash(ls .vscode)",
+      "WebSearch",
+      "Bash(curl -s -o /dev/null -w \"GET / -> %{http_code}\\\\n\" http://localhost:8099/)",
+      "Bash(curl -s -o /dev/null -w \"GET /content.js -> %{http_code}\\\\n\" http://localhost:8099/content.js)",
+      "Bash(curl -s -o /dev/null -w \"OPTIONS /__save -> %{http_code}\\\\n\" -X OPTIONS http://localhost:8099/__save)",
+      "Bash(cp \"/Users/trayke6/GitHub work/Kevin Portfolio/content.js\" /tmp/content.js.bak)",
+      "Bash(curl -s -o /dev/null -w \"POST /__save -> %{http_code}\\\\n\" -X POST --data-binary @/tmp/content.js.bak http://localhost:8099/__save)",
+      "Bash(git commit -m ' *)",
+      "Bash(node dev-server.js 8080)",
+      "Bash(curl -s -o /dev/null -w \"GET / -> %{http_code}\\\\n\" http://localhost:8080/)",
+      "Bash(curl -sv http://localhost:8080/)",
+      "Bash(node -e ' *)",
+      "Bash(lsof -nP -iTCP:8080 -sTCP:LISTEN)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8080/case-study.html?case=myplan)",
+      "Bash(curl *)"
+    ]
+  },
+  "disabledMcpjsonServers": [
+    "VDS"
+  ]
+}
