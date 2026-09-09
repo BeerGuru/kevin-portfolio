@@ -7,7 +7,7 @@
       "Bash(curl -s -o /dev/null -w \"GET / -> %{http_code}\\\\n\" http://localhost:8099/)",
       "Bash(curl -s -o /dev/null -w \"GET /content.js -> %{http_code}\\\\n\" http://localhost:8099/content.js)",
       "Bash(curl -s -o /dev/null -w \"OPTIONS /__save -> %{http_code}\\\\n\" -X OPTIONS http://localhost:8099/__save)",
-      "Bash(cp \"/Users/trayke6/GitHub work/Kevin Portfolio/content.js\" /tmp/content.js.bak)",
+      "Bash(cp \"/Users/trayke6/GitHub work/KevinPortfolio/content.js\" /tmp/content.js.bak)",
       "Bash(curl -s -o /dev/null -w \"POST /__save -> %{http_code}\\\\n\" -X POST --data-binary @/tmp/content.js.bak http://localhost:8099/__save)",
       "Bash(git commit -m ' *)",
       "Bash(node dev-server.js 8080)",

@@ -74,7 +74,6 @@ function renderContact() {
     links.innerHTML = `
       <a class="btn btn-primary" href="mailto:${escapeHtml(content.profile.email)}" data-edit="contact.emailLabel">${escapeHtml(content.contact.emailLabel)}</a>
       <a class="btn btn-ghost" href="${escapeHtml(content.profile.linkedin)}" target="_blank" rel="noreferrer" data-edit="contact.linkedinLabel">${escapeHtml(content.contact.linkedinLabel)}</a>
-      <a class="btn btn-text" href="${escapeHtml(content.profile.scheduleLink)}" data-edit="contact.scheduleLabel">${escapeHtml(content.contact.scheduleLabel)}</a>
     `;
   }
 }

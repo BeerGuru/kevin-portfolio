@@ -10,8 +10,7 @@ window.PORTFOLIO_CONTENT = {
     "role": "Principal Experience Designer",
     "resumeHref": "kevin-trayner-resume.pdf",
     "email": "kevinctrayner@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/kevin-trayner-2031333/",
-    "scheduleLink": "#contact"
+    "linkedin": "https://www.linkedin.com/in/kevin-trayner-2031333/"
   },
   "nav": [
     {
@@ -28,26 +27,26 @@ window.PORTFOLIO_CONTENT = {
     }
   ],
   "hero": {
-    "eyebrow": "Product + Experience Leadership",
-    "headline": "Designing intuitive solutions for complex problems—from user strategy through execution.",
-    "subhead": "Strategic Experience Designer with 20+ years leading customer and internal experiences for Fortune 100 organizations — most recently Principal-level leadership at Verizon Consumer Group across strategy, cross-functional delivery, and design maturity.",
+    "eyebrow": "",
+    "headline": "Experience design that turns complexity into clarity.",
+    "subhead": "Strategic design leader aligning product, service, and customer experience around meaningful outcomes.",
     "primaryCta": {
-      "label": "View Case Studies",
+      "label": "View case studies",
       "href": "#work"
     },
     "secondaryCta": {
-      "label": "Book a Conversation",
+      "label": "Contact",
       "href": "#contact"
     }
   },
   "work": {
-    "kicker": "Selected Work",
-    "heading": "Three flagship programs demonstrating strategic framing, cross-functional leadership, and measurable outcomes.",
+    "kicker": "",
+    "heading": "",
     "cases": [
       {
         "id": "myplan",
         "tag": "Growth",
-        "title": "Mobile myPlan Experience",
+        "title": "Research, conceptualize and test a new plans experience",
         "challenge": "Led design for myPlan initiative to create clearer plan choice and more customer flexibility in a highly competitive market.",
         "bullets": [
           "Role: Lead UX Designer",
@@ -58,8 +57,8 @@ window.PORTFOLIO_CONTENT = {
       },
       {
         "id": "fcc-labels",
-        "tag": "Platform",
-        "title": "FCC Product Labels Across Experiences",
+        "tag": "Cross functional",
+        "title": "Manage end to end experience across functions, channels and business units",
         "challenge": "Directed the design and implementation of FCC-mandated product labels across mobile and home product experiences.",
         "bullets": [
           "Role: Lead UX Designer transitioning into Principal leadership",
@@ -71,7 +70,7 @@ window.PORTFOLIO_CONTENT = {
       {
         "id": "satellite-to-device",
         "tag": "Service Design",
-        "title": "Satellite to Device Experience",
+        "title": "Create a design strategy and journey map for a new service",
         "challenge": "Shaped the customer experience strategy for Verizon's Satellite to Device capability, building the cross-functional foundation to close coverage dead zones and support a beta launch.",
         "bullets": [
           "Role: Principal Experience Designer",
@@ -311,7 +310,7 @@ window.PORTFOLIO_CONTENT = {
       "quote": "I had the pleasure of working closely with Kevin on a number of high impact projects, where he consistently turned complex, ambiguous customer friction points into elegant, intuitive CX solutions. He doesn't just advocate for users, he builds clear business cases, aligns cross-functional stakeholders seamlessly, and delivers on initiatives that make a tangible difference.",
       "attribution": "Dennis Shapov, Head of Consumer Plan Perks & Content, Verizon"
     },
-       {
+    {
       "quote": "Kevin is an excellent strategic design leader and incredible colleague. He’s extremely sharp, creative, and customer-obsessed. He brings a clear strategic vision and a relentless drive for results. I had the pleasure to see firsthand how well he navigates ambiguity, addresses structural challenges, and wrangles & aligns groups of stakeholders around a shared outcome. He does it all with good humor, understanding, and professionalism. From a legal standpoint, Kevin is an amazing partner. He’s quick to spot potential issues, work through them, and balance ambitious targets with disciplined execution. His partnership, creativity, and constructive pushback consistently improved customer experiences and elevated the work of those around him.",
       "attribution": "Nicholas Buell, Strategic Legal, Compliance, and Business Advisor, Verizon"
     },
@@ -330,7 +329,7 @@ window.PORTFOLIO_CONTENT = {
     {
       "quote": "Over several years and numerous projects, I have consistently valued having Kevin on my project teams. He routinely exceeds expectations, taking care not only to excel in his own responsibilities but also to develop a comprehensive understanding of each project’s broader goal. Kevin is a huge asset to any working team and companies should be knocking down his door to snatch him up.",
       "attribution": "Megan Gottfried, Product Development/Sr Mgr, Verizon"
-    }, 
+    },
     {
       "quote": "I value our collaborative working relationship and appreciate your meticulous approach to project scenarios, which consistently leads to optimal customer experiences. I have personally gained significant knowledge from you over the past year. I thank you for your patience.and I look forward to working together more in the future.",
       "attribution": "Jeanette Hogan,Experience Management-Sr Mgr, Verizon"
@@ -340,8 +339,7 @@ window.PORTFOLIO_CONTENT = {
     "kicker": "Contact",
     "heading": "Building an experience? Let's make it a story worth telling.",
     "emailLabel": "Email Me",
-    "linkedinLabel": "LinkedIn",
-    "scheduleLabel": "Schedule Call"
+    "linkedinLabel": "LinkedIn"
   },
   "footer": {
     "left": "Kevin Trayner",

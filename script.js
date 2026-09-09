@@ -3,13 +3,9 @@ function renderHero() {
   if (!hero) return;
 
   hero.innerHTML = `
-    <p class="eyebrow" data-edit="hero.eyebrow">${escapeHtml(content.hero.eyebrow)}</p>
+    ${content.hero.eyebrow ? `<p class="eyebrow" data-edit="hero.eyebrow">${escapeHtml(content.hero.eyebrow)}</p>` : ''}
     <h1 data-edit="hero.headline">${escapeHtml(content.hero.headline)}</h1>
     <p class="hero-copy" data-edit="hero.subhead">${escapeHtml(content.hero.subhead)}</p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="${escapeHtml(content.hero.primaryCta.href)}" data-edit="hero.primaryCta.label">${escapeHtml(content.hero.primaryCta.label)}</a>
-      <a class="btn btn-text" href="${escapeHtml(content.hero.secondaryCta.href)}" data-edit="hero.secondaryCta.label">${escapeHtml(content.hero.secondaryCta.label)}</a>
-    </div>
   `;
 }
 
@@ -18,18 +14,16 @@ function renderWork() {
   if (!work) return;
 
   work.innerHTML = `
-    <div class="section-head">
-      <p class="section-kicker" data-edit="work.kicker">${escapeHtml(content.work.kicker)}</p>
-      <h2 data-edit="work.heading">${escapeHtml(content.work.heading)}</h2>
+    <div class="work-intro-block">
+      <p class="work-label">Case studies</p>
     </div>
     <div class="card-grid">
       ${content.work.cases
         .map(
           (item, index) => `
           <article class="case-card">
-            <p class="case-tag" data-edit="work.cases[${index}].tag">${escapeHtml(item.tag)}</p>
             <h3 data-edit="work.cases[${index}].title">${escapeHtml(item.title)}</h3>
-            <p data-edit="work.cases[${index}].challenge">${escapeHtml(item.challenge)}</p>
+            <p class="case-challenge" data-edit="work.cases[${index}].challenge">${escapeHtml(item.challenge)}</p>
             <ul>
               ${item.bullets
                 .map(
@@ -38,7 +32,7 @@ function renderWork() {
                 )
                 .join('')}
             </ul>
-            <a href="${escapeHtml(item.href)}">Read Case Study</a>
+            <a href="${escapeHtml(item.href)}">Read case study</a>
           </article>
         `
         )
