@@ -5,7 +5,7 @@ function renderHero() {
   hero.innerHTML = `
     ${content.hero.eyebrow ? `<p class="eyebrow" data-edit="hero.eyebrow">${escapeHtml(content.hero.eyebrow)}</p>` : ''}
     <h1 data-edit="hero.headline">${escapeHtml(content.hero.headline)}</h1>
-    <p class="hero-copy" data-edit="hero.subhead">${escapeHtml(content.hero.subhead)}</p>
+    ${content.hero.subhead ? `<p class="hero-copy" data-edit="hero.subhead">${escapeHtml(content.hero.subhead)}</p>` : ''}
   `;
 }
 

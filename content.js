@@ -28,8 +28,8 @@ window.PORTFOLIO_CONTENT = {
   ],
   "hero": {
     "eyebrow": "",
-    "headline": "Experience design that turns complexity into clarity.",
-    "subhead": "Strategic design leader aligning product, service, and customer experience around meaningful outcomes.",
+    "headline": "Strategic Experience Designer with 20+ years leading customer and internal experiences for Fortune 100 organizations.",
+    "subhead": "",
     "primaryCta": {
       "label": "View case studies",
       "href": "#work"
