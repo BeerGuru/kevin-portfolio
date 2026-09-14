@@ -134,7 +134,7 @@ function renderTestimonials() {
   section.innerHTML = `
     <div class="section-head">
       <p class="section-kicker">Partner Feedback</p>
-      <h2>Signals from cross-functional collaboration.</h2>
+      <h2>What my partners say about working with me</h2>
     </div>
     <div class="writing-list">
       ${content.testimonials

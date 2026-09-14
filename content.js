@@ -254,8 +254,8 @@ window.PORTFOLIO_CONTENT = {
   },
   "workingStyle": {
     "kicker": "Working Style",
-    "heading": "Strategy first, execution grounded, teams elevated.",
-    "intro": "I work as an empathetic systems-level design leader, balancing people, product constraints, and business outcomes to keep teams aligned and moving.",
+    "heading": "Empathetic systems-level design leader, balancing people, product constraints, & business outcomes to align and keep teams moving.",
+    "intro": "",
     "profileSignals": [
       {
         "label": "Personality Profile",
