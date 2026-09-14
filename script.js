@@ -152,26 +152,40 @@ function renderTestimonials() {
     </div>
     ${
       hasMore
-        ? `<div class="testimonials-toggle-wrap"><button type="button" class="btn btn-ghost testimonials-toggle" id="testimonials-toggle">Show more feedback</button></div>`
+        ? `<div class="testimonials-toggle-wrap"><button type="button" class="btn btn-ghost testimonials-toggle" id="testimonials-toggle" aria-expanded="false"><span class="toggle-label">Show more</span><span class="toggle-caret" aria-hidden="true">▾</span></button></div>`
         : ''
     }
   `;
 
   const toggleButton = document.getElementById('testimonials-toggle');
   if (toggleButton) {
-    toggleButton.addEventListener('click', () => {
-      const extras = section.querySelectorAll('.testimonial-extra');
+    const label = toggleButton.querySelector('.toggle-label');
+    const caret = toggleButton.querySelector('.toggle-caret');
+
+    const updateToggleState = () => {
       const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
+      const extras = section.querySelectorAll('.testimonial-extra');
+
       extras.forEach((el) => {
         if (expanded) {
-          el.setAttribute('hidden', '');
-        } else {
           el.removeAttribute('hidden');
+        } else {
+          el.setAttribute('hidden', '');
         }
       });
+
+      if (label) label.textContent = expanded ? 'Show less' : 'Show more';
+      if (caret) caret.textContent = expanded ? '▴' : '▾';
+      toggleButton.setAttribute('aria-expanded', String(expanded));
+    };
+
+    toggleButton.addEventListener('click', () => {
+      const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
       toggleButton.setAttribute('aria-expanded', String(!expanded));
-      toggleButton.textContent = expanded ? 'Show more feedback' : 'Show less';
+      updateToggleState();
     });
+
+    updateToggleState();
   }
 }
 
