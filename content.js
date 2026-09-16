@@ -46,7 +46,7 @@ window.PORTFOLIO_CONTENT = {
       {
         "id": "myplan",
         "tag": "Growth",
-        "title": "Research, conceptualize and test a new plans experience",
+        "title": "Redesign our core mobile plans architecture from early concept through to delivery",
         "challenge": "Led design for myPlan initiative to create clearer plan choice and more customer flexibility in a highly competitive market.",
         "bullets": [
           "Role: Lead UX Designer",
@@ -95,7 +95,7 @@ window.PORTFOLIO_CONTENT = {
   },
   "caseStudies": {
     "myplan": {
-      "title": "Research, conceptualize and test a new plans experience",
+      "title": "Redesign our core mobile plans architecture from early concept directly through to delivery",
       "subtitle": "Reframing mobile plan selection to give customers more flexibility while supporting business differentiation.",
       "role": "Lead UX Designer",
       "timeline": "",
