@@ -21,7 +21,7 @@ function renderWork() {
       ${content.work.cases
         .map(
           (item, index) => `
-          <article class="case-card">
+          <article class="case-card${index === content.work.cases.length - 1 ? ' case-card-featured' : ''}">
             <h3 data-edit="work.cases[${index}].title">${escapeHtml(item.title)}</h3>
             <p class="case-challenge" data-edit="work.cases[${index}].challenge">${escapeHtml(item.challenge)}</p>
             <ul>

@@ -318,6 +318,10 @@ h2 {
   box-shadow: 0 12px 24px rgba(31, 38, 31, 0.04);
 }
 
+.case-card-featured {
+  grid-column: span 2;
+}
+
 .case-card h3 {
   line-height: 1.18;
   min-height: 2.5em;
@@ -580,6 +584,10 @@ body.lightbox-open {
   .writing-list,
   .leadership-grid {
     grid-template-columns: 1fr;
+  }
+
+  .case-card-featured {
+    grid-column: auto;
   }
 
   .split {

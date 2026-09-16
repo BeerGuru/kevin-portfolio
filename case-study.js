@@ -185,7 +185,7 @@ function renderCaseOutcomes(caseStudy, caseId) {
               `<li data-edit="caseStudies.${caseId}.outcomes[${index}]">${escapeHtml(item)}</li>`
           )
           .join('')}
-        <li data-edit="caseStudies.${caseId}.reflection">${richText(caseStudy.reflection)}</li>
+        ${caseStudy.reflection ? `<li data-edit="caseStudies.${caseId}.reflection">${richText(caseStudy.reflection)}</li>` : ''}
       </ul>
     </div>
     <p style="margin-top: 1.5rem;"><a class="btn btn-text" href="index.html#work">&larr; Back to Selected Work</a></p>

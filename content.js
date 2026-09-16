@@ -56,16 +56,16 @@ window.PORTFOLIO_CONTENT = {
         "href": "case-study.html?case=myplan"
       },
       {
-        "id": "fcc-labels",
-        "tag": "Cross functional",
-        "title": "Manage end to end experience across functions, channels and business units",
-        "challenge": "Directed the design and implementation of FCC-mandated product labels across mobile and home product experiences.",
+        "id": "netmax",
+        "tag": "Service Design",
+        "title": "Own and define the end-to-end experience, and remove ambiguity for a new streaming launch",
+        "challenge": "Led the experience for a combined Netflix and Max streaming perk, removing ambiguity across partners, product, design, development, research, and marketing.",
         "bullets": [
-          "Role: Lead UX Designer transitioning into Principal leadership",
-          "Scope: Aligned legal requirements with product, design systems, and cross-channel customer journeys",
-          "Impact: Delivered consistent compliance patterns at scale while preserving experience clarity"
+          "Role: Lead Experience Architect",
+          "Scope: Partnered with Netflix, Max, product value, research, design, marketing, and other teams to shape the end-to-end digital experience",
+          "Impact: Launched an exclusive combined streaming product that became Verizon's second-best-selling perk, reaching nearly 11 million mobile accounts"
         ],
-        "href": "case-study.html?case=fcc-labels"
+        "href": "case-study.html?case=netmax"
       },
       {
         "id": "satellite-to-device",
@@ -78,12 +78,24 @@ window.PORTFOLIO_CONTENT = {
           "Impact: Built a trusted cross-functional partnership from scratch and became a recognized design leader on the initiative"
         ],
         "href": "case-study.html?case=satellite-to-device"
+      },
+      {
+        "id": "fcc-labels",
+        "tag": "Cross functional",
+        "title": "Build an end to end experience across channels, functions and business units",
+        "challenge": "Directed the design and implementation of FCC-mandated product labels across mobile and home product experiences.",
+        "bullets": [
+          "Role: Lead UX Designer transitioning into Principal leadership",
+          "Scope: Aligned legal requirements with product, design systems, and cross-channel customer journeys",
+          "Impact: Delivered consistent compliance patterns at scale while preserving experience clarity"
+        ],
+        "href": "case-study.html?case=fcc-labels"
       }
     ]
   },
   "caseStudies": {
     "myplan": {
-      "title": "Mobile myPlan Experience",
+      "title": "Research, conceptualize and test a new plans experience",
       "subtitle": "Reframing mobile plan selection to give customers more flexibility while supporting business differentiation.",
       "role": "Lead UX Designer",
       "timeline": "",
@@ -137,7 +149,7 @@ window.PORTFOLIO_CONTENT = {
       "reflection": "This work reinforced the importance of simplifying plan architecture and offering customization, and set the groundwork for the current [Simplicity plan](https://www.verizon.com/plans/unlimited/) today."
     },
     "fcc-labels": {
-      "title": "FCC Product Labels Across Experiences",
+      "title": "Build an end to end experience across channels, functions and business units",
       "subtitle": "Implementing regulatory requirements across product ecosystems without degrading customer clarity.",
       "role": "Lead UX Designer / Principal Experience Designer",
       "timeline": "",
@@ -193,7 +205,7 @@ window.PORTFOLIO_CONTENT = {
       "reflection": "Provided a model and guide for legal mandate projects of similar scope. (All-in pricing mandate for Massachucetts)"
     },
     "satellite-to-device": {
-      "title": "Satellite to Device Experience",
+      "title": "Create a design strategy and journey map for a new service",
       "subtitle": "Building the experience strategy and cross-functional partnerships behind Verizon's Satellite to Device network capability.",
       "role": "Principal Experience Designer",
       "timeline": "",
@@ -250,6 +262,57 @@ window.PORTFOLIO_CONTENT = {
         "Being seen as a leader on this work came from how the partnerships were built, not just the artifacts delivered — trust and shared direction made everything downstream easier."
       ],
       "reflection": "This work was paused in 2026 due to organizational reorgs and reprioritization"
+    },
+    "netmax": {
+      "title": "Own and define the end-to-end experience, and remove ambiguity for a new streaming launch",
+      "subtitle": "Defining the end-to-end experience for a new combined streaming product while removing ambiguity across partners and channels.",
+      "role": "Lead Experience Architect",
+      "timeline": "",
+      "context": "Verizon launched a new streaming combo service that needed to fit the existing service model, satisfy our partners, and remain clear to customers.",
+      "problem": "The combined service needed to feel like one product while still allowing customers to register, manage, and upgrade two separate subscriptions. Existing Verizon perk patterns did not fully support that model, and research showed that 80-90% of Verizon customers also overlapped with Netflix, making existing-subscription registration especially important to clarify. Additionally, customers needed to be able to upgrade their subscription, if they didn't want ads.",
+      "approach": [
+        "Worked with Netflix, Max, and the product team to understand partner constraints, subscription flows, and the experience risks of launching a combined perk.",
+        "Mapped the experience across Buy, Manage, Pay, and Use to identify ambiguity and friction across the customer journey.",
+        "Created detailed flows for registration, subscription upgrades, account management, and billing so partners and internal teams could align on the experience."
+      ],
+      "images": [
+        {
+          "src": "assets/case-studies/netmax/Up levels flow all.png",
+          "alt": "End-to-end flow showing Netflix and Max subscription upgrades",
+          "caption": "Upgrading from standard to no ads for Netflix (partial flow)"
+        },
+        {
+          "src": "assets/case-studies/netmax/Add perk and manage.png",
+          "alt": "Verizon account screens showing the Netflix and Max perk and registration actions",
+          "caption": "Bringing the combined perk into the account management experience, where Netflix and Max can be registered and manage separately."
+        },
+        {
+          "src": "assets/case-studies/netmax/Register Netflix.png",
+          "alt": "Netflix registration flow showing account linking and confirmation",
+          "caption": "Registering an existing Netflix account through Verizon"
+        }
+      ],
+      "decisions": [
+        {
+          "title": "Treat two services as one product where customers expect it",
+          "detail": "Presented Netflix and Max together in Buy and Pay so the combined perk felt like a single offering, while keeping each service separately manageable in Manage and Use."
+        },
+        {
+          "title": "Design around partner constraints",
+          "detail": "Partner conversations made clear that the existing Netflix and Max experiences could not be substantially customized. I incorporated wayfinders, and provided key information to guide customers within the Verizon experience."
+        },
+        {
+          "title": "Make registration and upgrades understandable",
+          "detail": "Clarified how existing subscribers could connect their accounts, how the included ad-supported plans worked, and how customers could move to another subscription level even when that was not possible when selecting the perk."
+        }
+      ],
+      "outcomes": [
+        "Launched the combined Netflix/Max service, which became Verizon's second-best-selling perk, on nearly 11 million mobile accounts.",
+        "Created a reusable experience framework for combining two partner services into one Verizon perk.",
+        "Established a framework for upgrading existing subscriptions and representing those changes across the experience.",
+        "Planted the idea for managing unused subscriptions, which later informed a 90-day removal rule for unregistered services."
+      ],
+      "reflection": ""
     }
   },
   "workingStyle": {
