@@ -834,9 +834,40 @@ body.lightbox-open {
   }
 
   .site-header {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 0.8rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
     text-align: center;
+  }
+
+  .header-left {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .header-note-wrap {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header-note {
+    width: fit-content;
+    max-width: 100%;
+    font-size: 0.72rem;
+    line-height: 1.4;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .header-note-popover {
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(22rem, calc(100vw - 1.5rem));
   }
 
   .main-nav {
