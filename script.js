@@ -189,9 +189,42 @@ function renderTestimonials() {
   }
 }
 
+function setupAiNote() {
+  const noteButton = document.querySelector('.header-note');
+  const notePopover = document.getElementById('ai-note-popover');
+
+  if (!noteButton || !notePopover) return;
+
+  const setNoteState = (isOpen) => {
+    noteButton.setAttribute('aria-expanded', String(isOpen));
+    notePopover.hidden = !isOpen;
+  };
+
+  noteButton.addEventListener('click', () => {
+    const shouldOpen = noteButton.getAttribute('aria-expanded') !== 'true';
+    setNoteState(shouldOpen);
+  });
+
+  document.addEventListener('click', (event) => {
+    const target = event.target;
+    if (!(target instanceof Node)) return;
+
+    if (!noteButton.contains(target) && !notePopover.contains(target)) {
+      setNoteState(false);
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      setNoteState(false);
+    }
+  });
+}
+
 function init() {
   applySeo(content.seo.title, content.seo.description, content.seo.ogTitle, content.seo.ogDescription);
   renderHeader();
+  setupAiNote();
   renderHero();
   renderWork();
   renderWorkingStyle();

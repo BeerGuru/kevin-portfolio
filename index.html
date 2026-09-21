@@ -20,7 +20,21 @@
     <div class="page-bg" aria-hidden="true"></div>
 
     <header class="site-header">
-      <a class="brand" href="#top" id="brand-name">Portfolio</a>
+      <div class="header-left">
+        <a class="brand" href="#top" id="brand-name">Portfolio</a>
+        <div class="header-note-wrap">
+          <button class="header-note" type="button" aria-expanded="false" aria-controls="ai-note-popover">
+            Built with Claude Code + Copilot
+          </button>
+          <div id="ai-note-popover" class="header-note-popover" role="dialog" aria-live="polite" hidden>
+            <p>
+              I built this portfolio initially using Claude Code, and then Copilot, publishing to GitHub.
+              Locally, I am using VS Code on my laptop to edit and manage this portfolio (and some other
+              projects). Like a welcome back/return to my days of UI front end coding a decade ago!
+            </p>
+          </div>
+        </div>
+      </div>
       <nav class="main-nav" aria-label="Main navigation" id="main-nav"></nav>
       <a class="btn btn-ghost" href="#" id="resume-link" target="_blank" rel="noreferrer">Resume</a>
     </header>
