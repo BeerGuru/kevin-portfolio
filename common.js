@@ -1,6 +1,36 @@
-const content = window.PORTFOLIO_CONTENT;
+function mergeDeep(base, override) {
+  if (!override || typeof override !== 'object') return base;
 
-if (!content) {
+  const result = Array.isArray(base) ? [...base] : { ...base };
+
+  Object.entries(override).forEach(([key, value]) => {
+    const existing = result[key];
+
+    if (value && typeof value === 'object' && !Array.isArray(value) && existing && typeof existing === 'object' && !Array.isArray(existing)) {
+      result[key] = mergeDeep(existing, value);
+      return;
+    }
+
+    result[key] = structuredClone(value);
+  });
+
+  return result;
+}
+
+function resolveActiveContent() {
+  const base = window.PORTFOLIO_CONTENT || {};
+  const variants = base.variants || {};
+  const requestedVariant = new URLSearchParams(window.location.search).get('variant') || 'main';
+  const variantKey = variants[requestedVariant] ? requestedVariant : 'main';
+  const activeVariant = variants[variantKey] || {};
+  const merged = mergeDeep(base, activeVariant);
+  delete merged.variants;
+  return merged;
+}
+
+const content = resolveActiveContent();
+
+if (!content || !content.profile) {
   throw new Error('Missing PORTFOLIO_CONTENT. Ensure content.js loads before common.js.');
 }
 
@@ -35,6 +65,47 @@ function applySeo(title, description, ogTitle, ogDescription) {
   if (ogDescriptionEl) ogDescriptionEl.setAttribute('content', ogDescription);
 }
 
+function getActiveFontTheme() {
+  const params = new URLSearchParams(window.location.search);
+  const requestedTheme = params.get('font') || params.get('theme') || 'lora';
+  const aliasMap = {
+    default: 'default',
+    sans: 'default',
+    serif: 'lora',
+    fraunces: 'fraunces',
+    cormorant: 'cormorant',
+    lora: 'lora',
+    libre: 'libre-baskerville',
+    'libre-baskerville': 'libre-baskerville',
+  };
+
+  return aliasMap[requestedTheme] || 'lora';
+}
+
+function applyFontTheme() {
+  document.body.setAttribute('data-font', getActiveFontTheme());
+}
+
+function getActiveColorTheme() {
+  const params = new URLSearchParams(window.location.search);
+  const requestedTheme = params.get('palette') || params.get('color') || 'green';
+  const aliasMap = {
+    default: 'green',
+    orange: 'warm',
+    warm: 'warm',
+    blue: 'blue',
+    green: 'green',
+    neutral: 'neutral',
+    slate: 'neutral',
+  };
+
+  return aliasMap[requestedTheme] || 'green';
+}
+
+function applyColorTheme() {
+  document.body.setAttribute('data-theme', getActiveColorTheme());
+}
+
 function renderHeader(navBase = '') {
   const brandName = document.getElementById('brand-name');
   const mainNav = document.getElementById('main-nav');
@@ -54,6 +125,47 @@ function renderHeader(navBase = '') {
       )
       .join('');
   }
+}
+
+function renderVariantSelector() {
+  const wrapper = document.getElementById('variant-picker-wrap');
+  const variants = window.PORTFOLIO_CONTENT && window.PORTFOLIO_CONTENT.variants
+    ? Object.keys(window.PORTFOLIO_CONTENT.variants)
+    : [];
+
+  if (!wrapper || variants.length === 0) return;
+
+  const currentVariant = new URLSearchParams(window.location.search).get('variant') || 'main';
+
+  wrapper.innerHTML = `
+    <label class="variant-picker" for="variant-select">
+      <span>Variant</span>
+      <select id="variant-select" aria-label="Select portfolio variant">
+        ${variants
+          .map(
+            (variant) =>
+              `<option value="${escapeHtml(variant)}" ${variant === currentVariant ? 'selected' : ''}>${escapeHtml(variant)}</option>`
+          )
+          .join('')}
+      </select>
+    </label>
+  `;
+
+  const select = document.getElementById('variant-select');
+  if (!select) return;
+
+  select.addEventListener('change', (event) => {
+    const nextVariant = event.target.value;
+    const url = new URL(window.location.href);
+
+    if (nextVariant === 'main') {
+      url.searchParams.delete('variant');
+    } else {
+      url.searchParams.set('variant', nextVariant);
+    }
+
+    window.location.href = url.toString();
+  });
 }
 
 function renderContact() {

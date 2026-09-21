@@ -13,19 +13,64 @@
   --header-bg: rgba(247, 243, 236, 0.8);
 }
 
-body[data-theme='sage'] {
-  --bg: #edf2ea;
-  --paper: #f8faf6;
-  --ink: #1f2d26;
-  --muted: #50645d;
-  --accent: #5d7b63;
-  --accent-deep: #2f4537;
-  --line: rgba(31, 45, 38, 0.14);
-  --mint: #dfeae0;
-  --gold: #e5dfc6;
-  --bg-glow-1: rgba(131, 165, 132, 0.22);
-  --bg-glow-2: rgba(101, 141, 117, 0.18);
-  --header-bg: rgba(237, 242, 234, 0.84);
+body[data-theme='warm'] {
+  --bg: #f5f1ea;
+  --paper: #fffdf9;
+  --ink: #1f261f;
+  --muted: #5b625d;
+  --accent: #7d5f49;
+  --accent-deep: #4f362a;
+  --line: rgba(31, 38, 31, 0.12);
+  --mint: #dde7dc;
+  --gold: #e9d9b3;
+  --bg-glow-1: rgba(167, 131, 101, 0.12);
+  --bg-glow-2: rgba(134, 157, 124, 0.16);
+  --header-bg: rgba(247, 243, 236, 0.8);
+}
+
+body[data-theme='blue'] {
+  --bg: #edf3f8;
+  --paper: #f8fbff;
+  --ink: #1f2d3a;
+  --muted: #52657a;
+  --accent: #3f6f9f;
+  --accent-deep: #244866;
+  --line: rgba(31, 45, 58, 0.12);
+  --mint: #dfeaf3;
+  --gold: #d9e6f2;
+  --bg-glow-1: rgba(103, 144, 185, 0.18);
+  --bg-glow-2: rgba(75, 117, 161, 0.12);
+  --header-bg: rgba(240, 246, 252, 0.82);
+}
+
+body[data-theme='green'] {
+  --bg: #f7f8f3;
+  --paper: #fdfdfb;
+  --ink: #233429;
+  --muted: #53675b;
+  --accent: #647d5b;
+  --accent-deep: #334d3a;
+  --line: rgba(35, 52, 41, 0.1);
+  --mint: #e8efe2;
+  --gold: #eadab0;
+  --bg-glow-1: rgba(120, 146, 107, 0.11);
+  --bg-glow-2: rgba(151, 165, 111, 0.09);
+  --header-bg: rgba(247, 248, 244, 0.88);
+}
+
+body[data-theme='neutral'] {
+  --bg: #f0f1f2;
+  --paper: #fbfbfa;
+  --ink: #1d242b;
+  --muted: #5d6771;
+  --accent: #6d7d8a;
+  --accent-deep: #404d57;
+  --line: rgba(26, 31, 35, 0.12);
+  --mint: #dfe5e7;
+  --gold: #e5ded1;
+  --bg-glow-1: rgba(142, 150, 155, 0.16);
+  --bg-glow-2: rgba(103, 114, 121, 0.12);
+  --header-bg: rgba(244, 245, 246, 0.82);
 }
 
 * {
@@ -45,6 +90,86 @@ body {
   line-height: 1.5;
   position: relative;
   min-height: 100vh;
+}
+
+body[data-font='fraunces'] {
+  font-family: "Fraunces", serif;
+}
+
+body[data-font='fraunces'] h1,
+body[data-font='fraunces'] h2,
+body[data-font='fraunces'] h3,
+body[data-font='fraunces'] .brand,
+body[data-font='fraunces'] .section-kicker,
+body[data-font='fraunces'] .work-label,
+body[data-font='fraunces'] .eyebrow,
+body[data-font='fraunces'] .main-nav,
+body[data-font='fraunces'] .main-nav a,
+body[data-font='fraunces'] .variant-picker,
+body[data-font='fraunces'] .theme-picker,
+body[data-font='fraunces'] .btn,
+body[data-font='fraunces'] .case-card a {
+  font-family: "Fraunces", serif;
+}
+
+body[data-font='cormorant'] {
+  font-family: "Cormorant Garamond", serif;
+}
+
+body[data-font='cormorant'] h1,
+body[data-font='cormorant'] h2,
+body[data-font='cormorant'] h3,
+body[data-font='cormorant'] .brand,
+body[data-font='cormorant'] .section-kicker,
+body[data-font='cormorant'] .work-label,
+body[data-font='cormorant'] .eyebrow,
+body[data-font='cormorant'] .main-nav,
+body[data-font='cormorant'] .main-nav a,
+body[data-font='cormorant'] .variant-picker,
+body[data-font='cormorant'] .theme-picker,
+body[data-font='cormorant'] .btn,
+body[data-font='cormorant'] .case-card a {
+  font-family: "Cormorant Garamond", serif;
+}
+
+body[data-font='lora'] {
+  font-family: "Lora", serif;
+}
+
+body[data-font='lora'] h1,
+body[data-font='lora'] h2,
+body[data-font='lora'] h3,
+body[data-font='lora'] .brand,
+body[data-font='lora'] .section-kicker,
+body[data-font='lora'] .work-label,
+body[data-font='lora'] .eyebrow,
+body[data-font='lora'] .main-nav,
+body[data-font='lora'] .main-nav a,
+body[data-font='lora'] .variant-picker,
+body[data-font='lora'] .theme-picker,
+body[data-font='lora'] .btn,
+body[data-font='lora'] .case-card a {
+  font-family: "Lora", serif;
+}
+
+body[data-font='libre-baskerville'] {
+  font-family: "Libre Baskerville", serif;
+}
+
+body[data-font='libre-baskerville'] h1,
+body[data-font='libre-baskerville'] h2,
+body[data-font='libre-baskerville'] h3,
+body[data-font='libre-baskerville'] .brand,
+body[data-font='libre-baskerville'] .section-kicker,
+body[data-font='libre-baskerville'] .work-label,
+body[data-font='libre-baskerville'] .eyebrow,
+body[data-font='libre-baskerville'] .main-nav,
+body[data-font='libre-baskerville'] .main-nav a,
+body[data-font='libre-baskerville'] .variant-picker,
+body[data-font='libre-baskerville'] .theme-picker,
+body[data-font='libre-baskerville'] .btn,
+body[data-font='libre-baskerville'] .case-card a {
+  font-family: "Libre Baskerville", serif;
 }
 
 .page-bg {
@@ -140,6 +265,35 @@ body {
 .main-nav {
   display: flex;
   gap: 1rem;
+}
+
+.variant-picker-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+}
+
+.variant-picker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.35rem 0.55rem 0.35rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 253, 250, 0.8);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.variant-picker select {
+  border: none;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+  outline: none;
 }
 
 .main-nav a {
@@ -376,6 +530,7 @@ h2 {
 .case-card-featured {
   grid-column: span 2;
 }
+
 
 .case-card h3 {
   line-height: 1.18;

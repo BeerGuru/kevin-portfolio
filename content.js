@@ -5,6 +5,92 @@ window.PORTFOLIO_CONTENT = {
     "ogTitle": "Kevin Trayner | Principal Experience Designer",
     "ogDescription": "Strategic design and product leadership portfolio for hiring managers and design leaders."
   },
+  "variants": {
+    "main": {},
+    "test": {
+      "profile": {
+        "resumeHref": "kevin-trayner-resume-test.pdf"
+      },
+      "hero": {
+        "headline": "Test variant headline for previewing tailored portfolio content.",
+        "subhead": "This is a temporary variant for testing the URL-based portfolio customization flow.",
+        "primaryCta": {
+          "label": "Test CTA",
+          "href": "#work"
+        }
+      },
+      "work": {
+        "cases": [
+          "myplan",
+          "netmax",
+          "satellite-to-device"
+        ]
+      }
+    },
+    "design-lead": {
+      "profile": {
+        "resumeHref": "kevin-trayner-resume-design-lead.pdf"
+      },
+      "hero": {
+        "headline": "Design leader translating ambiguity into direction, alignment, and traction.",
+        "subhead": "I help teams turn messy strategic problems into clearer decisions, stronger customer experiences, and measurable business outcomes.",
+        "primaryCta": {
+          "label": "See leadership work",
+          "href": "#work"
+        }
+      },
+      "work": {
+        "cases": [
+          "netmax",
+          "myplan",
+          "satellite-to-device",
+          "fcc-labels"
+        ]
+      }
+    },
+    "product-strategy": {
+      "profile": {
+        "resumeHref": "kevin-trayner-resume-product-strategy.pdf"
+      },
+      "hero": {
+        "headline": "Product and experience strategist connecting customer needs to business outcomes.",
+        "subhead": "I design clear, scalable experiences that simplify choice, support product strategy, and create stronger customer trust.",
+        "primaryCta": {
+          "label": "View product work",
+          "href": "#work"
+        }
+      },
+      "work": {
+        "cases": [
+          "myplan",
+          "netmax",
+          "satellite-to-device",
+          "fcc-labels"
+        ]
+      }
+    },
+    "service-design": {
+      "profile": {
+        "resumeHref": "kevin-trayner-resume-service-design.pdf"
+      },
+      "hero": {
+        "headline": "Service designer shaping end-to-end journeys across business, product, and customer touchpoints.",
+        "subhead": "I bring clarity to complex journeys by aligning customer needs, operational realities, and cross-functional execution.",
+        "primaryCta": {
+          "label": "Explore service design",
+          "href": "#work"
+        }
+      },
+      "work": {
+        "cases": [
+          "netmax",
+          "satellite-to-device",
+          "myplan",
+          "fcc-labels"
+        ]
+      }
+    }
+  },
   "profile": {
     "name": "Kevin Trayner",
     "role": "Principal Experience Designer",

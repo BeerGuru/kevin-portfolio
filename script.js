@@ -13,28 +13,53 @@ function renderWork() {
   const work = document.getElementById('work');
   if (!work) return;
 
+  const cases = (content.work.cases || []).map((item) => {
+    if (typeof item === 'string') {
+      const meta = content.caseStudies[item];
+      if (!meta) return null;
+      return {
+        id: item,
+        tag: '',
+        title: meta.title,
+        challenge: meta.challenge || meta.problem || meta.context || '',
+        bullets: Array.isArray(meta.outcomes) ? meta.outcomes.slice(0, 3) : [],
+        href: `case-study.html?case=${encodeURIComponent(item)}`,
+      };
+    }
+    return item;
+  }).filter(Boolean);
+
+  const featuredIndex = cases.length > 3 ? cases.length - 1 : null;
+
   work.innerHTML = `
     <div class="work-intro-block">
       <p class="work-label">Case studies</p>
     </div>
     <div class="card-grid">
-      ${content.work.cases
+      ${cases
         .map(
-          (item, index) => `
-          <article class="case-card${index === content.work.cases.length - 1 ? ' case-card-featured' : ''}">
-            <h3 data-edit="work.cases[${index}].title">${escapeHtml(item.title)}</h3>
-            <p class="case-challenge" data-edit="work.cases[${index}].challenge">${escapeHtml(item.challenge)}</p>
-            <ul>
-              ${item.bullets
-                .map(
-                  (bullet, bulletIndex) =>
-                    `<li data-edit="work.cases[${index}].bullets[${bulletIndex}]">${escapeHtml(bullet)}</li>`
-                )
-                .join('')}
-            </ul>
-            <a href="${escapeHtml(item.href)}">Read case study</a>
-          </article>
-        `
+          (item, index) => {
+            const isFeatured = featuredIndex !== null && index === featuredIndex && cases.length > 1;
+            const cardClasses = ['case-card'];
+
+            if (isFeatured) cardClasses.push('case-card-featured');
+
+            return `
+              <article class="${cardClasses.join(' ')}">
+                <h3 data-edit="work.cases[${index}].title">${escapeHtml(item.title)}</h3>
+                <p class="case-challenge" data-edit="work.cases[${index}].challenge">${escapeHtml(item.challenge)}</p>
+                <ul>
+                  ${item.bullets
+                    .map(
+                      (bullet, bulletIndex) =>
+                        `<li data-edit="work.cases[${index}].bullets[${bulletIndex}]">${escapeHtml(bullet)}</li>`
+                    )
+                    .join('')}
+                </ul>
+                <a href="${escapeHtml(item.href)}">Read case study</a>
+              </article>
+            `;
+          }
         )
         .join('')}
     </div>
@@ -222,9 +247,10 @@ function setupAiNote() {
 }
 
 function init() {
+  applyFontTheme();
+  applyColorTheme();
   applySeo(content.seo.title, content.seo.description, content.seo.ogTitle, content.seo.ogDescription);
   renderHeader();
-  setupAiNote();
   renderHero();
   renderWork();
   renderWorkingStyle();
