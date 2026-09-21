@@ -834,49 +834,80 @@ body.lightbox-open {
   }
 
   .site-header {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
-    padding-top: 0.9rem;
-    padding-bottom: 0.9rem;
-    text-align: center;
+    justify-content: space-between;
+    gap: 0.45rem;
+    padding: 0.65rem 0.75rem;
+    text-align: left;
+    min-height: 3.25rem;
   }
 
   .header-left {
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    min-width: 0;
+    flex: 1 1 auto;
+    overflow: hidden;
+  }
+
+  .brand {
+    font-size: 1.05rem;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .header-note-wrap {
-    width: 100%;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    flex: 1 1 auto;
+    justify-content: flex-start;
   }
 
   .header-note {
-    width: fit-content;
+    width: auto;
     max-width: 100%;
-    font-size: 0.72rem;
-    line-height: 1.4;
-    white-space: normal;
+    font-size: 0.62rem;
+    line-height: 1.2;
+    padding: 0.38rem 0.55rem;
+    white-space: nowrap;
     text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .header-note-popover {
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(22rem, calc(100vw - 1.5rem));
+    left: auto;
+    right: 0;
+    transform: none;
+    width: min(22rem, calc(100vw - 2rem));
   }
 
   .main-nav {
-    width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 0.6rem;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+  }
+
+  .main-nav a {
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  .btn.btn-ghost#resume-link {
+    padding: 0.45rem 0.7rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .hero {
-    padding-top: 3.5rem;
+    padding-top: 2.4rem;
   }
 }
