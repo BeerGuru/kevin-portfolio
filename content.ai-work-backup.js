@@ -1,3 +1,4 @@
+// Backup created before removing the "How I use AI in my work" CTA from the work section.
 window.PORTFOLIO_CONTENT = {
   "seo": {
     "title": "Kevin Trayner | Principal Experience Designer",
@@ -187,53 +188,56 @@ window.PORTFOLIO_CONTENT = {
     "kicker": "How I use AI in my work",
     "heading": "Partnering with AI through different project phases",
     "intro": "I use AI to analyze, summarize and simplify, be a knowledge repository, present different points of view, create visualizations, and just build and test stuff more quickly. Vibe coding has opened up new worlds of exploration (VS Code and Copilot now). The below illustrates examples of how I use it day to day in different phases of a project. I recognize there are many more opportunities to partner with AI - which I look forward to discovering.",
-    "phases": [
+    "phases":  
+    [
       {
-        "label": "Discover",
+        "label": "Discover\n                \n                \n                  Use my Product Design expert Gemini Gem to evaluate value prop completeness and identify friction points.Use Gemini to do competitive analysis and research on similar products in market. Additionally, use Gemini to summarize any in-house research. Synthesize the research into themes and opportunity areas.Sometimes, when I need a \"gut check\" on the project - does it align with organization goals and strategic direction - I will tap my \"Ask the CEO\" Gemini Gem (leverages a Notebook LM built on our CEO's speeches and interviews)",
         "color": "purple",
         "examples": [
           "Use my Product Design expert Gemini Gem to evaluate value prop completeness and identify friction points.",
-          "Use Gemini to do competitive analysis and research on similar products in market. Additionally, use Gemini to summarize any in-house research. Synthesize the research into themes and opportunity areas.",
-          "Sometimes, when I need a gut check on the project — does it align with organizational goals and strategic direction — I will tap my “Ask the CEO” Gemini Gem, which leverages a Notebook LM built on our CEO’s speeches and interviews."
+          "Use Gemini to conduct competitive analysis, synthesize research, and summarize in-house insights.",
+          "Turn customer feedback and interview notes into themes, opportunity areas, and stronger product questions.",
+          "Use a CEO-focused Gemini Gem as a strategic gut check against organizational goals and messaging."
         ]
       },
       {
-        "label": "Define",
+        "label": "Define\n                \n                \n                  Define Review product taxonomy/database in Notebook LM to see commonalities and differences with other products and where it fits in our ecosystem.Use vibe-coded app (VS Code + Claude) to create draft Design Brief deck based on project docs and user input (WIP).Use Gemini Gem \"Simple Illustrator\" to build similar looking storyboards with consistent style and format.Use vibe-coded Claude/Figma app to create journey maps based on the current web site and assessment form answers. (WIP by larger team)",
         "color": "green",
         "examples": [
-          "Review product taxonomy and database in Notebook LM to see commonalities and differences with other products and where it fits in our ecosystem.",
-          "Use a vibe-coded app (VS Code + Claude) to create a draft design brief deck based on project docs and user input.",
-          "Use Gemini Gem “Simple Illustrator” to build similarly styled storyboards with consistent format.",
-          "Use a vibe-coded Claude/Figma app to create journey maps based on the current website and assessment form answers. This work is still evolving with broader team input."
+          "Review product taxonomy and service flows to identify commonalities, gaps, and ecosystem fit.",
+          "Use AI to pressure-test opportunities and compare different strategic directions.",
+          "Create draft briefs, storyboards, and early framework artifacts based on project inputs and user research.",
+          "Use AI to structure and summarize workshop findings, decisions, and next steps."
         ]
       },
       {
-        "label": "Design",
+        "label": "Design\n                \n                \n                  Use Figma Make to create multiple conceptual designs based on text prompt, OR  based on existing screens in design system or best in class example. Create a prototype in Figma Make from leading design concept to share with stakeholders.(Alternatively, use Gemini in Google Docs to create a slide deck, using Figma screens as an input.)From leading concept, create detailed draft wireframes based on design system library.Quickly \"Spot test\" base concept prototype from Figma (usertesting.com), using AI prompting to create test script and select audience.",
         "color": "blue",
         "examples": [
-          "Use Figma Make to create multiple conceptual designs based on a text prompt or existing screens in the design system or best-in-class examples.",
-          "Create a prototype in Figma Make from the leading design concept to share with stakeholders. Alternatively, use Gemini in Google Docs to create a slide deck using Figma screens as input.",
-          "From the leading concept, create detailed draft wireframes based on the design system library.",
-          "Quickly “spot test” the base concept prototype from Figma using usertesting.com and AI prompting to create the test script and select the audience."
+          "Use Figma Make or similar tools to generate multiple concept directions from prompts or existing design patterns.",
+          "Draft early concept screens, flows, and prototypes to align teams quickly.",
+          "Create test scripts, audience framing, and design critique prompts with AI support.",
+          "Translate the strongest concept into clearer wireframes and a more focused prototype narrative."
         ]
       },
       {
-        "label": "Develop",
+        "label": "Develop\n                \n                \n                  Use AI to review implementation trade-offs, identify edge cases, and help refine design details.Use AI to suggest FAQ documentation, learning materials for customer service teams. etc.In test environment, test developed design against Figma - using vibe coded VCA app, and generate a summary of issues. (FUTURE path).",
         "color": "orange",
         "examples": [
-          "Use AI to review implementation trade-offs, identify edge cases, and help refine design details.",
-          "Use AI to suggest FAQ documentation and learning materials for customer service teams..",
-          "In the test environment, test developed designs against Figma using a vibe-coded VCA app and generate a summary of issues. This is a future path."
+          "Use AI to review implementation trade-offs, flag edge cases, and refine UX details.",
+          "Generate documentation, FAQs, and internal guidance to support rollout and adoption.",
+          "Test UI behavior in a sandbox and summarize gaps against the design intent.",
+          "Use AI to turn testing feedback into clearer product and experience improvements."
         ]
       },
       {
-        "label": "Deploy",
+        "label": "Deploy\n                \n                \n                  Use AI to evaluate launch readiness, surface risks, and summarize what to monitor after release.Use AEM or similar tool to test multiple variations of experience in production environment to optimize experience.Use Gemini (future forward - could be an app) to measure desired outcome metrics against actual metrics for product.Turn performance learnings into stakeholder updates, next actions, and follow-on experiments.",
         "color": "gold",
         "examples": [
-          "Use AI to assess launch readiness, surface risks, and summarize what to monitor after release.",
-          "Use AEM or a similar tool to test multiple variations of the experience in a production environment to optimize the experience.",
-          "Use Gemini, in a future-forward way, to compare desired outcome metrics against actual metrics for the product.",
-          "Turn performance learnings into stakeholder updates, actions, and fast follows."
+          "Use AI to evaluate launch readiness, surface risks, and summarize what to monitor after release.",
+          "Test variations in production-like environments to understand what is improving the experience.",
+          "Use AI to compare outcome metrics against goals and identify optimization opportunities.",
+          "Turn performance learnings into stakeholder updates, next actions, and follow-on experiments."
         ]
       }
     ]

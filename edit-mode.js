@@ -83,11 +83,27 @@
   // Re-apply contenteditable to anything re-rendered while edit mode is already on
   // (e.g. reveal animations don't re-render, but this keeps behavior consistent
   // if a render function is ever re-run after toggling on).
+  function getEditableTarget(target) {
+    if (!target || !target.closest) return null;
+
+    const editable = target.closest('[data-edit]');
+    if (!editable) return null;
+
+    const nestedEditable = editable.querySelector('[data-edit]');
+    if (nestedEditable && nestedEditable !== editable) {
+      return null;
+    }
+
+    return editable;
+  }
+
   document.addEventListener('blur', (event) => {
     const target = event.target;
-    if (!target || !target.matches || !target.matches('[data-edit][contenteditable="true"]')) return;
-    const path = target.getAttribute('data-edit');
-    const value = target.textContent.trim();
+    const editable = getEditableTarget(target);
+    if (!editable || !editable.matches('[contenteditable="true"]')) return;
+
+    const path = editable.getAttribute('data-edit');
+    const value = editable.textContent.trim();
     if (setPath(draft, path, value)) {
       setStatus(`Updated ${path}`);
     }

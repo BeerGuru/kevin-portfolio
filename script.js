@@ -66,6 +66,57 @@ function renderWork() {
   `;
 }
 
+function renderAIWork() {
+  const section = document.getElementById('ai-work');
+  if (!section) return;
+
+  const phases = Array.isArray(content.aiWork.phases) ? content.aiWork.phases : [];
+
+  section.innerHTML = `
+    <div class="section-head ai-work-header">
+      <p class="section-kicker" data-edit="aiWork.kicker">${escapeHtml(content.aiWork.kicker)}</p>
+      <h2 data-edit="aiWork.heading">${escapeHtml(content.aiWork.heading)}</h2>
+      <p class="section-intro" data-edit="aiWork.intro">${escapeHtml(content.aiWork.intro)}</p>
+    </div>
+    <div class="ai-activity-panel">
+      <div class="ai-phase-flow" aria-label="How I use AI across project phases">
+        ${phases
+          .map(
+            (phase, index) => `
+              <div class="ai-phase-item ai-phase-${phase.color || 'neutral'}">
+                <div class="ai-phase-node" data-edit="aiWork.phases[${index}].label">${escapeHtml(phase.label)}</div>
+                ${index < phases.length - 1 ? '<span class="ai-phase-connector" aria-hidden="true"></span>' : ''}
+              </div>
+            `
+          )
+          .join('')}
+      </div>
+      <div class="ai-phase-grid">
+        ${phases
+          .map(
+            (phase, index) => `
+              <article class="ai-phase-card">
+                <div class="ai-phase-card-header">
+                  <span class="ai-phase-dot ai-phase-${phase.color || 'neutral'}"></span>
+                  <h3>${escapeHtml(phase.label)}</h3>
+                </div>
+                <ul>
+                  ${phase.examples
+                    .map(
+                      (example, exampleIndex) =>
+                        `<li data-edit="aiWork.phases[${index}].examples[${exampleIndex}]">${escapeHtml(example)}</li>`
+                    )
+                    .join('')}
+                </ul>
+              </article>
+            `
+          )
+          .join('')}
+      </div>
+    </div>
+  `;
+}
+
 function renderWorkingStyle() {
   const section = document.getElementById('working-style');
   if (!section) return;
@@ -254,6 +305,7 @@ function init() {
   setupAiNote();
   renderHero();
   renderWork();
+  renderAIWork();
   renderWorkingStyle();
   renderTestimonials();
   renderContact();

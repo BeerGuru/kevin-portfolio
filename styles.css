@@ -409,6 +409,129 @@ h2 {
   color: var(--muted);
 }
 
+.ai-work-header {
+  margin-bottom: 1.5rem;
+}
+
+.ai-activity-panel {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 253, 250, 0.7);
+  padding: 1.2rem 1rem 1rem;
+}
+
+.ai-phase-flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.ai-phase-item {
+  display: flex;
+  align-items: center;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.ai-phase-node {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(112px, 12vw, 148px);
+  height: clamp(112px, 12vw, 148px);
+  border-radius: 50%;
+  border: 1px solid rgba(31, 38, 31, 0.2);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--ink);
+  padding: 0.75rem;
+}
+
+.ai-phase-purple .ai-phase-node,
+.ai-phase-dot.ai-phase-purple {
+  background: rgba(177, 139, 214, 0.28);
+}
+
+.ai-phase-green .ai-phase-node,
+.ai-phase-dot.ai-phase-green {
+  background: rgba(135, 182, 149, 0.28);
+}
+
+.ai-phase-blue .ai-phase-node,
+.ai-phase-dot.ai-phase-blue {
+  background: rgba(98, 164, 216, 0.28);
+}
+
+.ai-phase-orange .ai-phase-node,
+.ai-phase-dot.ai-phase-orange {
+  background: rgba(225, 161, 92, 0.28);
+}
+
+.ai-phase-gold .ai-phase-node,
+.ai-phase-dot.ai-phase-gold {
+  background: rgba(217, 191, 116, 0.32);
+}
+
+.ai-phase-connector {
+  flex: 1 1 auto;
+  height: 2px;
+  background: rgba(31, 38, 31, 0.18);
+  display: block;
+  min-width: 0.8rem;
+}
+
+.ai-phase-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.ai-phase-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 253, 250, 0.82);
+  padding: 0.8rem 0.8rem 0.7rem;
+}
+
+.ai-phase-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.55rem;
+}
+
+.ai-phase-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.ai-phase-dot {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.ai-phase-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  display: grid;
+  gap: 0.55rem;
+  list-style: disc;
+}
+
+.ai-phase-card li {
+  line-height: 1.45;
+  font-size: 0.82rem;
+}
+
 .profile-signal-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -757,6 +880,10 @@ body.lightbox-open {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .ai-phase-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .card-grid,
   .writing-list,
   .leadership-grid {
@@ -829,6 +956,25 @@ body.lightbox-open {
 }
 
 @media (max-width: 760px) {
+  .ai-phase-flow {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+
+  .ai-phase-item {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .ai-phase-connector {
+    display: none;
+  }
+
+  .ai-phase-grid {
+    grid-template-columns: 1fr;
+  }
+
   .profile-signal-grid {
     grid-template-columns: 1fr;
   }
@@ -891,16 +1037,28 @@ body.lightbox-open {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.2rem;
+    gap: 0.15rem;
     flex-wrap: nowrap;
     width: 100%;
     min-width: 0;
   }
 
   .main-nav a {
-    font-size: 0.7rem;
+    position: relative;
+    padding: 0.18rem 0.5rem;
+    font-size: 0.68rem;
     white-space: nowrap;
     line-height: 1.2;
+    border-left: 1px solid rgba(31, 38, 31, 0.12);
+  }
+
+  .main-nav a:first-child {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .main-nav a:last-child {
+    padding-right: 0;
   }
 
   .btn.btn-ghost#resume-link {
