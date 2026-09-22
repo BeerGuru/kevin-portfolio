@@ -100,7 +100,7 @@ window.PORTFOLIO_CONTENT = {
   },
   "nav": [
     {
-      "label": "Work",
+      "label": "Case Studies",
       "href": "#work"
     },
     {
@@ -133,7 +133,7 @@ window.PORTFOLIO_CONTENT = {
         "id": "myplan",
         "tag": "Growth",
         "title": "Redesign our core mobile plans architecture from early concept through to delivery",
-        "challenge": "Led design for myPlan initiative to create clearer plan choice and more customer flexibility in a highly competitive market.",
+        "challenge": "Led design for the myPlan initiative to create clearer plan choice and more customer flexibility in a highly competitive market.",
         "bullets": [
           "Role: Lead UX Designer",
           "Scope: Partnered across product owners, legal, retail, and research from value proposition through launch",
@@ -144,7 +144,7 @@ window.PORTFOLIO_CONTENT = {
       {
         "id": "netmax",
         "tag": "Service Design",
-        "title": "Own and define the end-to-end experience, and remove ambiguity for a new streaming launch",
+        "title": "Own and define the end-to-end experience, & remove ambiguity for new streaming service",
         "challenge": "Led the experience for a combined Netflix and Max streaming perk, removing ambiguity across partners, product, design, development, research, and marketing.",
         "bullets": [
           "Role: Lead Experience Architect",
