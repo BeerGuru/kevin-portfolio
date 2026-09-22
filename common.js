@@ -127,7 +127,14 @@ function renderHeader(navBase = '') {
   }
 }
 
+function isDebugModeEnabled() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('debug') === 'true';
+}
+
 function renderVariantSelector() {
+  if (!isDebugModeEnabled()) return;
+
   const wrapper = document.getElementById('variant-picker-wrap');
   const variants = window.PORTFOLIO_CONTENT && window.PORTFOLIO_CONTENT.variants
     ? Object.keys(window.PORTFOLIO_CONTENT.variants)
