@@ -267,6 +267,7 @@ function init() {
   applyColorTheme();
   applySeo(content.seo.title, content.seo.description, content.seo.ogTitle, content.seo.ogDescription);
   renderHeader();
+  renderVariantSelector();
   setupAiNote();
   renderHero();
   renderWork();

@@ -9,10 +9,10 @@ window.PORTFOLIO_CONTENT = {
     "main": {},
     "test": {
       "profile": {
-        "resumeHref": "kevin-trayner-resume-test.pdf"
+        "resumeHref": "kevin-trayner-resume-reg.pdf"
       },
       "hero": {
-        "headline": "Test variant headline for previewing tailored portfolio content.",
+        "headline": "Strategic product designer with experience in regulatory environments",
         "subhead": "This is a temporary variant for testing the URL-based portfolio customization flow.",
         "primaryCta": {
           "label": "Test CTA",
@@ -21,9 +21,9 @@ window.PORTFOLIO_CONTENT = {
       },
       "work": {
         "cases": [
+          "fcc-labels",
           "myplan",
           "netmax",
-          "satellite-to-device"
         ]
       }
     },
@@ -118,8 +118,8 @@ window.PORTFOLIO_CONTENT = {
   ],
   "hero": {
     "eyebrow": "",
-    "headline": "Strategic Experience Designer with 20+ years leading customer and internal experiences for Fortune 100 organizations.",
-    "subhead": "",
+    "headline": "Strategic product designer with experience in regulatory environments",
+    "subhead": "This is a temporary variant for testing the URL-based portfolio customization flow.",
     "primaryCta": {
       "label": "View case studies",
       "href": "#work"
@@ -464,7 +464,7 @@ window.PORTFOLIO_CONTENT = {
     "kicker": "Working Style",
     "heading": "Empathetic systems-level design leader, balancing people, product constraints, & business outcomes to align and keep teams moving.",
     "intro": "",
-       "profileSignals": [
+    "profileSignals": [
       {
         "label": "Personality Profile",
         "value": "ENFJ-A (Protagonist)",
