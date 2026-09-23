@@ -388,12 +388,17 @@ h2 {
   display: flex;
   justify-content: center;
   margin-top: 1.6rem;
+  margin-bottom: 1.4rem;
 }
 
 .testimonials-toggle {
   font-family: inherit;
   font-size: 0.95rem;
   cursor: pointer;
+}
+
+#testimonials {
+  margin-top: 1.4rem;
 }
 
 .section {
@@ -536,6 +541,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -667,8 +673,18 @@ h2 {
 }
 
 .working-style-subhead {
-  margin-top: 1.4rem;
-  margin-bottom: 0.7rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.working-style-testimonials-wrap {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.working-style-testimonial-head {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .leadership-grid {

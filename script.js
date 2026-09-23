@@ -137,6 +137,56 @@ function renderWorkingStyle() {
       <h2 data-edit="workingStyle.heading">${escapeHtml(content.workingStyle.heading)}</h2>
       <p class="section-intro" data-edit="workingStyle.intro">${escapeHtml(content.workingStyle.intro)}</p>
     </div>
+    <h3 class="working-style-subhead">How This Shows Up In My Process</h3>
+    <div class="leadership-grid leadership-grid-4">
+      ${content.workingStyle.pillars
+        .map(
+          (item, index) => `
+          <article>
+            <h3 data-edit="workingStyle.pillars[${index}].title">${escapeHtml(item.title)}</h3>
+            <p data-edit="workingStyle.pillars[${index}].body">${escapeHtml(item.body)}</p>
+          </article>
+        `
+        )
+        .join('')}
+    </div>
+    ${
+      collaborationNotes.length
+        ? `<h3 class="working-style-subhead">How This Shows Up In Collaboration</h3>
+    <div class="working-notes">
+      <ul>
+        ${collaborationNotes
+          .map(
+            (note, index) =>
+              `<li data-edit="workingStyle.collaborationNotes[${index}]">${escapeHtml(note)}</li>`
+          )
+          .join('')}
+      </ul>
+    </div>`
+        : ''
+    }
+    <div class="working-style-testimonials-wrap">
+      <h3 class="working-style-subhead working-style-testimonial-head">What my partners say about working with me</h3>
+      <div class="writing-list">
+        ${content.testimonials
+          .map(
+            (item, index) => `
+            <article class="testimonial-card${index >= 3 ? ' testimonial-extra' : ''}"${
+              index >= 3 ? ' hidden' : ''
+            }>
+              <p class="testimonial-quote" data-edit="testimonials[${index}].quote">${escapeHtml(item.quote)}</p>
+              <p class="testimonial-attribution" data-edit="testimonials[${index}].attribution">${escapeHtml(item.attribution)}</p>
+            </article>
+          `
+          )
+          .join('')}
+      </div>
+      ${
+        content.testimonials.length > 3
+          ? `<div class="testimonials-toggle-wrap"><button type="button" class="btn btn-ghost testimonials-toggle" id="testimonials-toggle" aria-expanded="false"><span class="toggle-label">Show more</span><span class="toggle-caret" aria-hidden="true">▾</span></button></div>`
+          : ''
+      }
+    </div>
     ${
       profileSignals.length
         ? `<div class="profile-signal-grid">
@@ -169,34 +219,6 @@ function renderWorkingStyle() {
     </div>`
         : ''
     }
-    <h3 class="working-style-subhead">How This Shows Up In My Process</h3>
-    <div class="leadership-grid leadership-grid-4">
-      ${content.workingStyle.pillars
-        .map(
-          (item, index) => `
-          <article>
-            <h3 data-edit="workingStyle.pillars[${index}].title">${escapeHtml(item.title)}</h3>
-            <p data-edit="workingStyle.pillars[${index}].body">${escapeHtml(item.body)}</p>
-          </article>
-        `
-        )
-        .join('')}
-    </div>
-    ${
-      collaborationNotes.length
-        ? `<h3 class="working-style-subhead">How This Shows Up In Collaboration</h3>
-    <div class="working-notes">
-      <ul>
-        ${collaborationNotes
-          .map(
-            (note, index) =>
-              `<li data-edit="workingStyle.collaborationNotes[${index}]">${escapeHtml(note)}</li>`
-          )
-          .join('')}
-      </ul>
-    </div>`
-        : ''
-    }
   `;
 }
 
@@ -204,65 +226,8 @@ function renderTestimonials() {
   const section = document.getElementById('testimonials');
   if (!section) return;
 
-  const VISIBLE_COUNT = 3;
-  const hasMore = content.testimonials.length > VISIBLE_COUNT;
-
-  section.innerHTML = `
-    <div class="section-head">
-      <p class="section-kicker">Partner Feedback</p>
-      <h2>What my partners say about working with me</h2>
-    </div>
-    <div class="writing-list">
-      ${content.testimonials
-        .map(
-          (item, index) => `
-          <article class="testimonial-card${index >= VISIBLE_COUNT ? ' testimonial-extra' : ''}"${
-            index >= VISIBLE_COUNT ? ' hidden' : ''
-          }>
-            <p class="testimonial-quote" data-edit="testimonials[${index}].quote">${escapeHtml(item.quote)}</p>
-            <p class="testimonial-attribution" data-edit="testimonials[${index}].attribution">${escapeHtml(item.attribution)}</p>
-          </article>
-        `
-        )
-        .join('')}
-    </div>
-    ${
-      hasMore
-        ? `<div class="testimonials-toggle-wrap"><button type="button" class="btn btn-ghost testimonials-toggle" id="testimonials-toggle" aria-expanded="false"><span class="toggle-label">Show more</span><span class="toggle-caret" aria-hidden="true">▾</span></button></div>`
-        : ''
-    }
-  `;
-
-  const toggleButton = document.getElementById('testimonials-toggle');
-  if (toggleButton) {
-    const label = toggleButton.querySelector('.toggle-label');
-    const caret = toggleButton.querySelector('.toggle-caret');
-
-    const updateToggleState = () => {
-      const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
-      const extras = section.querySelectorAll('.testimonial-extra');
-
-      extras.forEach((el) => {
-        if (expanded) {
-          el.removeAttribute('hidden');
-        } else {
-          el.setAttribute('hidden', '');
-        }
-      });
-
-      if (label) label.textContent = expanded ? 'Show less' : 'Show more';
-      if (caret) caret.textContent = expanded ? '▴' : '▾';
-      toggleButton.setAttribute('aria-expanded', String(expanded));
-    };
-
-    toggleButton.addEventListener('click', () => {
-      const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
-      toggleButton.setAttribute('aria-expanded', String(!expanded));
-      updateToggleState();
-    });
-
-    updateToggleState();
-  }
+  section.innerHTML = '';
+  section.hidden = true;
 }
 
 function setupAiNote() {

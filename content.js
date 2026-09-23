@@ -464,7 +464,7 @@ window.PORTFOLIO_CONTENT = {
     "kicker": "Working Style",
     "heading": "Empathetic systems-level design leader, balancing people, product constraints, & business outcomes to align and keep teams moving.",
     "intro": "",
-    "profileSignals": [
+       "profileSignals": [
       {
         "label": "Personality Profile",
         "value": "ENFJ-A (Protagonist)",
