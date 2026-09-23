@@ -12,12 +12,13 @@ window.PORTFOLIO_CONTENT = {
         "resumeHref": "kevin-trayner-resume-reg.pdf"
       },
       "hero": {
-        "headline": "Strategic product designer with experience in regulatory environments",
-        "subhead": "This is a temporary variant for testing the URL-based portfolio customization flow.",
+        "headline": "Strategic Experience Designer with 20+ years leading customer and internal experiences for Fortune 100 organizations.",
+        "subhead": "",
         "primaryCta": {
           "label": "Test CTA",
           "href": "#work"
-        }
+        },
+        "secondaryCta": ""
       },
       "work": {
         "cases": [
@@ -33,11 +34,12 @@ window.PORTFOLIO_CONTENT = {
       },
       "hero": {
         "headline": "Design leader translating ambiguity into direction, alignment, and traction.",
-        "subhead": "I help teams turn messy strategic problems into clearer decisions, stronger customer experiences, and measurable business outcomes.",
+        "subhead": "",
         "primaryCta": {
           "label": "See leadership work",
           "href": "#work"
-        }
+        },
+        "secondaryCta": ""
       },
       "work": {
         "cases": [
@@ -54,11 +56,12 @@ window.PORTFOLIO_CONTENT = {
       },
       "hero": {
         "headline": "Product and experience strategist connecting customer needs to business outcomes.",
-        "subhead": "I design clear, scalable experiences that simplify choice, support product strategy, and create stronger customer trust.",
+        "subhead": "",
         "primaryCta": {
           "label": "View product work",
           "href": "#work"
-        }
+        },
+        "secondaryCta": ""
       },
       "work": {
         "cases": [
@@ -75,11 +78,12 @@ window.PORTFOLIO_CONTENT = {
       },
       "hero": {
         "headline": "Service designer shaping end-to-end journeys across business, product, and customer touchpoints.",
-        "subhead": "I bring clarity to complex journeys by aligning customer needs, operational realities, and cross-functional execution.",
+        "subhead": "",
         "primaryCta": {
           "label": "Explore service design",
           "href": "#work"
-        }
+        },
+        "secondaryCta": ""
       },
       "work": {
         "cases": [
@@ -118,16 +122,13 @@ window.PORTFOLIO_CONTENT = {
   ],
   "hero": {
     "eyebrow": "",
-    "headline": "Strategic product designer with experience in regulatory environments",
-    "subhead": "This is a temporary variant for testing the URL-based portfolio customization flow.",
+    "headline": "Strategic Experience Designer with 20+ years leading customer and internal experiences for Fortune 100 organizations.",
+    "subhead": "",
     "primaryCta": {
       "label": "View case studies",
       "href": "#work"
     },
-    "secondaryCta": {
-      "label": "Contact",
-      "href": "#contact"
-    }
+    "secondaryCta": ""
   },
   "work": {
     "kicker": "",
