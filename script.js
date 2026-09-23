@@ -24,9 +24,15 @@ function renderWork() {
         challenge: meta.challenge || meta.problem || meta.context || '',
         bullets: Array.isArray(meta.outcomes) ? meta.outcomes.slice(0, 3) : [],
         href: `case-study.html?case=${encodeURIComponent(item)}`,
+        image: Array.isArray(meta.images) && meta.images.length ? meta.images[0] : null,
       };
     }
-    return item;
+
+    const caseMeta = item && item.id && content.caseStudies ? content.caseStudies[item.id] : null;
+    return {
+      ...item,
+      image: item.image || (caseMeta && Array.isArray(caseMeta.images) && caseMeta.images.length ? caseMeta.images[0] : null),
+    };
   }).filter(Boolean);
 
   const featuredIndex = cases.length > 3 ? cases.length - 1 : null;
@@ -46,6 +52,7 @@ function renderWork() {
 
             return `
               <article class="${cardClasses.join(' ')}">
+                ${item.image ? `<img class="case-card-thumb" src="${escapeHtml(item.image.src)}" alt="${escapeHtml(item.image.alt || item.title)}" loading="lazy" />` : ''}
                 <h3 data-edit="work.cases[${index}].title">${escapeHtml(item.title)}</h3>
                 <p class="case-challenge" data-edit="work.cases[${index}].challenge">${escapeHtml(item.challenge)}</p>
                 <ul>
