@@ -3,3 +3,5 @@
 
 # Personal source PDFs (not needed in repo/site)
 working styles and strengths/
+# Hide my api key from being committed to the repository
+.claude 
