@@ -19,14 +19,48 @@ function renderNotFound() {
   });
 }
 
+function getOrderedCaseIds() {
+  const workCases = Array.isArray(content.work?.cases) ? content.work.cases : [];
+  const orderedIds = workCases.map((item) => item && item.id).filter(Boolean);
+
+  if (orderedIds.length > 0) return orderedIds;
+  return Object.keys(content.caseStudies || {});
+}
+
+function getAdjacentCaseIds(caseId) {
+  const orderedIds = getOrderedCaseIds();
+  const currentIndex = orderedIds.indexOf(caseId);
+
+  if (currentIndex === -1) {
+    return { prevId: null, nextId: null, prevHref: '', nextHref: '' };
+  }
+
+  const prevId = currentIndex > 0 ? orderedIds[currentIndex - 1] : null;
+  const nextId = currentIndex < orderedIds.length - 1 ? orderedIds[currentIndex + 1] : null;
+
+  return {
+    prevId,
+    nextId,
+    prevHref: prevId ? `case-study.html?case=${encodeURIComponent(prevId)}` : '',
+    nextHref: nextId ? `case-study.html?case=${encodeURIComponent(nextId)}` : '',
+  };
+}
+
 function renderCaseHero(caseStudy, caseId) {
   const hero = document.getElementById('case-hero');
   if (!hero) return;
+
+  const { prevId, nextId, prevHref, nextHref } = getAdjacentCaseIds(caseId);
 
   hero.innerHTML = `
     <p class="eyebrow">Case Study</p>
     <h1 data-edit="caseStudies.${caseId}.title">${escapeHtml(caseStudy.title)}</h1>
     <p class="hero-copy" data-edit="caseStudies.${caseId}.subtitle">${escapeHtml(caseStudy.subtitle)}</p>
+    <div class="case-study-nav" aria-label="Case study navigation">
+      ${prevId ? `<a class="btn btn-ghost" href="${prevHref}" aria-label="Previous case study">&larr; Previous</a>` : `<span class="btn btn-ghost btn-disabled" aria-disabled="true">&larr; Previous</span>`}
+      <a class="btn btn-text" href="index.html#work">Back to Selected Work</a>
+      ${nextId ? `<a class="btn btn-ghost" href="${nextHref}" aria-label="Next case study">Next &rarr;</a>` : `<span class="btn btn-ghost btn-disabled" aria-disabled="true">Next &rarr;</span>`}
+    </div>
     <div class="hero-signal" role="note" aria-label="Role and timeline"><span data-edit="caseStudies.${caseId}.role">${escapeHtml(caseStudy.role)}</span>${caseStudy.timeline ? ` &middot; <span data-edit="caseStudies.${caseId}.timeline">${escapeHtml(caseStudy.timeline)}</span>` : `<span data-edit="caseStudies.${caseId}.timeline" style="display:none">${escapeHtml(caseStudy.timeline)}</span>`}</div>
   `;
 }
@@ -79,46 +113,96 @@ function renderCaseGallery(caseStudy, caseId) {
 
   section.querySelectorAll('[data-gallery-index]').forEach((button) => {
     button.addEventListener('click', () => {
-      const image = images[Number(button.dataset.galleryIndex)];
-      openLightbox(image);
+      const index = Number(button.dataset.galleryIndex);
+      const image = images[index];
+      openLightbox(image, index, images);
     });
   });
 }
 
-function openLightbox(image) {
+let lightboxImages = [];
+let currentLightboxIndex = -1;
+
+function openLightbox(image, index, images = lightboxImages) {
   const lightbox = document.getElementById('lightbox');
   const img = document.getElementById('lightbox-img');
   const caption = document.getElementById('lightbox-caption');
+  const counter = document.getElementById('lightbox-counter');
   if (!lightbox || !img || !caption) return;
 
-  img.src = image.src;
-  img.alt = image.alt || '';
-  caption.textContent = image.caption || '';
+  lightboxImages = Array.isArray(images) ? images : [];
+  currentLightboxIndex = Number.isInteger(index) ? index : 0;
+
+  let activeImage = image;
+  if (!activeImage && lightboxImages.length > 0) {
+    activeImage = lightboxImages[currentLightboxIndex];
+  }
+
+  if (!activeImage) return;
+
+  img.src = activeImage.src;
+  img.alt = activeImage.alt || '';
+  caption.textContent = activeImage.caption || '';
+
+  if (counter) {
+    counter.textContent = lightboxImages.length > 1
+      ? `Artifact ${currentLightboxIndex + 1} of ${lightboxImages.length}`
+      : 'Artifact 1 of 1';
+  }
+
   lightbox.hidden = false;
   document.body.classList.add('lightbox-open');
+}
+
+function navigateLightbox(direction) {
+  if (!lightboxImages.length) return;
+
+  const nextIndex = currentLightboxIndex + direction;
+  if (nextIndex < 0 || nextIndex >= lightboxImages.length) return;
+
+  currentLightboxIndex = nextIndex;
+  openLightbox(lightboxImages[nextIndex], nextIndex, lightboxImages);
 }
 
 function closeLightbox() {
   const lightbox = document.getElementById('lightbox');
   const img = document.getElementById('lightbox-img');
+  const counter = document.getElementById('lightbox-counter');
+  const caption = document.getElementById('lightbox-caption');
   if (!lightbox) return;
 
   lightbox.hidden = true;
   document.body.classList.remove('lightbox-open');
   if (img) img.src = '';
+  if (counter) counter.textContent = '';
+  if (caption) caption.textContent = '';
+  currentLightboxIndex = -1;
+  lightboxImages = [];
 }
 
 function setupLightbox() {
   const lightbox = document.getElementById('lightbox');
   const closeButton = document.getElementById('lightbox-close');
+  const prevButton = document.getElementById('lightbox-prev');
+  const nextButton = document.getElementById('lightbox-next');
   if (!lightbox || !closeButton) return;
 
   closeButton.addEventListener('click', closeLightbox);
+  if (prevButton) {
+    prevButton.addEventListener('click', () => navigateLightbox(-1));
+  }
+  if (nextButton) {
+    nextButton.addEventListener('click', () => navigateLightbox(1));
+  }
+
   lightbox.addEventListener('click', (event) => {
     if (event.target === lightbox) closeLightbox();
   });
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && !lightbox.hidden) closeLightbox();
+    if (lightbox.hidden) return;
+    if (event.key === 'ArrowLeft') navigateLightbox(-1);
+    if (event.key === 'ArrowRight') navigateLightbox(1);
   });
 }
 

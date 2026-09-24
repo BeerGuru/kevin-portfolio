@@ -353,6 +353,15 @@ h2 {
   border-radius: 10px;
 }
 
+.case-study-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0 0 1.25rem;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -362,6 +371,12 @@ h2 {
   padding: 0.62rem 1rem;
   font-weight: 700;
   border: 1px solid transparent;
+}
+
+.btn-disabled {
+  opacity: 0.45;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 .btn-primary {
@@ -823,9 +838,19 @@ h2 {
 }
 
 .lightbox-figure figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
   color: #f6f4ef;
   font-size: 0.9rem;
   text-align: center;
+}
+
+#lightbox-counter {
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.8;
 }
 
 .lightbox-close {
@@ -840,6 +865,30 @@ h2 {
   color: #fff;
   font-size: 1.4rem;
   line-height: 1;
+  cursor: pointer;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  right: 1rem;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.lightbox-arrow {
+  pointer-events: auto;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  background: rgba(31, 42, 47, 0.64);
+  color: #fff;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
