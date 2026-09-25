@@ -17,6 +17,7 @@ function renderWork() {
     if (typeof item === 'string') {
       const meta = content.caseStudies[item];
       if (!meta) return null;
+      const summaryImage = meta.summaryImage || (Array.isArray(meta.images) && meta.images.length ? meta.images[0] : null);
       return {
         id: item,
         tag: '',
@@ -24,14 +25,15 @@ function renderWork() {
         challenge: meta.challenge || meta.problem || meta.context || '',
         bullets: Array.isArray(meta.outcomes) ? meta.outcomes.slice(0, 3) : [],
         href: `case-study.html?case=${encodeURIComponent(item)}`,
-        image: Array.isArray(meta.images) && meta.images.length ? meta.images[0] : null,
+        image: summaryImage,
       };
     }
 
     const caseMeta = item && item.id && content.caseStudies ? content.caseStudies[item.id] : null;
+    const summaryImage = item.summaryImage || item.image || (caseMeta && caseMeta.summaryImage) || (caseMeta && Array.isArray(caseMeta.images) && caseMeta.images.length ? caseMeta.images[0] : null);
     return {
       ...item,
-      image: item.image || (caseMeta && Array.isArray(caseMeta.images) && caseMeta.images.length ? caseMeta.images[0] : null),
+      image: summaryImage,
     };
   }).filter(Boolean);
 

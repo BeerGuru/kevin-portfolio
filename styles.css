@@ -635,8 +635,9 @@ h2 {
 .case-card-thumb {
   display: block;
   width: 100%;
-  height: 180px;
+  height: 220px;
   object-fit: cover;
+  object-position: center top;
   border-radius: 12px;
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.5);

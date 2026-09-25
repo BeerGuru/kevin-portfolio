@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">NetMax summary image</title>
+  <desc id="desc">Abstract banner for a streaming service experience and end-to-end flow.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#edf1fb"/>
+      <stop offset="100%" stop-color="#f7efe8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="170" y="190" width="1260" height="520" rx="25" fill="#ffffff" fill-opacity="0.82" stroke="#dfe2ee"/>
+  <rect x="260" y="295" width="260" height="180" rx="18" fill="#e7edf9" stroke="#cdd8e9"/>
+  <rect x="560" y="295" width="260" height="180" rx="18" fill="#f5eee7" stroke="#e2d1bf"/>
+  <rect x="860" y="295" width="260" height="180" rx="18" fill="#edf5ef" stroke="#c8d9ce"/>
+  <path d="M360 520 L520 520 L590 620 L730 620" stroke="#6e88b6" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M820 520 L980 520 L1048 620 L1190 620" stroke="#9f7b5a" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="220" y="120" fill="#232c35" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700">NetMax</text>
+  <text x="220" y="170" fill="#4b5863" font-family="Arial, Helvetica, sans-serif" font-size="30">One experience • clear paths • aligned partners</text>
+</svg>

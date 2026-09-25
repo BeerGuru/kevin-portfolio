@@ -247,6 +247,10 @@ window.PORTFOLIO_CONTENT = {
       "timeline": "",
       "context": "Verizon needed a clearer and more competitive plan experience for consumers that was a differentiator.",
       "problem": "Customers faced complexity when choosing, comparing and configuring plans. The business needed a flexible architecture that could support new products and services.",
+      "summaryImage": {
+        "src": "assets/case-studies/myplan/summary-image.svg",
+        "alt": "MyPlan summary banner"
+      },
       "approach": [
         "Aligned design, business and marketing to a \"radically simple\" vision of plans that focused on core features, with the ability to add other services.",
         "Translated value prop work and customer research around high-value features into experience architecture that simplified customer choices and provided greater control",
@@ -301,6 +305,10 @@ window.PORTFOLIO_CONTENT = {
       "timeline": "",
       "context": "FCC-mandated product labels required coordinated implementation across mobile and home product experiences.",
       "problem": "The team needed to satisfy compliance requirements while preserving usability, consistency, and trust across multiple channels.",
+      "summaryImage": {
+        "src": "assets/case-studies/fcc-labels/summary-image.svg",
+        "alt": "FCC labels summary banner"
+      },
       "approach": [
         "Mapped where label requirements intersected with existing product journeys and content systems, across business units (incl other Verizon business units like Visible, TracFone, etc] and channels.",
         "Partnered closely with legal, product, and engineering to define practical patterns that could be built centrally and scale.",
@@ -357,6 +365,10 @@ window.PORTFOLIO_CONTENT = {
       "timeline": "",
       "context": "Verizon's strategic ambition is to eliminate coverage dead zones and offer customers seamless connectivity through Satellite to Device — matching competitor offerings while protecting Verizon's network superiority, and earning the right to claim near-full USA satellite coverage.",
       "problem": "The initiative required alignment across multiple teams, some of whom had no prior working relationship, plus a solid experience strategy, supported by research, for the beta and production launch — all while translating a broad network capability into a clear customer offering.",
+      "summaryImage": {
+        "src": "assets/case-studies/satellite-to-device/summary-image.svg",
+        "alt": "Satellite to Device summary banner"
+      },
       "approach": [
         "Created experience overview decks and hosted workshops to align business partners on the offering and where it's headed.",
         "Brought in Value Proposition and CMI research early to shape the beta data collection journey ahead of launch.",
@@ -416,6 +428,10 @@ window.PORTFOLIO_CONTENT = {
       "timeline": "",
       "context": "Verizon launched a new streaming combo service that needed to fit the existing service model, satisfy our partners, and remain clear to customers.",
       "problem": "The combined service needed to feel like one product while still allowing customers to register, manage, and upgrade two separate subscriptions. Existing Verizon perk patterns did not fully support that model, and research showed that 80-90% of Verizon customers also overlapped with Netflix, making existing-subscription registration especially important to clarify. Additionally, customers needed to be able to upgrade their subscription, if they didn't want ads.",
+      "summaryImage": {
+        "src": "assets/case-studies/netmax/summary-image.svg",
+        "alt": "NetMax summary banner"
+      },
       "approach": [
         "Worked with Netflix, Max, and the product team to understand partner constraints, subscription flows, and the experience risks of launching a combined perk.",
         "Mapped the experience across Buy, Manage, Pay, and Use to identify ambiguity and friction across the customer journey.",
