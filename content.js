@@ -24,7 +24,6 @@ window.PORTFOLIO_CONTENT = {
         "cases": [
           "myplan",
           "fcc-labels",
-          "myplan",
           "netmax",
         ]
       }
