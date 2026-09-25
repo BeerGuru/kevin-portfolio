@@ -7,9 +7,9 @@ window.PORTFOLIO_CONTENT = {
   },
   "variants": {
     "main": {},
-    "test": {
+    "design-principal": {
       "profile": {
-        "resumeHref": "kevin-trayner-resume-reg.pdf"
+        "resumeHref": "kevin-trayner-resume-design-principal.pdf"
       },
       "hero": {
         "headline": "Strategic Experience Designer with 20+ years leading customer and internal experiences for Fortune 100 organizations.",
@@ -22,6 +22,7 @@ window.PORTFOLIO_CONTENT = {
       },
       "work": {
         "cases": [
+          "myplan",
           "fcc-labels",
           "myplan",
           "netmax",
