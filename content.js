@@ -258,23 +258,23 @@ window.PORTFOLIO_CONTENT = {
       ],
       "images": [
         {
-          "src": "assets/case-studies/myplan/placeholder-1.svg",
-          "alt": "Placeholder wireframe of the plan selection screen",
+          "src": "assets/case-studies/myplan/artifact-1.svg",
+          "alt": "Artifact wireframe of the plan selection screen",
           "caption": "Storyboard for prospect journey"
         },
         {
-          "src": "assets/case-studies/myplan/placeholder-2.svg",
-          "alt": "Placeholder diagram of the customer flow",
+          "src": "assets/case-studies/myplan/artifact-2.svg",
+          "alt": "Artifact diagram of the customer flow",
           "caption": "Test concept - including perk with plan"
         },
         {
-          "src": "assets/case-studies/myplan/placeholder-3.svg",
-          "alt": "Placeholder wireframe of the mobile plan detail screen",
+          "src": "assets/case-studies/myplan/artifact-3.svg",
+          "alt": "Artifact wireframe of the mobile plan detail screen",
           "caption": "Early prototype combining bundled and build your own"
         },
         {
-          "src": "assets/case-studies/myplan/placeholder-4.svg",
-          "alt": "Placeholder layout comparing plan options side by side",
+          "src": "assets/case-studies/myplan/artifact-4.svg",
+          "alt": "Artifact layout comparing plan options side by side",
           "caption": "Final mobile plan details"
         }
       ],
@@ -316,28 +316,28 @@ window.PORTFOLIO_CONTENT = {
       ],
       "images": [
         {
-          "src": "assets/case-studies/fcc-labels/placeholder-1.svg",
-          "alt": "Placeholder wireframe of the plan selection screen",
+          "src": "assets/case-studies/fcc-labels/artifact-1.svg",
+          "alt": "Artifact wireframe of the plan selection screen",
           "caption": "Base requirements from FCC for the \"nutrition label\""
         },
         {
-          "src": "assets/case-studies/fcc-labels/placeholder-2.svg",
-          "alt": "Placeholder diagram of the customer flow",
+          "src": "assets/case-studies/fcc-labels/artifact-2.svg",
+          "alt": "Artifact diagram of the customer flow",
           "caption": "Going wide with lots of different concepts for how to display labels for plans."
         },
         {
-          "src": "assets/case-studies/fcc-labels/placeholder-3.svg",
-          "alt": "Placeholder wireframe of the mobile plan detail screen",
+          "src": "assets/case-studies/fcc-labels/artifact-3.svg",
+          "alt": "Artifact wireframe of the mobile plan detail screen",
           "caption": "Narrowing down to a handful of concepts that will meet legal requirements and work from an experience standpoint"
         },
         {
-          "src": "assets/case-studies/fcc-labels/placeholder-4.svg",
-          "alt": "Placeholder layout comparing plan options side by side",
+          "src": "assets/case-studies/fcc-labels/artifact-4.svg",
+          "alt": "Artifact layout comparing plan options side by side",
           "caption": "Then we tested with customers for comprehension and as part of the experience of buying plans."
         },
         {
-          "src": "assets/case-studies/fcc-labels/placeholder-5.svg",
-          "alt": "Placeholder layout comparing plan options side by side",
+          "src": "assets/case-studies/fcc-labels/artifact-5.svg",
+          "alt": "Artifact layout comparing plan options side by side",
           "caption": "Ultimately settling on this approach."
         }
       ],
@@ -376,28 +376,28 @@ window.PORTFOLIO_CONTENT = {
       ],
       "images": [
         {
-          "src": "assets/case-studies/satellite-to-device/placeholder-1.svg",
-          "alt": "Placeholder diagram of satellite coverage concept",
+          "src": "assets/case-studies/satellite-to-device/artifact-1.svg",
+          "alt": "Artifact diagram of satellite coverage concept",
           "caption": "Early design storyboard and persona example"
         },
         {
-          "src": "assets/case-studies/satellite-to-device/placeholder-2.svg",
-          "alt": "Placeholder wireframe of beta onboarding flow",
+          "src": "assets/case-studies/satellite-to-device/artifact-2.svg",
+          "alt": "Artifact wireframe of beta onboarding flow",
           "caption": "Personas/segments representing customer base"
         },
         {
-          "src": "assets/case-studies/satellite-to-device/placeholder-3.svg",
-          "alt": "Placeholder board from a partner alignment workshop",
+          "src": "assets/case-studies/satellite-to-device/artifact-3.svg",
+          "alt": "Artifact board from a partner alignment workshop",
           "caption": "Early journey map"
         },
         {
-          "src": "assets/case-studies/satellite-to-device/placeholder-4.svg",
-          "alt": "Placeholder excerpt from an experience overview deck",
+          "src": "assets/case-studies/satellite-to-device/artifact-4.svg",
+          "alt": "Artifact excerpt from an experience overview deck",
           "caption": "Early concept wireframes for beta/onboarding site"
         },
         {
-          "src": "assets/case-studies/satellite-to-device/placeholder-5.svg",
-          "alt": "Placeholder excerpt from an experience overview deck",
+          "src": "assets/case-studies/satellite-to-device/artifact-5.svg",
+          "alt": "Artifact excerpt from an experience overview deck",
           "caption": "Service map snippet"
         }
       ],
@@ -440,17 +440,17 @@ window.PORTFOLIO_CONTENT = {
       "images": [
         {
           "src": "assets/case-studies/netmax/Up levels flow all.png",
-          "alt": "End-to-end flow showing Netflix and Max subscription upgrades",
+          "alt": "Artifact end-to-end flow showing Netflix and Max subscription upgrades",
           "caption": "Upgrading from standard to no ads for Netflix (partial flow)"
         },
         {
           "src": "assets/case-studies/netmax/Add perk and manage.png",
-          "alt": "Verizon account screens showing the Netflix and Max perk and registration actions",
+          "alt": "Artifact Verizon account screens showing the Netflix and Max perk and registration actions",
           "caption": "Bringing the combined perk into the account management experience, where Netflix and Max can be registered and manage separately."
         },
         {
           "src": "assets/case-studies/netmax/Register Netflix.png",
-          "alt": "Netflix registration flow showing account linking and confirmation",
+          "alt": "Artifact Netflix registration flow showing account linking and confirmation",
           "caption": "Registering an existing Netflix account through Verizon"
         }
       ],
