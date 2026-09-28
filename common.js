@@ -34,6 +34,16 @@ if (!content || !content.profile) {
   throw new Error('Missing PORTFOLIO_CONTENT. Ensure content.js loads before common.js.');
 }
 
+function urlWithVariant(href) {
+  const currentVariant = new URLSearchParams(window.location.search).get('variant');
+  if (!currentVariant) return href;
+  const url = new URL(href, window.location.href);
+  if (!url.searchParams.has('variant')) {
+    url.searchParams.set('variant', currentVariant);
+  }
+  return url.toString();
+}
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll('&', '&amp;')
@@ -115,13 +125,13 @@ function renderHeader(navBase = '') {
     brandName.textContent = content.profile.name;
     brandName.setAttribute('data-edit', 'profile.name');
   }
-  if (resumeLink) resumeLink.setAttribute('href', content.profile.resumeHref);
+  if (resumeLink) resumeLink.setAttribute('href', urlWithVariant(content.profile.resumeHref));
 
   if (mainNav) {
     mainNav.innerHTML = content.nav
       .map(
         (item, index) =>
-          `<a href="${escapeHtml(navBase + item.href)}" data-edit="nav[${index}].label">${escapeHtml(item.label)}</a>`
+          `<a href="${escapeHtml(urlWithVariant(navBase + item.href))}" data-edit="nav[${index}].label">${escapeHtml(item.label)}</a>`
       )
       .join('');
   }

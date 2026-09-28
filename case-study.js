@@ -41,8 +41,8 @@ function getAdjacentCaseIds(caseId) {
   return {
     prevId,
     nextId,
-    prevHref: prevId ? `case-study.html?case=${encodeURIComponent(prevId)}` : '',
-    nextHref: nextId ? `case-study.html?case=${encodeURIComponent(nextId)}` : '',
+    prevHref: prevId ? urlWithVariant(`case-study.html?case=${encodeURIComponent(prevId)}`) : '',
+    nextHref: nextId ? urlWithVariant(`case-study.html?case=${encodeURIComponent(nextId)}`) : '',
   };
 }
 
@@ -58,7 +58,7 @@ function renderCaseHero(caseStudy, caseId) {
     <p class="hero-copy" data-edit="caseStudies.${caseId}.subtitle">${escapeHtml(caseStudy.subtitle)}</p>
     <div class="case-study-nav" aria-label="Case study navigation">
       ${prevId ? `<a class="btn btn-ghost" href="${prevHref}" aria-label="Previous case study">&larr; Previous</a>` : `<span class="btn btn-ghost btn-disabled" aria-disabled="true">&larr; Previous</span>`}
-      <a class="btn btn-text" href="index.html#work">Back to Selected Work</a>
+<a class="btn btn-text" href="${urlWithVariant('index.html#work')}">Back to Selected Work</a>
       ${nextId ? `<a class="btn btn-ghost" href="${nextHref}" aria-label="Next case study">Next &rarr;</a>` : `<span class="btn btn-ghost btn-disabled" aria-disabled="true">Next &rarr;</span>`}
     </div>
     <div class="hero-signal" role="note" aria-label="Role and timeline"><span data-edit="caseStudies.${caseId}.role">${escapeHtml(caseStudy.role)}</span>${caseStudy.timeline ? ` &middot; <span data-edit="caseStudies.${caseId}.timeline">${escapeHtml(caseStudy.timeline)}</span>` : `<span data-edit="caseStudies.${caseId}.timeline" style="display:none">${escapeHtml(caseStudy.timeline)}</span>`}</div>
@@ -272,7 +272,7 @@ function renderCaseOutcomes(caseStudy, caseId) {
         ${caseStudy.reflection ? `<li data-edit="caseStudies.${caseId}.reflection">${richText(caseStudy.reflection)}</li>` : ''}
       </ul>
     </div>
-    <p style="margin-top: 1.5rem;"><a class="btn btn-text" href="index.html#work">&larr; Back to Selected Work</a></p>
+    <p style="margin-top: 1.5rem;"><a class="btn btn-text" href="${urlWithVariant('index.html#work')}">&larr; Back to Selected Work</a></p>
   `;
 }
 

@@ -24,7 +24,7 @@ function renderWork() {
         title: meta.title,
         challenge: meta.challenge || meta.problem || meta.context || '',
         bullets: Array.isArray(meta.outcomes) ? meta.outcomes.slice(0, 3) : [],
-        href: `case-study.html?case=${encodeURIComponent(item)}`,
+        href: urlWithVariant(`case-study.html?case=${encodeURIComponent(item)}`),
         image: summaryImage,
       };
     }

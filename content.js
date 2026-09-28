@@ -15,7 +15,7 @@ window.PORTFOLIO_CONTENT = {
         "headline": "Strategic Experience Designer with 20+ years leading customer and internal experiences for Fortune 100 organizations.",
         "subhead": "",
         "primaryCta": {
-          "label": "Test CTA",
+          "label": "View design work",
           "href": "#work"
         },
         "secondaryCta": ""
