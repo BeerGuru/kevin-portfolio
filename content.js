@@ -25,6 +25,7 @@ window.PORTFOLIO_CONTENT = {
           "myplan",
           "fcc-labels",
           "netmax",
+          "research",
         ]
       }
     },
@@ -475,6 +476,57 @@ window.PORTFOLIO_CONTENT = {
         "Planted the idea for managing unused subscriptions, which later informed a 90-day removal rule for unregistered services."
       ],
       "reflection": ""
+    },
+    "research": {
+      "title": "Research informing design direction and confirming results",
+      "subtitle": "Using research methodologies to guide design decisions and validate outcomes",
+      "role": "Principal Experience Designer",
+      "timeline": "",
+      "context": "Design decisions needed to be grounded in user research and validated through testing to ensure they met both user needs and business objectives.",
+      "problem": "Teams were making design decisions based on assumptions rather than evidence, leading to products that didn't fully resonate with users or achieve desired business outcomes.",
+      "summaryImage": {
+        "src": "assets/case-studies/research/summary-image.svg",
+        "alt": "Research informing design direction and confirming results"
+      },
+      "approach": [
+        "Applied mixed-methods research combining quantitative surveys and qualitative interviews",
+        "Used usability testing to validate design concepts before development",
+        "Synthesized research findings into actionable design principles",
+        "Created research-informed design systems that could be scaled across products"
+      ],
+      "images": [
+        {
+          "src": "assets/case-studies/research/artifact-1.svg",
+          "alt": "Research methodology framework",
+          "caption": "Combined quantitative and qualitative research approach"
+        },
+        {
+          "src": "assets/case-studies/research/artifact-2.svg",
+          "alt": "User journey map based on research findings",
+          "caption": "Current state journey map highlighting pain points"
+        },
+        {
+          "src": "assets/case-studies/research/artifact-3.svg",
+          "alt": "Design principles derived from research",
+          "caption": "Research-validated design guidelines"
+        }
+      ],
+      "decisions": [
+        {
+          "title": "Prioritize research-informed design over assumption-based decisions",
+          "detail": "Established a requirement that all major design decisions must be backed by user research data"
+        },
+        {
+          "title": "Create reusable research artifacts for cross-team sharing",
+          "detail": "Developed standardized research deliverables that could be understood and used by designers, product managers, and engineers"
+        }
+      ],
+      "outcomes": [
+        "Design decisions became more user-centered and evidence-based",
+        "Reduced rework by validating concepts before full development",
+        "Created a shared research language that improved cross-functional collaboration"
+      ],
+      "reflection": "This work reinforced the importance of grounding design in research and established practices that continue to influence how design decisions are made."
     }
   },
   "workingStyle": {
