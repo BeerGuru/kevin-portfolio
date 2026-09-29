@@ -478,12 +478,12 @@ window.PORTFOLIO_CONTENT = {
       "reflection": ""
     },
     "research": {
-      "title": "Research informing design direction and confirming results",
-      "subtitle": "Using research methodologies to guide design decisions and validate outcomes",
-      "role": "Principal Experience Designer",
+      "title": "Partner with our business and research teams to influence strategic direction, turn research and data into actionable insights, and measure design impacts post launch for our mobile plans.",
+      "subtitle": "Verizon refreshes its mobile plans several times a year, looking to increase revenue, attract new prospects, and differentiate its services. For the initial work, we aligned with the value prop business team and research team (CMI) to understand how customers perceived our current mobile plans and what could we do to reduce friction and increase clarity. For the second part of the work, we were focused on (ideally) what would customers want in a plan that is not out there today.",
+      "role": "Role: Lead experience architect",
       "timeline": "",
-      "context": "Design decisions needed to be grounded in user research and validated through testing to ensure they met both user needs and business objectives.",
-      "problem": "Teams were making design decisions based on assumptions rather than evidence, leading to products that didn't fully resonate with users or achieve desired business outcomes.",
+      "context": "Scope: Current mobile plans and future direction for next version of mobile plans.",
+      "problem": "Impact: Addressed some of the friction points with current plans, and created direction for future plan development, in terms of what customers want but aren’t getting served by any telecoms currently.",
       "summaryImage": {
         "src": "assets/case-studies/research/summary-image.svg",
         "alt": "Research informing design direction and confirming results"
