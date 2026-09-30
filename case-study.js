@@ -55,13 +55,11 @@ function renderCaseHero(caseStudy, caseId) {
   hero.innerHTML = `
     <p class="eyebrow">Case Study</p>
     <h1 data-edit="caseStudies.${caseId}.title">${escapeHtml(caseStudy.title)}</h1>
-    <p class="hero-copy" data-edit="caseStudies.${caseId}.subtitle">${escapeHtml(caseStudy.subtitle)}</p>
     <div class="case-study-nav" aria-label="Case study navigation">
       ${prevId ? `<a class="btn btn-ghost" href="${prevHref}" aria-label="Previous case study">&larr; Previous</a>` : `<span class="btn btn-ghost btn-disabled" aria-disabled="true">&larr; Previous</span>`}
 <a class="btn btn-text" href="${urlWithVariant('index.html#work')}">Back to Selected Work</a>
       ${nextId ? `<a class="btn btn-ghost" href="${nextHref}" aria-label="Next case study">Next &rarr;</a>` : `<span class="btn btn-ghost btn-disabled" aria-disabled="true">Next &rarr;</span>`}
     </div>
-    <div class="hero-signal" role="note" aria-label="Role and timeline"><span data-edit="caseStudies.${caseId}.role">${escapeHtml(caseStudy.role)}</span>${caseStudy.timeline ? ` &middot; <span data-edit="caseStudies.${caseId}.timeline">${escapeHtml(caseStudy.timeline)}</span>` : `<span data-edit="caseStudies.${caseId}.timeline" style="display:none">${escapeHtml(caseStudy.timeline)}</span>`}</div>
   `;
 }
 
@@ -298,9 +296,9 @@ function init() {
 
   applySeo(
     `${caseStudy.title} | ${content.profile.name}`,
-    caseStudy.subtitle,
+    caseStudy.context || caseStudy.problem || '',
     caseStudy.title,
-    caseStudy.subtitle
+    caseStudy.context || caseStudy.problem || ''
   );
   renderCaseHero(caseStudy, caseId);
   renderCaseContext(caseStudy, caseId);

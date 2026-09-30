@@ -41,6 +41,7 @@ function renderWork() {
     const summaryImage = item.summaryImage || item.image || (caseMeta && caseMeta.summaryImage) || (caseMeta && Array.isArray(caseMeta.images) && caseMeta.images.length ? caseMeta.images[0] : null);
     return {
       ...item,
+      title: item.title || (caseMeta && caseMeta.title) || '',
       image: summaryImage,
     };
   }).filter(Boolean);

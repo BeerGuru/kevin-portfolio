@@ -146,7 +146,6 @@ window.PORTFOLIO_CONTENT = {
       {
         "id": "myplan",
         "tag": "Growth",
-        "title": "Redesign our core mobile plans architecture from early concept through to delivery",
         "challenge": "Led design for the myPlan initiative to create clearer plan choice and more customer flexibility in a highly competitive market.",
         "bullets": [
           "Role: Lead UX Designer",
@@ -158,31 +157,28 @@ window.PORTFOLIO_CONTENT = {
       {
         "id": "netmax",
         "tag": "Service Design",
-        "title": "Own and define the end-to-end experience, & remove ambiguity for new streaming service",
         "challenge": "Led the experience for a combined Netflix and Max streaming perk, removing ambiguity across partners, product, design, development, research, and marketing.",
         "bullets": [
-          "Role: Lead Experience Architect",
+          "Role: Lead UX Designer transitioning into Principal leadership",
           "Scope: Partnered with Netflix, Max, product value, research, design, marketing, and other teams to shape the end-to-end digital experience",
-          "Impact: Launched an exclusive combined streaming product that became Verizon's second-best-selling perk, reaching nearly 11 million mobile accounts"
+          "Impact: Delivered consistent compliance patterns at scale while preserving experience clarity"
         ],
         "href": "case-study.html?case=netmax"
       },
       {
         "id": "satellite-to-device",
         "tag": "Service Design",
-        "title": "Create a design strategy and journey map for a new service",
-        "challenge": "Shaped the customer experience strategy for Verizon's Satellite to Device capability, building the cross-functional foundation to close coverage dead zones and support a beta launch.",
+        "challenge": "Verizon periodically refreshes its mobile plans to boost revenue, attract prospects, and differentiate its offerings. We partnered with the value proposition and research (CMI) teams in two phases: first, analyzing customer perception of current plans to reduce friction and improve clarity; second, identifying unmet customer needs to inform future plan features.",
         "bullets": [
-          "Role: Principal Experience Designer",
-          "Scope: Partnered with Experience Management, Value Proposition, and CMI research to shape the beta data collection journey and experience strategy",
-          "Impact: Built a trusted cross-functional partnership from scratch and became a recognized design leader on the initiative"
+          "Role: Lead experience architect",
+          "Scope: Current mobile plans and future direction for next version of mobile plans.",
+          "Impact: Addressed some of the friction points with current plans, and created direction for future plans to address unmet customer needs."
         ],
         "href": "case-study.html?case=satellite-to-device"
       },
       {
         "id": "fcc-labels",
         "tag": "Cross functional",
-        "title": "Build an end to end experience across channels, functions and business units",
         "challenge": "Directed the design and implementation of FCC-mandated product labels across mobile and home product experiences.",
         "bullets": [
           "Role: Lead UX Designer transitioning into Principal leadership",
@@ -194,12 +190,11 @@ window.PORTFOLIO_CONTENT = {
       {
         "id": "research",
         "tag": "Research",
-        "title": "Partner with our business and research teams to influence strategic direction, turn research and data into actionable insights, and measure design impacts post launch for our mobile plans.",
-        "challenge": "Verizon refreshes its mobile plans several times a year, looking to increase revenue, attract new prospects, and differentiate its services. For the initial work, we aligned with the value prop business team and research team (CMI) to understand how customers perceived our current mobile plans and what could we do to reduce friction and increase clarity. For the second part of the work, we were focused on (ideally) what would customers want in a plan that is not out there today.",
+        "challenge": "Partner with our business and CMI (Customer Marketing Integration) research teams to influence strategic direction, turn research and data into actionable insights, and measure design impacts post launch for our mobile plans.",
         "bullets": [
           "Role: Lead experience architect",
           "Scope: Current mobile plans and future direction for next version of mobile plans.",
-          "Impact: Addressed some of the friction points with current plans, and created direction for future plan development, in terms of what customers want but aren't getting served by any telecoms currently."
+          "Impact: Addressed some of the friction points with current plans, and created direction for future plan development for customers’ unmet needs."
         ],
         "href": "case-study.html?case=research"
       }
@@ -263,8 +258,7 @@ window.PORTFOLIO_CONTENT = {
   "caseStudies": {
     "myplan": {
       "title": "Redesign our core mobile plans architecture from early concept directly through to delivery",
-      "subtitle": "Reframing mobile plan selection to give customers more flexibility while supporting business differentiation.",
-      "role": "Lead UX Designer",
+            "role": "Lead UX Designer",
       "timeline": "",
       "context": "Verizon needed a clearer and more competitive plan experience for consumers that was a differentiator.",
       "problem": "Customers faced complexity when choosing, comparing and configuring plans. The business needed a flexible architecture that could support new products and services.",
@@ -321,8 +315,7 @@ window.PORTFOLIO_CONTENT = {
     },
     "fcc-labels": {
       "title": "Build an end to end experience across channels, functions and business units",
-      "subtitle": "Implementing regulatory requirements across product ecosystems without degrading customer clarity.",
-      "role": "Lead UX Designer / Principal Experience Designer",
+            "role": "Lead UX Designer / Principal Experience Designer",
       "timeline": "",
       "context": "FCC-mandated product labels required coordinated implementation across mobile and home product experiences.",
       "problem": "The team needed to satisfy compliance requirements while preserving usability, consistency, and trust across multiple channels.",
@@ -381,8 +374,7 @@ window.PORTFOLIO_CONTENT = {
     },
     "satellite-to-device": {
       "title": "Create a design strategy and journey map for a new service",
-      "subtitle": "Building the experience strategy and cross-functional partnerships behind Verizon's Satellite to Device network capability.",
-      "role": "Principal Experience Designer",
+            "role": "Principal Experience Designer",
       "timeline": "",
       "context": "Verizon's strategic ambition is to eliminate coverage dead zones and offer customers seamless connectivity through Satellite to Device — matching competitor offerings while protecting Verizon's network superiority, and earning the right to claim near-full USA satellite coverage.",
       "problem": "The initiative required alignment across multiple teams, some of whom had no prior working relationship, plus a solid experience strategy, supported by research, for the beta and production launch — all while translating a broad network capability into a clear customer offering.",
@@ -444,8 +436,7 @@ window.PORTFOLIO_CONTENT = {
     },
     "netmax": {
       "title": "Own and define the end-to-end experience, and remove ambiguity for a new streaming launch",
-      "subtitle": "Defining the end-to-end experience for a new combined streaming product while removing ambiguity across partners and channels.",
-      "role": "Lead Experience Architect",
+            "role": "Lead Experience Architect",
       "timeline": "",
       "context": "Verizon launched a new streaming combo service that needed to fit the existing service model, satisfy our partners, and remain clear to customers.",
       "problem": "The combined service needed to feel like one product while still allowing customers to register, manage, and upgrade two separate subscriptions. Existing Verizon perk patterns did not fully support that model, and research showed that 80-90% of Verizon customers also overlapped with Netflix, making existing-subscription registration especially important to clarify. Additionally, customers needed to be able to upgrade their subscription, if they didn't want ads.",
@@ -498,9 +489,8 @@ window.PORTFOLIO_CONTENT = {
       "reflection": ""
     },
     "research": {
-      "title": "Partner with our business and research teams to influence strategic direction, turn research and data into actionable insights, and measure design impacts post launch for our mobile plans.",
-      "subtitle": "Verizon refreshes its mobile plans several times a year, looking to increase revenue, attract new prospects, and differentiate its services. For the initial work, we aligned with the value prop business team and research team (CMI) to understand how customers perceived our current mobile plans and what could we do to reduce friction and increase clarity. For the second part of the work, we were focused on (ideally) what would customers want in a plan that is not out there today.",
-      "role": "Role: Lead experience architect",
+      "title": "Partner with research teams to influence strategic direction, turn research into action, and measure design.",
+            "role": "Role: Lead experience architect",
       "timeline": "",
       "context": "Scope: Current mobile plans and future direction for next version of mobile plans.",
       "problem": "Impact: Addressed some of the friction points with current plans, and created direction for future plan development, in terms of what customers want but aren’t getting served by any telecoms currently.",
