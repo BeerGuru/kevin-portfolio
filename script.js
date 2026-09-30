@@ -17,13 +17,21 @@ function renderWork() {
     if (typeof item === 'string') {
       const meta = content.caseStudies[item];
       if (!meta) return null;
+      const baseEntry =
+        (window.PORTFOLIO_CONTENT && window.PORTFOLIO_CONTENT.work && window.PORTFOLIO_CONTENT.work.cases || []).find(
+          (c) => c.id === item
+        );
       const summaryImage = meta.summaryImage || (Array.isArray(meta.images) && meta.images.length ? meta.images[0] : null);
       return {
         id: item,
-        tag: '',
+        tag: baseEntry ? baseEntry.tag : '',
         title: meta.title,
-        challenge: meta.challenge || meta.problem || meta.context || '',
-        bullets: Array.isArray(meta.outcomes) ? meta.outcomes.slice(0, 3) : [],
+        challenge: baseEntry
+          ? baseEntry.challenge
+          : meta.challenge || meta.problem || meta.context || '',
+        bullets: baseEntry && Array.isArray(baseEntry.bullets)
+          ? baseEntry.bullets.slice(0, 3)
+          : Array.isArray(meta.outcomes) ? meta.outcomes.slice(0, 3) : [],
         href: urlWithVariant(`case-study.html?case=${encodeURIComponent(item)}`),
         image: summaryImage,
       };

@@ -6,7 +6,16 @@ window.PORTFOLIO_CONTENT = {
     "ogDescription": "Strategic design and product leadership portfolio for hiring managers and design leaders."
   },
   "variants": {
-    "main": {},
+    "main": {
+      "work": {
+        "cases": [
+          "myplan",
+          "netmax",
+          "satellite-to-device",
+          "fcc-labels"
+        ]
+      }
+    },
     "design-principal": {
       "profile": {
         "resumeHref": "kevin-trayner-resume-design-principal.pdf"
@@ -24,8 +33,7 @@ window.PORTFOLIO_CONTENT = {
         "cases": [
           "myplan",
           "fcc-labels",
-          "netmax",
-          "research",
+          "research"
         ]
       }
     },
@@ -182,6 +190,18 @@ window.PORTFOLIO_CONTENT = {
           "Impact: Delivered consistent compliance patterns at scale while preserving experience clarity"
         ],
         "href": "case-study.html?case=fcc-labels"
+      },
+      {
+        "id": "research",
+        "tag": "Research",
+        "title": "Partner with our business and research teams to influence strategic direction, turn research and data into actionable insights, and measure design impacts post launch for our mobile plans.",
+        "challenge": "Verizon refreshes its mobile plans several times a year, looking to increase revenue, attract new prospects, and differentiate its services. For the initial work, we aligned with the value prop business team and research team (CMI) to understand how customers perceived our current mobile plans and what could we do to reduce friction and increase clarity. For the second part of the work, we were focused on (ideally) what would customers want in a plan that is not out there today.",
+        "bullets": [
+          "Role: Lead experience architect",
+          "Scope: Current mobile plans and future direction for next version of mobile plans.",
+          "Impact: Addressed some of the friction points with current plans, and created direction for future plan development, in terms of what customers want but aren't getting served by any telecoms currently."
+        ],
+        "href": "case-study.html?case=research"
       }
     ]
   },
