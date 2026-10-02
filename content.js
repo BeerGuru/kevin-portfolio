@@ -517,7 +517,7 @@ window.PORTFOLIO_CONTENT = {
         {
           "src": "assets/case-studies/research/Research artifact3.png",
           "alt": "Design principles derived from research",
-          "caption": "Updating plans for better clarity and transparency."
+          "caption": "Updating plans based on clarity research - updated terminology, clearer visual separation of core and other features, reduced tagline, and carets which allowed customers to see feature details in context (previously there was only one link for all details)."
         },
         {
           "src": "assets/case-studies/research/Research artifact_mp3.png",
@@ -525,9 +525,9 @@ window.PORTFOLIO_CONTENT = {
           "caption": "Surfacing core, unmet needs of the customer in co-creation session."
         },
         {
-          "src": "assets/case-studies/research/Research artifact4.png",
+          "src": "assets/case-studies/research/Research artifact_mp4.png",
           "alt": "Design principles derived from research",
-          "caption": "Creating multiple prototypes for testing highlighting choice and control."
+          "caption": "One of the early concepts we tested - choice of basic and premium plan, and choice of basic and premium perks which you could swap out. All of the concepts focused on highlighting choice and control for the customer."
         },
         {
           "src": "assets/case-studies/research/Research artifact_mp5.png",
