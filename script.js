@@ -46,7 +46,7 @@ function renderWork() {
     };
   }).filter(Boolean);
 
-  const featuredIndex = cases.length > 3 ? cases.length - 1 : null;
+  const featuredIndex = cases.length >= 5 ? 3 : cases.length > 3 ? cases.length - 1 : null;
 
   work.innerHTML = `
     <div class="work-intro-block">
