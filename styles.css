@@ -332,6 +332,27 @@ h2 {
   font-size: 1.02rem;
 }
 
+.hero-copy-rich {
+  max-width: 200ch;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+  font-size: 1.02rem;
+}
+
+.hero-copy-rich ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.hero-copy-rich li {
+  margin-bottom: 0.3rem;
+}
+
+.hero-copy-rich br + ul,
+.hero-copy-rich ul + br {
+  margin-top: 0.5rem;
+}
+
 .work-intro-block {
   margin-bottom: 1rem;
 }

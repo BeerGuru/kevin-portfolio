@@ -2,10 +2,19 @@ function renderHero() {
   const hero = document.getElementById('hero');
   if (!hero) return;
 
+  // subheadHtml supports HTML bullets (no edit-mode support); subhead remains
+  // escaped plain text with edit-mode support. subheadHtml takes precedence.
+  let subheadHtml = '';
+  if (content.hero.subheadHtml) {
+    subheadHtml = `<div class="hero-copy hero-copy-rich">${content.hero.subheadHtml}</div>`;
+  } else if (content.hero.subhead) {
+    subheadHtml = `<p class="hero-copy">${escapeHtml(content.hero.subhead)}</p>`;
+  }
+
   hero.innerHTML = `
     ${content.hero.eyebrow ? `<p class="eyebrow" data-edit="hero.eyebrow">${escapeHtml(content.hero.eyebrow)}</p>` : ''}
     <h1 data-edit="hero.headline">${escapeHtml(content.hero.headline)}</h1>
-    ${content.hero.subhead ? `<p class="hero-copy" data-edit="hero.subhead">${escapeHtml(content.hero.subhead)}</p>` : ''}
+    ${subheadHtml}
   `;
 }
 

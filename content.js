@@ -43,7 +43,8 @@ window.PORTFOLIO_CONTENT = {
       },
       "hero": {
         "headline": "Strategic design leader delivering end-to-end mobile consumer experiences that balance user needs, business goals, and technical scalability.",
-        "subhead": "Own the full lifecycle — from ambiguous problem spaces through research, concepting, and prototyping to high-quality execution. Partner across Product, CX, Development, Research, Legal, and Marketing to define vision and strategy. Shape the design system with new patterns and reusable components. Mentor designers and evolve organizational practices.",
+        "subhead": "",
+        "subheadHtml": "<ul><li>Lead design for complex products and strategic initiatives in the mobile consumer space, working across channels and teams.</li><li>Partner across Product, CX, Development, Research, Legal, and Marketing to define vision and strategy.</li><li>Own and define the end-to-end experience, solving for ambiguity in complex problem spaces, through storytelling, research, and prototyping.</li><li>Shape the design system with new patterns and reusable components.</li><li>Mentor designers and evolve organizational practices.</li></ul>",
         "primaryCta": {
           "label": "See leadership work",
           "href": "#work"
@@ -134,6 +135,7 @@ window.PORTFOLIO_CONTENT = {
     "eyebrow": "",
     "headline": "Strategic Experience Designer with 20+ years leading customer and internal experiences for Fortune 100 organizations.",
     "subhead": "",
+    "subheadHtml": "",
     "primaryCta": {
       "label": "View case studies",
       "href": "#work"
