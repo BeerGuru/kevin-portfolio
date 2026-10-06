@@ -42,8 +42,8 @@ window.PORTFOLIO_CONTENT = {
         "resumeHref": "kevin-trayner-resume-lead.pdf"
       },
       "hero": {
-        "headline": "Design leader translating ambiguity into direction, alignment, and traction.",
-        "subhead": "",
+        "headline": "Strategic design leader delivering end-to-end mobile consumer experiences that balance user needs, business goals, and technical scalability.",
+        "subhead": "Own the full lifecycle — from ambiguous problem spaces through research, concepting, and prototyping to high-quality execution. Partner across Product, CX, Development, Research, Legal, and Marketing to define vision and strategy. Shape the design system with new patterns and reusable components. Mentor designers and evolve organizational practices.",
         "primaryCta": {
           "label": "See leadership work",
           "href": "#work"
@@ -52,10 +52,11 @@ window.PORTFOLIO_CONTENT = {
       },
       "work": {
         "cases": [
-          "netmax",
           "myplan",
+          "fcc-labels",
+          "netmax",
           "satellite-to-device",
-          "fcc-labels"
+          "research"
         ]
       }
     },
