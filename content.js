@@ -21,19 +21,21 @@ window.PORTFOLIO_CONTENT = {
         "resumeHref": "kevin-trayner-resume-principal.pdf"
       },
       "hero": {
-        "headline": "Strategic Experience Designer with 20+ years leading customer and internal experiences for Fortune 100 organizations.",
-        "subhead": "",
+        "headline": "Senior product designer shaping intuitive digital brand experiences end-to-end - collaborating across research, content, business, and development.",
+        "subhead": "",  
+        "subheadHtml": "<ul><li>Drive strategic design vision: Led cross-functional teams spanning Product, CX, Development, Research, Marketing, and Legal to deliver high-impact digital experiences from discovery through production.</li><li>Co-create service strategy: Shaped the customer experience strategy for Verizon's Satellite to Device capability, building the cross-functional foundation to close coverage dead zones and support a beta launch.</li><li>Align stakeholders in ambiguous spaces: Defined end-to-end vision using storytelling and prototyping, driving consensus among executives and external partners.</li><li>Mentor junior designers, evaluate future patterns with the VDS (Verizon Design System), and evolve design processes; integrated generative AI tooling (Gemini, Claude Code, Copilot, Figma Make) into research, prototyping, and workflow improvement.</li></ul>",
         "primaryCta": {
-          "label": "View design work",
+          "label": "View product work",
           "href": "#work"
         },
         "secondaryCta": ""
       },
       "work": {
         "cases": [
-          "myplan",
           "fcc-labels",
-          "research"
+          "satellite-to-device",
+          "netmax",
+          "research",
         ]
       }
     },
