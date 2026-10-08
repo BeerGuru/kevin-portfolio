@@ -136,7 +136,7 @@ window.PORTFOLIO_CONTENT = {
   ],
   "hero": {
     "eyebrow": "",
-    "headline": "Strategic Experience Designer with 20+ years leading customer and internal experiences for Fortune 100 organizations.",
+    "headline": "Strategic Experience Designer with 20+ years leading customer and internal experiences, and still curious.",
     "subhead": "",
     // "subheadHtml": "Design is a collaborative practice, where you are often required to step outside of your job silo, and just do what is needed. I think Will Guidara's <a href=\"https://www.amazon.com/Unreasonable-Hospitality-Remarkable-Giving-People/dp/0593418573\">Unreasonable Hospitality book</a> (inspiration/producer of \"The Bear\") is a great model for how to truly be of service for any industry.",
     "primaryCta": {
