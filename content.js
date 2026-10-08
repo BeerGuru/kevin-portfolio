@@ -176,7 +176,7 @@ window.PORTFOLIO_CONTENT = {
         "bullets": [
           "Role: Principal Experience Designer",
           "Scope: Partnered with Experience Management, Value Proposition, and CMI research to shape the beta data collection journey and experience strategy.",
-          "Impact: "
+          "Impact: Built a trusted cross-functional partnership from scratch and became a recognized design leader on the initiative."
         ],
         "href": "case-study.html?case=satellite-to-device",
         "title": "Partner with research teams to influence strategic direction, turn research into action, and measure design impact."
