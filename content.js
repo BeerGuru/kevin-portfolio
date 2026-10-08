@@ -165,18 +165,18 @@ window.PORTFOLIO_CONTENT = {
         "bullets": [
           "Role: Lead UX Designer transitioning into Principal leadership",
           "Scope: Partnered with Netflix, Max, product value, research, design, marketing, and other teams to shape the end-to-end digital experience",
-          "Impact: Delivered consistent compliance patterns at scale while preserving experience clarity"
+          "Impact: Built a trusted cross-functional partnership from scratch and became a recognized design leader on the initiative."
         ],
         "href": "case-study.html?case=netmax"
       },
       {
         "id": "satellite-to-device",
         "tag": "Service Design",
-        "challenge": "Verizon periodically refreshes its mobile plans to boost revenue, attract prospects, and differentiate its offerings. We partnered with the value proposition and research (CMI) teams in two phases: first, analyzing customer perception of current plans to reduce friction and improve clarity; second, identifying unmet customer needs to inform future plan features.",
+        "challenge": "Shaped the customer experience strategy for Verizon's Satellite to Device capability, building the cross-functional foundation to close coverage dead zones and support a beta launch.",
         "bullets": [
-          "Role: Lead experience architect",
-          "Scope: Current mobile plans and future direction for next version of mobile plans.",
-          "Impact: Addressed some of the friction points with current plans, and created direction for future plans to address unmet customer needs."
+          "Role: Principal Experience Designer",
+          "Scope: Partnered with Experience Management, Value Proposition, and CMI research to shape the beta data collection journey and experience strategy.",
+          "Impact: "
         ],
         "href": "case-study.html?case=satellite-to-device",
         "title": "Partner with research teams to influence strategic direction, turn research into action, and measure design impact."
