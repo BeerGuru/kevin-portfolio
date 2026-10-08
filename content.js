@@ -63,6 +63,30 @@ window.PORTFOLIO_CONTENT = {
         ]
       }
     },
+    "creative": {
+      "profile": {
+        "resumeHref": "kevin-trayner-resume-creative.pdf"
+      },
+      "hero": {
+        "headline": "Strategic Experience Designer with 20+ years leading customer and internal experiences, and still curious.",
+        "subhead": "",
+        "subheadHtml": "<ul><li>Own ambiguous problem spaces and solutions end-to-end for mobile consumer-facing products from concept to delivery.</li><li>Build a solid experience strategy through storytelling, research, and prototyping - all while figuring out how to translate a service into something customers really want and love.</li><li>Partner with research, prototype and iterate to influence strategic direction and distinguish us from the competition.</li><li>Incorporate AI into my daily work: Use agentic and generative AI (Gemini, Claude Code, Copilot, Figma Make) to make work flow better - brief creation, journey mapping, prototyping, research, and more - but keep the human in the lead.</li></ul>Design is a collaborative practice, where you often need to step outside of your job silo, and just do what is needed. Even though it is focused on restaurant service, I think Will Guidara's <a href=\"https://www.amazon.com/Unreasonable-Hospitality-Remarkable-Giving-People/dp/0593418573\">Unreasonable Hospitality book</a> (inspiration/producer of \"The Bear\") is a great model for how to truly be of service in any industry.</li>",
+        "primaryCta": {
+          "label": "See leadership work",
+          "href": "#work"
+        },
+        "secondaryCta": ""
+      },
+      "work": {
+        "cases": [
+          "myplan",
+          "satellite-to-device",
+          "netmax",
+          "research",
+          "fcc-labels"
+        ]
+      }
+    },
     "product": {
       "profile": {
         "resumeHref": "kevin-trayner-resume-product.pdf"
