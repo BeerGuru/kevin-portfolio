@@ -61,13 +61,14 @@ window.PORTFOLIO_CONTENT = {
         ]
       }
     },
-    "product-strategy": {
+    "product": {
       "profile": {
-        "resumeHref": "kevin-trayner-resume-product-strategy.pdf"
+        "resumeHref": "kevin-trayner-resume-product.pdf"
       },
       "hero": {
-        "headline": "Product and experience strategist connecting customer needs to business outcomes.",
-        "subhead": "",
+        "headline": "Senior product designer shaping intuitive digital brand experiences end-to-end - collaborating across research, content, business, and development.",
+        "subhead": "",  
+        "subheadHtml": "<ul><li>Champion end-to-end design for complex mobile projects, solving problems strategically, and translating business goals and complex rules into intuitive digital solutions.</li><li>Drive cross-functional partnerships across channels and products.</li><li>Collaborate to solve for ambiguity - defining end-to-end design vision in complex product spaces using storytelling, research, and rapid prototyping to drive consensus with executive stakeholders and third-party partners.</li><li>Lead architectural and experience design for multi-channel digital solutions reaching tens of millions of users, partnering with business, design, and research teams.</li><li>Mentor junior designers, give feedback and critique, and evolve ways of working — typically with little direction.</li></ul>",
         "primaryCta": {
           "label": "View product work",
           "href": "#work"
@@ -76,10 +77,10 @@ window.PORTFOLIO_CONTENT = {
       },
       "work": {
         "cases": [
+          "fcc-labels",
           "myplan",
           "netmax",
-          "satellite-to-device",
-          "fcc-labels"
+          "satellite-to-device"
         ]
       }
     },

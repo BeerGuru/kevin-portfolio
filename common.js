@@ -223,6 +223,16 @@ function renderFooter() {
 
 function setupReveal() {
   const revealedElements = document.querySelectorAll('.reveal');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // If user prefers reduced motion, skip animation and show all sections immediately
+  if (prefersReducedMotion) {
+    revealedElements.forEach(el => {
+      el.classList.add('is-visible');
+      el.style.transition = 'none'; // remove any transition delays
+    });
+    return;
+  }
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -233,11 +243,12 @@ function setupReveal() {
         }
       });
     },
-    { threshold: 0.2 }
+    { threshold: 0.05 } // trigger sooner
   );
 
   revealedElements.forEach((el, index) => {
-    el.style.transitionDelay = `${Math.min(index * 70, 320)}ms`;
+    // Shorter, more staggered delay
+    el.style.transitionDelay = `${Math.min(index * 50, 200)}ms`;
     observer.observe(el);
   });
 }
