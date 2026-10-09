@@ -36,7 +36,7 @@ window.PORTFOLIO_CONTENT = {
           "fcc-labels",
           "satellite-to-device",
           "netmax",
-          "research",
+          "research"
         ]
       }
     },
@@ -163,7 +163,6 @@ window.PORTFOLIO_CONTENT = {
     "eyebrow": "",
     "headline": "Strategic Experience Designer with 20+ years leading customer and internal experiences, always curious.",
     "subhead": "",
-    // "subheadHtml": "Design is a collaborative practice, where you are often required to step outside of your job silo, and just do what is needed. I think Will Guidara's <a href=\"https://www.amazon.com/Unreasonable-Hospitality-Remarkable-Giving-People/dp/0593418573\">Unreasonable Hospitality book</a> (inspiration/producer of \"The Bear\") is a great model for how to truly be of service for any industry.",
     "primaryCta": {
       "label": "View case studies",
       "href": "#work"
@@ -179,7 +178,6 @@ window.PORTFOLIO_CONTENT = {
         "tag": "Growth",
         "challenge": "Led design for the myPlan initiative to create clearer plan choice and more customer flexibility in a highly competitive market.",
         "bullets": [
-          "Role: Lead UX Designer",
           "Scope: Partnered across product owners, legal, retail, and research from value proposition through launch",
           "Impact: Introduced an industry-differentiating plan experience and clearer customer choice architecture"
         ],
@@ -190,9 +188,8 @@ window.PORTFOLIO_CONTENT = {
         "tag": "Service Design",
         "challenge": "Led the experience for a combined Netflix and Max streaming perk, removing ambiguity across partners, product, design, development, research, and marketing.",
         "bullets": [
-          "Role: Lead/Principal Designer",
           "Scope: Partnered with Netflix, Max, product value, research, design, marketing, and other teams to shape the end-to-end digital experience",
-          "Impact: Built a trusted cross-functional partnership from scratch and became a recognized design leader on the initiative."
+          "Impact: Launched an exclusive combined streaming product that became Verizon's second-best-selling perk, reaching nearly 11 million mobile accounts."
         ],
         "href": "case-study.html?case=netmax"
       },
@@ -201,19 +198,16 @@ window.PORTFOLIO_CONTENT = {
         "tag": "Service Design",
         "challenge": "Shaped the customer experience strategy for Verizon's Satellite to Device capability, building the cross-functional foundation to close coverage dead zones and support a beta launch.",
         "bullets": [
-          "Role: Principal UX Designer",
           "Scope: Partnered with Experience Management, Value Proposition, and CMI research to shape the beta data collection journey and experience strategy.",
           "Impact: Built a trusted cross-functional partnership from scratch and became a recognized design leader on the initiative."
         ],
-        "href": "case-study.html?case=satellite-to-device",
-        "title": "Partner with research teams to influence strategic direction, turn research into action, and measure design impact."
+        "href": "case-study.html?case=satellite-to-device"
       },
       {
         "id": "fcc-labels",
         "tag": "Cross functional",
         "challenge": "Directed the design and implementation of FCC-mandated product labels across mobile and home product experiences.",
         "bullets": [
-          "Role: Lead UX Designer transitioning into Principal leadership",
           "Scope: Aligned legal requirements with product, design systems, and cross-channel customer journeys",
           "Impact: Delivered consistent compliance patterns at scale while preserving experience clarity"
         ],
@@ -222,10 +216,9 @@ window.PORTFOLIO_CONTENT = {
       {
         "id": "research",
         "tag": "Research",
-        "challenge": "Partner with our business and CMI (Customer Marketing Integration) research teams to influence strategic direction, turn research and data into actionable insights, and measure design impacts post launch for our mobile plans.",
+        "challenge": "Influence strategic direction, turn research and data into actionable insights, and measure design impacts post launch for our mobile plans.",
         "bullets": [
-          "Role: Lead experience architect",
-          "Scope: Current mobile plans and future direction for next version of mobile plans.",
+          "Scope: Researched and defined future mobile plans using customer co-creation and conjoint testing.",
           "Impact: Addressed some of the friction points with current plans, and created direction for future plan development for customers’ unmet needs."
         ],
         "href": "case-study.html?case=research"
@@ -291,7 +284,6 @@ window.PORTFOLIO_CONTENT = {
     "myplan": {
       "title": "Redesign our core mobile plans architecture from early concept directly through to delivery",
       "role": "Lead UX Designer",
-      "timeline": "",
       "context": "Verizon needed a clearer and more competitive plan experience for consumers that was a differentiator.",
       "problem": "Customers faced complexity when choosing, comparing and configuring plans. The business needed a flexible architecture that could support new products and services.",
       "summaryImage": {
@@ -348,7 +340,6 @@ window.PORTFOLIO_CONTENT = {
     "fcc-labels": {
       "title": "Build an end to end experience across channels, functions and business units",
       "role": "Lead / Principal UX Designer",
-      "timeline": "",
       "context": "FCC-mandated product labels required coordinated implementation across mobile and home product experiences.",
       "problem": "The team needed to satisfy compliance requirements while preserving usability, consistency, and trust across multiple channels.",
       "summaryImage": {
@@ -407,7 +398,6 @@ window.PORTFOLIO_CONTENT = {
     "satellite-to-device": {
       "title": "Create a design strategy and journey map for a new service",
       "role": "Principal UXDesigner",
-      "timeline": "",
       "context": "Verizon wanted to eliminate coverage dead zones and provide seamless connectivity through Satellite to Device — matching competitors, while protecting network superiority, and offering full satellite coverage.",
       "problem": "The initiative required alignment across multiple teams, some of whom had no prior working relationship, plus a solid experience strategy, supported by research, for the beta and production launch — all while translating a broad network capability into a clear customer offering.",
       "summaryImage": {
@@ -469,7 +459,6 @@ window.PORTFOLIO_CONTENT = {
     "netmax": {
       "title": "Own and define the end-to-end experience, and remove ambiguity for a new streaming launch",
       "role": "Lead Experience Architect",
-      "timeline": "",
       "context": "Verizon launched a new streaming combo service that needed to fit the existing service model, satisfy our partners, and remain clear to customers.",
       "problem": "The combined service needed to feel like one product while still allowing customers to register, manage, and upgrade two separate subscriptions. Existing Verizon perk patterns did not fully support that model, and research showed that 80-90% of Verizon customers also overlapped with Netflix, making existing-subscription registration especially important to clarify. Additionally, customers needed to be able to upgrade their subscription, if they didn't want ads.",
       "summaryImage": {
@@ -521,9 +510,8 @@ window.PORTFOLIO_CONTENT = {
       "reflection": ""
     },
     "research": {
-      "title": "Partner with research teams to influence strategic direction, turn research into action, and measure design impact.",
+      "title": "Partner with research teams to influence strategic direction.",
       "role": "Role: Lead experience architect",
-      "timeline": "",
       "context": "Address current friction points in our mobile plans today. Identify opportunities for future direction of mobile plans to distinguish Verizon from the competition.",
       "problem": "For the first release, we addressed plan clarity and understanding using our CMI (Customer Market Insights) team’s research - moderated, terminology, and card-sorting studies - alongside customer service feedback from \"Your Voice Matters\" to fix issues with layout and terminology.The second phase focused on uncovering unmet needs to differentiate Verizon. Starting with customer co-creation sessions and an AI-driven conjoint study to rank proposed and existing features, we developed and iteratively tested multiple prototypes. Partnering with an external agency, we tested two prototypes, using that feedback to hone the final launch experience.Overall, this was a 10–12 month initiative spanning two major plan releases.",
       "summaryImage": {
