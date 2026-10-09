@@ -12,7 +12,8 @@ window.PORTFOLIO_CONTENT = {
           "myplan",
           "netmax",
           "satellite-to-device",
-          "fcc-labels"
+          "fcc-labels",
+          "research"
         ]
       }
     },
@@ -160,7 +161,7 @@ window.PORTFOLIO_CONTENT = {
   ],
   "hero": {
     "eyebrow": "",
-    "headline": "Strategic Experience Designer with 20+ years leading customer and internal experiences, and still curious.",
+    "headline": "Strategic Experience Designer with 20+ years leading customer and internal experiences, always curious.",
     "subhead": "",
     // "subheadHtml": "Design is a collaborative practice, where you are often required to step outside of your job silo, and just do what is needed. I think Will Guidara's <a href=\"https://www.amazon.com/Unreasonable-Hospitality-Remarkable-Giving-People/dp/0593418573\">Unreasonable Hospitality book</a> (inspiration/producer of \"The Bear\") is a great model for how to truly be of service for any industry.",
     "primaryCta": {
@@ -189,7 +190,7 @@ window.PORTFOLIO_CONTENT = {
         "tag": "Service Design",
         "challenge": "Led the experience for a combined Netflix and Max streaming perk, removing ambiguity across partners, product, design, development, research, and marketing.",
         "bullets": [
-          "Role: Lead UX Designer transitioning into Principal leadership",
+          "Role: Lead/Principal Designer",
           "Scope: Partnered with Netflix, Max, product value, research, design, marketing, and other teams to shape the end-to-end digital experience",
           "Impact: Built a trusted cross-functional partnership from scratch and became a recognized design leader on the initiative."
         ],
@@ -200,7 +201,7 @@ window.PORTFOLIO_CONTENT = {
         "tag": "Service Design",
         "challenge": "Shaped the customer experience strategy for Verizon's Satellite to Device capability, building the cross-functional foundation to close coverage dead zones and support a beta launch.",
         "bullets": [
-          "Role: Principal Experience Designer",
+          "Role: Principal UX Designer",
           "Scope: Partnered with Experience Management, Value Proposition, and CMI research to shape the beta data collection journey and experience strategy.",
           "Impact: Built a trusted cross-functional partnership from scratch and became a recognized design leader on the initiative."
         ],
@@ -346,7 +347,7 @@ window.PORTFOLIO_CONTENT = {
     },
     "fcc-labels": {
       "title": "Build an end to end experience across channels, functions and business units",
-      "role": "Lead UX Designer / Principal Experience Designer",
+      "role": "Lead / Principal UX Designer",
       "timeline": "",
       "context": "FCC-mandated product labels required coordinated implementation across mobile and home product experiences.",
       "problem": "The team needed to satisfy compliance requirements while preserving usability, consistency, and trust across multiple channels.",
@@ -405,9 +406,9 @@ window.PORTFOLIO_CONTENT = {
     },
     "satellite-to-device": {
       "title": "Create a design strategy and journey map for a new service",
-      "role": "Principal Experience Designer",
+      "role": "Principal UXDesigner",
       "timeline": "",
-      "context": "Verizon's strategic ambition is to eliminate coverage dead zones and offer customers seamless connectivity through Satellite to Device — matching competitor offerings while protecting Verizon's network superiority, and earning the right to claim near-full USA satellite coverage.",
+      "context": "Verizon wanted to eliminate coverage dead zones and provide seamless connectivity through Satellite to Device — matching competitors, while protecting network superiority, and offering full satellite coverage.",
       "problem": "The initiative required alignment across multiple teams, some of whom had no prior working relationship, plus a solid experience strategy, supported by research, for the beta and production launch — all while translating a broad network capability into a clear customer offering.",
       "summaryImage": {
         "src": "assets/case-studies/satellite-to-device/summary-image.svg",
