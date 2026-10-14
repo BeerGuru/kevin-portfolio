@@ -23,8 +23,8 @@ window.PORTFOLIO_CONTENT = {
       },
       "hero": {
         "headline": "Senior product designer shaping intuitive digital brand experiences end-to-end - collaborating across research, content, business, and development.",
-        "subhead": "",  
-        "subheadHtml": "<ul><li>Drive strategic design vision: Led cross-functional teams spanning Product, CX, Development, Research, Marketing, and Legal to deliver high-impact digital experiences from discovery through production.</li><li>Co-create service strategy: Shaped the customer experience strategy for Verizon's Satellite to Device capability, building the cross-functional foundation to close coverage dead zones and support a beta launch.</li><li>Align stakeholders in ambiguous spaces: Defined end-to-end vision using storytelling and prototyping, driving consensus among executives and external partners.</li><li>Mentor junior designers, evaluate future patterns with the VDS (Verizon Design System), and evolve design processes; integrated generative AI tooling (Gemini, Claude Code, Copilot, Figma Make) into research, prototyping, and workflow improvement.</li></ul>",
+        "subhead": "",
+        "subheadHtml": "<ul><li>Drive strategic design vision: Led cross-functional teams spanning Product, CX, Development, Research, Marketing, and Legal to deliver high-impact digital experiences from discovery through production.</li><li>Co-create service strategy: Shaped the customer experience strategy for Verizon's Satellite to Device capability to close coverage dead zones and support a beta launch.</li><li>Align stakeholders in ambiguous spaces: Defined end-to-end vision using storytelling and prototyping, driving consensus among executives and external partners.</li><li>Mentor junior designers, evaluate future patterns with the VDS (Verizon Design System), and evolve design processes; integrated generative AI tooling (Gemini, Claude Code, Copilot, Figma Make) into research, prototyping, and workflow improvement.</li></ul>",
         "primaryCta": {
           "label": "View product work",
           "href": "#work"
@@ -94,7 +94,7 @@ window.PORTFOLIO_CONTENT = {
       },
       "hero": {
         "headline": "Senior product designer shaping intuitive digital brand experiences end-to-end - collaborating across research, content, business, and development.",
-        "subhead": "",  
+        "subhead": "",
         "subheadHtml": "<ul><li>Champion end-to-end design for complex mobile projects, solving problems strategically, and translating business goals and complex rules into intuitive digital solutions.</li><li>Drive cross-functional partnerships across channels and products.</li><li>Collaborate to solve for ambiguity - defining end-to-end design vision in complex product spaces using storytelling, research, and rapid prototyping to drive consensus with executive stakeholders and third-party partners.</li><li>Lead architectural and experience design for multi-channel digital solutions reaching tens of millions of users, partnering with business, design, and research teams.</li><li>Mentor junior designers, give feedback and critique, and evolve ways of working — typically with little direction.</li></ul>",
         "primaryCta": {
           "label": "View product work",
@@ -108,6 +108,29 @@ window.PORTFOLIO_CONTENT = {
           "myplan",
           "netmax",
           "satellite-to-device"
+        ]
+      }
+    },
+    "product2": {
+      "profile": {
+        "resumeHref": "kevin-trayner-resume-product2.pdf"
+      },
+      "hero": {
+        "headline": "Senior Product Designer crafting north-star product strategies and scalable systems that make complex workflows simple and intuitive.",
+        "subhead": "",
+        "subheadHtml": "<ul><li>Define long-term design vision for new services: Shaped customer experience strategy for Verizon's Satellite to Device capability.</li><li>Lead cross-functional product delivery with Product, CX, Development, Research, Marketing, and Legal teams from initial discovery through final production.</li><li>Revamp mobile plans architecture: Leveraged customer research and prototyping to develop, test, and launch a new product to differentiate Verizon in the market.</li><li>Resolve ambiguity and align stakeholders: Defined end-to-end design vision in ambiguous spaces using storytelling, research, and prototyping, driving consensus with executive stakeholders and third-party partners.</li><li>Mentor teams, identify design patterns, and evolve processes: Mentor junior designers, collaborate weekly with the Verizon Design System (VDS) team to define future patterns, and provide design critiques to advance organization-wide ways of working.</li></ul>",
+        "primaryCta": {
+          "label": "View product work",
+          "href": "#work"
+        },
+        "secondaryCta": ""
+      },
+      "work": {
+        "cases": [
+          "satellite-to-device",
+          "fcc-labels",
+          "protoresearch",
+          "netmax"
         ]
       }
     },
@@ -161,7 +184,7 @@ window.PORTFOLIO_CONTENT = {
   ],
   "hero": {
     "eyebrow": "",
-    "headline": "Strategic Experience Designer with 20+ years leading customer and internal experiences, always curious.",
+    "headline": "Senior Product Designer crafting north-star product strategies and scalable systems that make complex workflows simple and intuitive.",
     "subhead": "",
     "primaryCta": {
       "label": "View case studies",
@@ -196,7 +219,7 @@ window.PORTFOLIO_CONTENT = {
       {
         "id": "satellite-to-device",
         "tag": "Service Design",
-        "challenge": "Shaped the customer experience strategy for Verizon's Satellite to Device capability, building the cross-functional foundation to close coverage dead zones and support a beta launch.",
+        "challenge": "Shaped the customer experience strategy for Verizon's Satellite to Device capability to close coverage dead zones and support a beta launch.",
         "bullets": [
           "Scope: Partnered with Experience Management, Value Proposition, and CMI research to shape the beta data collection journey and experience strategy.",
           "Impact: Built a trusted cross-functional partnership from scratch and became a recognized design leader on the initiative."
@@ -222,6 +245,16 @@ window.PORTFOLIO_CONTENT = {
           "Impact: Addressed some of the friction points with current plans, and created direction for future plan development for customers’ unmet needs."
         ],
         "href": "case-study.html?case=research"
+      },
+      {
+        "id": "protoresearch",
+        "tag": "Research",
+        "challenge": "Use customer insights, prototyping and iteration to incrementally improve, then revamp our mobile plans architecture",
+        "bullets": [
+          "Scope: Researched and defined future mobile plans using customer co-creation and conjoint testing.",
+          "Impact: Addressed major friction points with current plans, and created a new plan to address customers' unmet needs."
+        ],
+        "href": "case-study.html?case=protoresearch"
       }
     ]
   },
@@ -457,7 +490,7 @@ window.PORTFOLIO_CONTENT = {
       "reflection": "This work was paused in 2026 due to organizational reorgs and reprioritization"
     },
     "netmax": {
-      "title": "Own and define the end-to-end experience, and remove ambiguity for a new streaming launch",
+      "title": "Own and define the experience, and remove ambiguity for a new streaming launch",
       "role": "Lead Experience Architect",
       "context": "Verizon launched a new streaming combo service that needed to fit the existing service model, satisfy our partners, and remain clear to customers.",
       "problem": "The combined service needed to feel like one product while still allowing customers to register, manage, and upgrade two separate subscriptions. Existing Verizon perk patterns did not fully support that model, and research showed that 80-90% of Verizon customers also overlapped with Netflix, making existing-subscription registration especially important to clarify. Additionally, customers needed to be able to upgrade their subscription, if they didn't want ads.",
@@ -513,7 +546,7 @@ window.PORTFOLIO_CONTENT = {
       "title": "Partner with research teams to influence strategic direction.",
       "role": "Role: Lead experience architect",
       "context": "Address current friction points in our mobile plans today. Identify opportunities for future direction of mobile plans to distinguish Verizon from the competition.",
-      "problem": "For the first release, we addressed plan clarity and understanding using our CMI (Customer Market Insights) team’s research - moderated, terminology, and card-sorting studies - alongside customer service feedback from \"Your Voice Matters\" to fix issues with layout and terminology.The second phase focused on uncovering unmet needs to differentiate Verizon. Starting with customer co-creation sessions and an AI-driven conjoint study to rank proposed and existing features, we developed and iteratively tested multiple prototypes. Partnering with an external agency, we tested two prototypes, using that feedback to hone the final launch experience.Overall, this was a 10–12 month initiative spanning two major plan releases.",
+      "problem": "For the first release, we addressed plan clarity and understanding using our research team’s findings - moderated, terminology, and card-sorting studies - alongside customer service feedback from \"Your Voice Matters\" to fix issues with layout and terminology. The second phase focused on uncovering unmet needs to differentiate Verizon. Starting with customer co-creation sessions and an AI-driven conjoint study to rank proposed and existing features, we developed and iteratively tested multiple prototypes. Partnering with an external agency, we tested two prototypes, using that feedback to hone the final launch experience. Overall, this was a 10–12 month initiative spanning two major plan releases.",
       "summaryImage": {
         "src": "assets/case-studies/research/summary-image.png",
         "alt": "Research informing design direction and confirming results"
@@ -536,7 +569,68 @@ window.PORTFOLIO_CONTENT = {
         {
           "src": "assets/case-studies/research/Research artifact3.png",
           "alt": "Design principles derived from research",
-          "caption": "Updating plans based on clarity research - updated terminology, clearer visual separation of core and other features, reduced tagline, and carets which allowed customers to see feature details in context (previously there was only one link for all details)."
+          "caption": "Updating plans based on clarity research - updated terminology, clearer visual separation of core and other features, reduced tagline, and addition of carets which allowed customers to see feature details in context (previously there was only one link for all details)."
+        },
+        {
+          "src": "assets/case-studies/research/Research artifact_mp3.png",
+          "alt": "Design principles derived from research",
+          "caption": "Surfacing core, unmet needs of the customer in co-creation session."
+        },
+        {
+          "src": "assets/case-studies/research/Research artifact_mp4.png",
+          "alt": "Design principles derived from research",
+          "caption": "One of the early concepts we tested - choice of basic and premium plan, and choice of basic and premium perks which you could swap out. All of the concepts focused on highlighting choice and control for the customer."
+        },
+        {
+          "src": "assets/case-studies/research/Research artifact_mp5.png",
+          "alt": "Design principles derived from research",
+          "caption": "Post plan research shows new plans are a clear improvement over legacy, but we can do even better."
+        }
+      ],
+      "decisions": [
+        {
+          "title": "Research can change the opinion of leadership",
+          "detail": "One of the biggest challenges was pushing back on the language of the current plans, which was created by business and marketing and blessed by leadership. Even though design (and some of the business team) agreed that the language could be more customer-forward, some of the copy had been around for a while and liked by leadership, who was somewhat reluctant to change it. We could not have done this without the support of the research team and their data. That was the push we needed to get leadership buy-in."
+        },
+        {
+          "title": "Customer-driven features win over business-driven features for both the business and customer",
+          "detail": "Our product cadence can be a constant cycle of conflicts  - we need a new thing that will increase revenue, but also don’t change things too much, because we don’t want to alienate customers, and need to get to market quickly. As a result, we often move quickly based on hunches (not research) and don’t substantially change our offerings, or process. If we wanted to truly create a product that customers really wanted, and also would distinguish us in the market - we needed to be bold. We were able to get the OK to start 6-8 months before the release (typically it was 1-2.5 months max from definition to implementation). We were able to test our hunches and research deeply customer’s unmet needs. Additionally, we were able to create and test multiple concepts, and verify with customers at several points."
+        }
+      ],
+      "outcomes": [
+        "Greater alignment among business, design and other teams that customer-driven experiences work for the customer and business.",
+        "We saw a better understanding from customers, which was reflected in better conversion and premium mix rates.",
+        "Through uncovering our customers' deep needs and friction points, we came up with the direction for a new value proposition for plans that differentiated Verizon in the market. This work paved the way for the Simplicity plan, which is even more radically rooted in a customer-driven experience (elimination of key fees, simpler plan features, cheaper base price) ."
+      ]
+    },
+    "protoresearch": {
+      "title": "Revamp mobile plans architecture to differentiate Verizon in the market",
+      "role": "Role: Lead experience architect",
+      "context": "Address current friction points in our mobile plans today. Leverage customer research and prototyping to develop, test, and launch a new kind of plan to differentiate Verizon in the market.", 
+      "problem": "For the first release, we addressed plan clarity and understanding using our research team’s findings - moderated, terminology, and card-sorting studies - alongside customer service feedback from \"Your Voice Matters\" to fix issues with layout and terminology. The second phase focused on uncovering unmet needs to differentiate Verizon. Starting with customer co-creation sessions and an AI-driven conjoint study to rank proposed and existing features, we developed and iteratively tested multiple prototypes. Partnering with an external agency, we tested two prototypes, using that feedback to hone the final launch experience. Overall, this was a 10–12 month initiative spanning two major plan releases.",
+      "summaryImage": {
+        "src": "assets/case-studies/research/summary-image.png",
+        "alt": "Research informing design direction and confirming results"
+      },
+      "approach": [
+        "In Phase 1, we partnered with research to identify clarity issues through a broad moderated study, and then through terminology, and categorization studies. We redesigned current plans to address these pain points, spot-tested and iterated, and validated the final design with a follow-up moderated study.",
+        "In Phase 2, we set out to uncover unmet market needs. We started with an in-person co-creation session with customers, research, business and agency partners. Based on the direction from that session, we designed and tested 8–10 conceptual prototypes with 400–500 customers. We then integrated high-ranking features from our annual AI-driven conjoint study and partnered with an agency to build and test two full-experience prototypes. The findings shaped our final design, which launched as myPlans and remains our best-selling plan in market today."
+      ],
+      "images": [
+        {
+          "src": "assets/case-studies/research/Research artifact1.png",
+          "alt": "Research methodology framework",
+          "caption": "Phase 1: Our plan terminology is not easily understood by customers, causing issues with transparency and trust."
+        },
+        {
+          "src": "assets/case-studies/research/Research artifact2.png",
+          "alt": "User journey map based on research findings",
+          "caption": "Current state journey map highlighting pain points"
+        },
+        {
+          "src": "assets/case-studies/research/Research artifact3.png",
+          "alt": "Design principles derived from research",
+          "caption": "Updating plans based on clarity research - updated terminology, clearer visual separation of core and other features, reduced tagline, and addition of carets which allowed customers to see feature details in context (previously there was only one link for all details)."
         },
         {
           "src": "assets/case-studies/research/Research artifact_mp3.png",
