@@ -548,7 +548,7 @@ window.PORTFOLIO_CONTENT = {
       "context": "Address current friction points in our mobile plans today. Identify opportunities for future direction of mobile plans to distinguish Verizon from the competition.",
       "problem": "For the first release, we addressed plan clarity and understanding using our research team’s findings - moderated, terminology, and card-sorting studies - alongside customer service feedback from \"Your Voice Matters\" to fix issues with layout and terminology. The second phase focused on uncovering unmet needs to differentiate Verizon. Starting with customer co-creation sessions and an AI-driven conjoint study to rank proposed and existing features, we developed and iteratively tested multiple prototypes. Partnering with an external agency, we tested two prototypes, using that feedback to hone the final launch experience. Overall, this was a 10–12 month initiative spanning two major plan releases.",
       "summaryImage": {
-        "src": "assets/case-studies/research/summary-image.png",
+        "src": "assets/case-studies/research/summary-image2.png",
         "alt": "Research informing design direction and confirming results"
       },
       "approach": [
@@ -609,7 +609,7 @@ window.PORTFOLIO_CONTENT = {
       "context": "Address current friction points in our mobile plans today. Leverage customer research and prototyping to develop, test, and launch a new kind of plan to differentiate Verizon in the market.", 
       "problem": "For the first release, we addressed plan clarity and understanding using our research team’s findings - moderated, terminology, and card-sorting studies - alongside customer service feedback from \"Your Voice Matters\" to fix issues with layout and terminology. The second phase focused on uncovering unmet needs to differentiate Verizon. Starting with customer co-creation sessions and an AI-driven conjoint study to rank proposed and existing features, we developed and iteratively tested multiple prototypes. Partnering with an external agency, we tested two prototypes, using that feedback to hone the final launch experience. Overall, this was a 10–12 month initiative spanning two major plan releases.",
       "summaryImage": {
-        "src": "assets/case-studies/research/summary-image.png",
+        "src": "assets/case-studies/research/summary-image2.png",
         "alt": "Research informing design direction and confirming results"
       },
       "approach": [
