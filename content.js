@@ -134,25 +134,25 @@ window.PORTFOLIO_CONTENT = {
         ]
       }
     },
-    "service-design": {
+    "staff": {
       "profile": {
-        "resumeHref": "kevin-trayner-resume-service-design.pdf"
+        "resumeHref": "kevin-trayner-resume-staff.pdf"
       },
       "hero": {
-        "headline": "Service designer shaping end-to-end journeys across business, product, and customer touchpoints.",
+        "headline": "Senior Product Designer working cross-functionally to build impactful designs that make complex workflows simple and frictionless.",
         "subhead": "",
-        "primaryCta": {
-          "label": "Explore service design",
-          "href": "#work"
+        "subheadHtml": "<ul><li>Explore and solution a new design strategy to innovate Verizon's Satellite to Device capability.</li><li>Use customer insights, prototyping and iteration to incrementally improve, then revamp our mobile plans architecture</li><li>Work strategically from high level vision to detail design experience across multiple channels, products and teams.</li><li>Mentor teams, identify design patterns, and evolve processes: Mentor junior designers, collaborate weekly with the Verizon Design System (VDS) team to define future patterns, and provide design critiques to advance organization-wide ways of working.</li><li>Incorporate AI into design work: Use agentic and generative AI (Gemini, Claude Code, Copilot, Figma Make) strategically to make work flow better - brief creation, journey mapping, prototyping, research, and more - but keep the human in the lead. </li></ul>",        "primaryCta": {
+        "label": "Explore staff designer",
+        "href": "#work"
         },
         "secondaryCta": ""
       },
       "work": {
         "cases": [
-          "netmax",
           "satellite-to-device",
-          "myplan",
-          "fcc-labels"
+          "protoresearch",
+          "fcc-labels",
+          "netmax"
         ]
       }
     }
