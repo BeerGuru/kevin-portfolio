@@ -434,7 +434,7 @@ window.PORTFOLIO_CONTENT = {
       "context": "Verizon wanted to eliminate coverage dead zones and provide seamless connectivity through Satellite to Device — matching competitors, while protecting network superiority, and offering full satellite coverage.",
       "problem": "The initiative required alignment across multiple teams, some of whom had no prior working relationship, plus a solid experience strategy, supported by research, for the beta and production launch — all while translating a broad network capability into a clear customer offering.",
       "summaryImage": {
-        "src": "assets/case-studies/satellite-to-device/summary-image.svg",
+        "src": "assets/case-studies/satellite-to-device/summary-image.jpg",
         "alt": "Satellite to Device summary banner"
       },
       "approach": [
