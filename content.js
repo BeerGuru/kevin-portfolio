@@ -141,10 +141,11 @@ window.PORTFOLIO_CONTENT = {
       "hero": {
         "headline": "Senior Product Designer working cross-functionally to build impactful designs that make complex workflows simple and frictionless.",
         "subhead": "",
-        "subheadHtml": "<ul><li>Explore and solution a new design strategy to innovate Verizon's Satellite to Device capability.</li><li>Use customer insights, prototyping and iteration to incrementally improve, then revamp our mobile plans architecture</li><li>Work strategically from high level vision to detail design experience across multiple channels, products and teams.</li><li>Mentor teams, identify design patterns, and evolve processes: Mentor junior designers, collaborate weekly with the Verizon Design System (VDS) team to define future patterns, and provide design critiques to advance organization-wide ways of working.</li><li>Incorporate AI into design work: Use agentic and generative AI (Gemini, Claude Code, Copilot, Figma Make) strategically to make work flow better - brief creation, journey mapping, prototyping, research, and more - but keep the human in the lead. </li></ul>",        "primaryCta": {
-        "label": "Explore staff designer",
+        "subheadHtml": "<ul><li>Explore and solution a new design strategy to innovate Verizon's Satellite to Device capability.</li><li>Use customer insights, prototyping and iteration to incrementally improve, then revamp our mobile plans architecture</li><li>Work strategically from high level vision to detail design experience across multiple channels, products and teams.</li><li>Mentor teams, identify design patterns, and evolve processes: Mentor junior designers, collaborate weekly with the Verizon Design System (VDS) team to define future patterns, and provide design critiques to advance organization-wide ways of working.</li><li>Incorporate AI into design work: Use agentic and generative AI (Gemini, Claude Code, Copilot, Figma Make) strategically to make work flow better - brief creation, journey mapping, prototyping, research, and more - but keep the human in the lead. </li></ul>",
+        "primaryCta": {
+        "label": "View product work",
         "href": "#work"
-        },
+      },
         "secondaryCta": ""
       },
       "work": {
@@ -155,6 +156,29 @@ window.PORTFOLIO_CONTENT = {
           "netmax"
         ]
       }
+    },
+    "bizanalyst": {
+      "profile": {
+        "resumeHref": "kevin-trayner-resume-bizanalyst.pdf"
+      },
+      "hero": {
+      "headline": "Senior Product Designer bridging enterprise business goals, complex systems, and intuitive design to deliver high-impact digital solutions.",        
+      "subhead": "",
+      "subheadHtml": "<ul><li>Collaborate with multiple teams and align stakeholders to create an end-to-end product vision in an ambiguous space using compelling storytelling, research, and prototyping.</li><li>Use customer insights, prototyping and iteration to incrementally improve, then revamp product architecture.</li><li>Work strategically from high level vision through detailed experiences across multiple channels, products and teams.</li><li>Mentor CX and design teams within the organization, work in an Agile ecosystem, and evolve our ways of working and processes in the broader organization. </li><li>Incorporate AI into my everyday work strategically to improve work flow - brief creation, research, competitive analysis, requirements definition/identifying gaps, prototyping, and more - but keep the human in the lead.</li></ul>",
+      "primaryCta": {
+      "label": "View product work",
+      "href": "#work"
+      },
+        "secondaryCta": ""
+      },
+      "work": {
+        "cases": [
+          "netmax",
+          "protoresearch",
+          "fcc-labels",
+          "satellite-to-device"
+        ]
+      },
     }
   },
   "profile": {
