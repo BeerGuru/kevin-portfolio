@@ -141,7 +141,8 @@ window.PORTFOLIO_CONTENT = {
       "hero": {
         "headline": "Principal Product Designer and Experience Architect, grounded in research, making complex enterprise ecosystems into clear, human-centered experiences.",
         "subhead": "",
-        "subheadHtml": "<ul><li> <b> Use research, prototyping, early testing and iteration to incrementally improve, then revamp our mobile plans architecture.</b> </li><li> <b>Create a design strategy, beta test plan and journey map for a new service.</b> </li><li> <b>Partner with business, developers, designers, CX, and legal from high level vision to detail design experience across multiple channels, products and teams.</b> </li><li> <b>Champion design craft and organization-wide process:</b> Mentor junior designers, partner weekly with the Verizon Design System (VDS) team to identify and build forward-looking patterns, work with the accessibility team to ensure compliance in patterns, and lead design critiques to continually elevate team standards and ways of working. </li><li> <b> Incorporate AI into design work:</b> Use agentic and generative AI (Gemini, Claude Code, Copilot, Figma Make) strategically to make work flow better - brief creation, competitive analysis, journey mapping, prototyping, research, and more - but keep the human in the lead. </li></ul>",        "primaryCta": {
+        "subheadHtml": "<ul><li> <b> Use research, prototyping, early testing and iteration to incrementally improve, then revamp our mobile plans architecture.</b> </li><li> <b>Create a design strategy, beta test plan and journey map for a new service.</b> </li><li> <b>Partner with business, developers, designers, CX, and legal from high level vision to detail design experience across multiple channels, products and teams.</b> </li><li> <b>Champion design craft and organization-wide process:</b> Mentor junior designers, partner weekly with the Verizon Design System (VDS) team to identify and build forward-looking patterns, work with the accessibility team to ensure compliance in patterns, and lead design critiques to continually elevate team standards and ways of working. </li><li> <b> Incorporate AI into design work:</b> Use agentic and generative AI (Gemini, Claude Code, Copilot, Figma Make) strategically to make work flow better - brief creation, competitive analysis, journey mapping, prototyping, research, and more - but keep the human in the lead. </li></ul>",        
+        "primaryCta": {
           "label": "View product work",
           "href": "#work"
         },
@@ -153,6 +154,29 @@ window.PORTFOLIO_CONTENT = {
           "satellite-to-device",
           "fcc-labels",
           "netmax"
+        ]
+      }
+    },
+    "appdesign": {
+      "profile": {
+        "resumeHref": "kevin-trayner-resume-appdesign.pdf"
+      },
+      "hero": {
+        "headline": "Principal Product Designer and Experience Architect specializing in untangling complex enterprise ecosystems and shaping scalable, human-centered mobile experiences.",        "subhead": "",
+        "subheadHtml": "<ul><li> <b> Use research, prototyping, early testing and iteration to incrementally improve, then revamp our mobile plans architecture.</b> </li> <li> <b> Led design strategy and alignment through storytelling, research, and rapid prototyping to turn ambiguous problems into clear design visions.</b> </li> <li> <b>Create a product design strategy, beta test plan and journey map for a new service to fit into, and expand the existing Satellite ecosystem.</b> </li> <li> <b>Partner with business, developers, designers, CX, and legal from high level vision to detail design experience across multiple channels, products and teams.</b></li><li> <b>Champion design craft and organization-wide process:</b> Mentor junior designers, partner weekly with the Verizon Design System (VDS) team to identify and build forward-looking patterns, work with the accessibility team to ensure compliance in patterns, and lead design critiques to continually elevate team standards and ways of working. </li><li> <b> Incorporate AI into design work:</b> Use agentic and generative AI (Gemini, Claude Code, Copilot, Figma Make) strategically to make work flow better - brief creation, competitive analysis, journey mapping, prototyping, research, and more - but keep the human in the lead. </li></ul>",         
+        "primaryCta": {
+          "label": "View product work",
+          "href": "#work"
+        },
+        "secondaryCta": ""
+      },
+      "work": {
+        "cases": [
+          "protoresearch",
+          "netmax",
+          "satellite-to-device",
+          "fcc-labels",
+
         ]
       }
     },
