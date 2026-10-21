@@ -137,54 +137,6 @@ function renderHeader(navBase = '') {
   }
 }
 
-function isDebugModeEnabled() {
-  const params = new URLSearchParams(window.location.search);
-  return params.get('debug') === 'true';
-}
-
-function renderVariantSelector() {
-  if (!isDebugModeEnabled()) return;
-
-  const wrapper = document.getElementById('variant-picker-wrap');
-  const variants = window.PORTFOLIO_CONTENT && window.PORTFOLIO_CONTENT.variants
-    ? Object.keys(window.PORTFOLIO_CONTENT.variants)
-    : [];
-
-  if (!wrapper || variants.length === 0) return;
-
-  const currentVariant = new URLSearchParams(window.location.search).get('variant') || 'main';
-
-  wrapper.innerHTML = `
-    <label class="variant-picker" for="variant-select">
-      <span>Variant</span>
-      <select id="variant-select" aria-label="Select portfolio variant">
-        ${variants
-          .map(
-            (variant) =>
-              `<option value="${escapeHtml(variant)}" ${variant === currentVariant ? 'selected' : ''}>${escapeHtml(variant)}</option>`
-          )
-          .join('')}
-      </select>
-    </label>
-  `;
-
-  const select = document.getElementById('variant-select');
-  if (!select) return;
-
-  select.addEventListener('change', (event) => {
-    const nextVariant = event.target.value;
-    const url = new URL(window.location.href);
-
-    if (nextVariant === 'main') {
-      url.searchParams.delete('variant');
-    } else {
-      url.searchParams.set('variant', nextVariant);
-    }
-
-    window.location.href = url.toString();
-  });
-}
-
 function renderContact() {
   const kicker = document.getElementById('contact-kicker');
   const heading = document.getElementById('contact-heading');

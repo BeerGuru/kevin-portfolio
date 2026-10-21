@@ -134,6 +134,28 @@ window.PORTFOLIO_CONTENT = {
         ]
       }
     },
+    "research": {
+      "profile": {
+        "resumeHref": "kevin-trayner-resume-research.pdf"
+      },
+      "hero": {
+        "headline": "Principal Product Designer and Experience Architect, grounded in research, making complex enterprise ecosystems into clear, human-centered experiences.",
+        "subhead": "",
+        "subheadHtml": "<ul><li> <b> Use research, prototyping, early testing and iteration to incrementally improve, then revamp our mobile plans architecture.</b> </li><li> <b>Create a design strategy, beta test plan and journey map for a new service.</b> </li><li> <b>Partner with business, developers, designers, CX, and legal from high level vision to detail design experience across multiple channels, products and teams.</b> </li><li> <b>Champion design craft and organization-wide process:</b> Mentor junior designers, partner weekly with the Verizon Design System (VDS) team to identify and build forward-looking patterns, work with the accessibility team to ensure compliance in patterns, and lead design critiques to continually elevate team standards and ways of working. </li><li> <b> Incorporate AI into design work:</b> Use agentic and generative AI (Gemini, Claude Code, Copilot, Figma Make) strategically to make work flow better - brief creation, competitive analysis, journey mapping, prototyping, research, and more - but keep the human in the lead. </li></ul>",        "primaryCta": {
+          "label": "View product work",
+          "href": "#work"
+        },
+        "secondaryCta": ""
+      },
+      "work": {
+        "cases": [
+          "protoresearch",
+          "satellite-to-device",
+          "fcc-labels",
+          "netmax"
+        ]
+      }
+    },
     "staff": {
       "profile": {
         "resumeHref": "kevin-trayner-resume-staff.pdf"
@@ -143,9 +165,9 @@ window.PORTFOLIO_CONTENT = {
         "subhead": "",
         "subheadHtml": "<ul><li>Explore and solution a new design strategy to innovate Verizon's Satellite to Device capability.</li><li>Use customer insights, prototyping and iteration to incrementally improve, then revamp our mobile plans architecture</li><li>Work strategically from high level vision to detail design experience across multiple channels, products and teams.</li><li>Mentor teams, identify design patterns, and evolve processes: Mentor junior designers, collaborate weekly with the Verizon Design System (VDS) team to define future patterns, and provide design critiques to advance organization-wide ways of working.</li><li>Incorporate AI into design work: Use agentic and generative AI (Gemini, Claude Code, Copilot, Figma Make) strategically to make work flow better - brief creation, journey mapping, prototyping, research, and more - but keep the human in the lead. </li></ul>",
         "primaryCta": {
-        "label": "View product work",
-        "href": "#work"
-      },
+          "label": "View product work",
+          "href": "#work"
+        },
         "secondaryCta": ""
       },
       "work": {
@@ -162,13 +184,13 @@ window.PORTFOLIO_CONTENT = {
         "resumeHref": "kevin-trayner-resume-bizanalyst.pdf"
       },
       "hero": {
-      "headline": "Senior Product Designer bridging enterprise business goals, complex systems, and intuitive design to deliver high-impact digital solutions.",        
-      "subhead": "",
-      "subheadHtml": "<ul><li>Collaborate with multiple teams and align stakeholders to create an end-to-end product vision in an ambiguous space using compelling storytelling, research, and prototyping.</li><li>Use customer insights, prototyping and iteration to incrementally improve, then revamp product architecture.</li><li>Work strategically from high level vision through detailed experiences across multiple channels, products and teams.</li><li>Mentor CX and design teams within the organization, work in an Agile ecosystem, and evolve our ways of working and processes in the broader organization. </li><li>Incorporate AI into my everyday work strategically to improve work flow - brief creation, research, competitive analysis, requirements definition/identifying gaps, prototyping, and more - but keep the human in the lead.</li></ul>",
-      "primaryCta": {
-      "label": "View product work",
-      "href": "#work"
-      },
+        "headline": "Senior Product Designer bridging enterprise business goals, complex systems, and intuitive design to deliver high-impact digital solutions.",
+        "subhead": "",
+        "subheadHtml": "<ul><li>Collaborate with multiple teams and align stakeholders to create an end-to-end product vision in an ambiguous space using compelling storytelling, research, and prototyping.</li><li>Use customer insights, prototyping and iteration to incrementally improve, then revamp product architecture.</li><li>Work strategically from high level vision through detailed experiences across multiple channels, products and teams.</li><li>Mentor CX and design teams within the organization, work in an Agile ecosystem, and evolve our ways of working and processes in the broader organization. </li><li>Incorporate AI into my everyday work strategically to improve work flow - brief creation, research, competitive analysis, requirements definition/identifying gaps, prototyping, and more - but keep the human in the lead.</li></ul>",
+        "primaryCta": {
+          "label": "View product work",
+          "href": "#work"
+        },
         "secondaryCta": ""
       },
       "work": {
@@ -178,7 +200,7 @@ window.PORTFOLIO_CONTENT = {
           "fcc-labels",
           "satellite-to-device"
         ]
-      },
+      }
     }
   },
   "profile": {
@@ -208,7 +230,7 @@ window.PORTFOLIO_CONTENT = {
   ],
   "hero": {
     "eyebrow": "",
-    "headline": "Senior Product Designer crafting north-star product strategies and scalable systems that make complex workflows simple and intuitive.",
+    "headline": "Principal Product Designer and Experience Architect, grounded in research, making complex enterprise ecosystems into clear, human-centered experiences.",
     "subhead": "",
     "primaryCta": {
       "label": "View case studies",
@@ -630,7 +652,7 @@ window.PORTFOLIO_CONTENT = {
     "protoresearch": {
       "title": "Revamp mobile plans architecture to differentiate Verizon in the market",
       "role": "Role: Lead experience architect",
-      "context": "Address current friction points in our mobile plans today. Leverage customer research and prototyping to develop, test, and launch a new kind of plan to differentiate Verizon in the market.", 
+      "context": "Address current friction points in our mobile plans today. Leverage customer research and prototyping to develop, test, and launch a new kind of plan to differentiate Verizon in the market.",
       "problem": "For the first release, we addressed plan clarity and understanding using our research team’s findings - moderated, terminology, and card-sorting studies - alongside customer service feedback from \"Your Voice Matters\" to fix issues with layout and terminology. The second phase focused on uncovering unmet needs to differentiate Verizon. Starting with customer co-creation sessions and an AI-driven conjoint study to rank proposed and existing features, we developed and iteratively tested multiple prototypes. Partnering with an external agency, we tested two prototypes, using that feedback to hone the final launch experience. Overall, this was a 10–12 month initiative spanning two major plan releases.",
       "summaryImage": {
         "src": "assets/case-studies/research/summary-image2.png",
