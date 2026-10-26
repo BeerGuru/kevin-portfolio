@@ -46,15 +46,15 @@ function getAdjacentCaseIds(caseId) {
   };
 }
 
-function renderCaseHero(caseStudy, caseId) {
+function renderCaseHero(caseStudy, caseId, displayCaseId) {
   const hero = document.getElementById('case-hero');
   if (!hero) return;
 
-  const { prevId, nextId, prevHref, nextHref } = getAdjacentCaseIds(caseId);
+  const { prevId, nextId, prevHref, nextHref } = getAdjacentCaseIds(displayCaseId);
 
   hero.innerHTML = `
     <p class="eyebrow">Case Study</p>
-    <h1 data-edit="caseStudies.${caseId}.title">${escapeHtml(caseStudy.title)}</h1>
+    <h1 data-edit="caseStudies.${displayCaseId}.title">${escapeHtml(caseStudy.title)}</h1>
     <div class="case-study-nav" aria-label="Case study navigation">
       ${prevId ? `<a class="btn btn-ghost" href="${prevHref}" aria-label="Previous case study">&larr; Previous</a>` : `<span class="btn btn-ghost btn-disabled" aria-disabled="true">&larr; Previous</span>`}
 <a class="btn btn-text" href="${urlWithVariant('index.html#work')}">Back to Selected Work</a>
@@ -63,22 +63,22 @@ function renderCaseHero(caseStudy, caseId) {
   `;
 }
 
-function renderCaseContext(caseStudy, caseId) {
+function renderCaseContext(caseStudy, displayCaseId) {
   const section = document.getElementById('case-context');
   if (!section) return;
 
   section.innerHTML = `
     <div class="section-head">
       <p class="section-kicker">Context</p>
-      <h2 data-edit="caseStudies.${caseId}.context">${escapeHtml(caseStudy.context)}</h2>
+      <h2 data-edit="caseStudies.${displayCaseId}.context">${escapeHtml(caseStudy.context)}</h2>
     </div>
     <article class="about-card">
-      <p data-edit="caseStudies.${caseId}.problem">${escapeHtml(caseStudy.problem)}</p>
+      <p data-edit="caseStudies.${displayCaseId}.problem">${escapeHtml(caseStudy.problem)}</p>
     </article>
   `;
 }
 
-function renderCaseGallery(caseStudy, caseId) {
+function renderCaseGallery(caseStudy, displayCaseId) {
   const section = document.getElementById('case-gallery');
   if (!section) return;
 
@@ -101,7 +101,7 @@ function renderCaseGallery(caseStudy, caseId) {
             <button type="button" class="case-gallery-thumb" data-gallery-index="${index}">
               <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt || '')}" loading="lazy" />
             </button>
-            <figcaption data-edit="caseStudies.${caseId}.images[${index}].caption">${escapeHtml(image.caption || '')}</figcaption>
+            <figcaption data-edit="caseStudies.${displayCaseId}.images[${index}].caption">${escapeHtml(image.caption || '')}</figcaption>
           </figure>
         `
         )
@@ -204,7 +204,7 @@ function setupLightbox() {
   });
 }
 
-function renderCaseApproach(caseStudy, caseId) {
+function renderCaseApproach(caseStudy, displayCaseId) {
   const section = document.getElementById('case-approach');
   if (!section) return;
 
@@ -218,7 +218,7 @@ function renderCaseApproach(caseStudy, caseId) {
         ${caseStudy.approach
           .map(
             (step, index) =>
-              `<li data-edit="caseStudies.${caseId}.approach[${index}]">${escapeHtml(step)}</li>`
+              `<li data-edit="caseStudies.${displayCaseId}.approach[${index}]">${escapeHtml(step)}</li>`
           )
           .join('')}
       </ul>
@@ -226,7 +226,7 @@ function renderCaseApproach(caseStudy, caseId) {
   `;
 }
 
-function renderCaseDecisions(caseStudy, caseId) {
+function renderCaseDecisions(caseStudy, displayCaseId) {
   const section = document.getElementById('case-decisions');
   if (!section) return;
 
@@ -240,8 +240,8 @@ function renderCaseDecisions(caseStudy, caseId) {
         .map(
           (item, index) => `
           <article>
-            <h3 data-edit="caseStudies.${caseId}.decisions[${index}].title">${escapeHtml(item.title)}</h3>
-            <p data-edit="caseStudies.${caseId}.decisions[${index}].detail">${escapeHtml(item.detail)}</p>
+            <h3 data-edit="caseStudies.${displayCaseId}.decisions[${index}].title">${escapeHtml(item.title)}</h3>
+            <p data-edit="caseStudies.${displayCaseId}.decisions[${index}].detail">${escapeHtml(item.detail)}</p>
           </article>
         `
         )
@@ -250,7 +250,7 @@ function renderCaseDecisions(caseStudy, caseId) {
   `;
 }
 
-function renderCaseOutcomes(caseStudy, caseId) {
+function renderCaseOutcomes(caseStudy, displayCaseId) {
   const section = document.getElementById('case-outcomes');
   if (!section) return;
 
@@ -264,10 +264,10 @@ function renderCaseOutcomes(caseStudy, caseId) {
         ${caseStudy.outcomes
           .map(
             (item, index) =>
-              `<li data-edit="caseStudies.${caseId}.outcomes[${index}]">${escapeHtml(item)}</li>`
+              `<li data-edit="caseStudies.${displayCaseId}.outcomes[${index}]">${escapeHtml(item)}</li>`
           )
           .join('')}
-        ${caseStudy.reflection ? `<li data-edit="caseStudies.${caseId}.reflection">${richText(caseStudy.reflection)}</li>` : ''}
+        ${caseStudy.reflection ? `<li data-edit="caseStudies.${displayCaseId}.reflection">${richText(caseStudy.reflection)}</li>` : ''}
       </ul>
     </div>
     <p style="margin-top: 1.5rem;"><a class="btn btn-text" href="${urlWithVariant('index.html#work')}">&larr; Back to Selected Work</a></p>
@@ -276,7 +276,29 @@ function renderCaseOutcomes(caseStudy, caseId) {
 
 function init() {
   const caseId = getCaseIdFromQuery();
-  const caseStudy = caseId ? content.caseStudies[caseId] : null;
+  // Alias mapping: old case study names resolve to current names
+  const caseStudyAliases = {
+    'protoresearch': 'research'
+  };
+  let caseStudy = caseId ? content.caseStudies[caseId] : null;
+  let displayCaseId = caseId;
+  if (!caseStudy && caseStudyAliases[caseId]) {
+    caseStudy = content.caseStudies[caseStudyAliases[caseId]];
+    displayCaseId = caseStudyAliases[caseId];
+  }
+  if (!caseStudy) {
+    applySeo(
+      'Case Study Not Found | ' + content.profile.name,
+      'This case study could not be found.',
+      'Case Study Not Found',
+      'This case study could not be found.'
+    );
+    renderNotFound();
+    renderContact();
+    renderFooter();
+    setupReveal();
+    return;
+  }
 
   renderHeader('index.html');
 
@@ -300,12 +322,12 @@ function init() {
     caseStudy.title,
     caseStudy.context || caseStudy.problem || ''
   );
-  renderCaseHero(caseStudy, caseId);
-  renderCaseContext(caseStudy, caseId);
-  renderCaseGallery(caseStudy, caseId);
-  renderCaseApproach(caseStudy, caseId);
-  renderCaseDecisions(caseStudy, caseId);
-  renderCaseOutcomes(caseStudy, caseId);
+  renderCaseHero(caseStudy, caseId, displayCaseId);
+  renderCaseContext(caseStudy, displayCaseId);
+  renderCaseGallery(caseStudy, displayCaseId);
+  renderCaseApproach(caseStudy, displayCaseId);
+  renderCaseDecisions(caseStudy, displayCaseId);
+  renderCaseOutcomes(caseStudy, displayCaseId);
   renderContact();
   renderFooter();
   setupReveal();

@@ -57,10 +57,11 @@ window.PORTFOLIO_CONTENT = {
       "work": {
         "cases": [
           "myplan",
+          "research",
+          "protoresearch",
           "fcc-labels",
           "netmax",
-          "satellite-to-device",
-          "research"
+          "satellite-to-device"
         ]
       }
     },
@@ -175,7 +176,7 @@ window.PORTFOLIO_CONTENT = {
           "protoresearch",
           "netmax",
           "satellite-to-device",
-          "fcc-labels",
+          "fcc-labels"
 
         ]
       }
@@ -309,10 +310,10 @@ window.PORTFOLIO_CONTENT = {
       {
         "id": "research",
         "tag": "Research",
-        "challenge": "Influence strategic direction, turn research and data into actionable insights, and measure design impacts post launch for our mobile plans.",
+        "challenge": "Use customer insights, prototyping and iteration to incrementally improve, then revamp our mobile plans architecture",
         "bullets": [
           "Scope: Researched and defined future mobile plans using customer co-creation and conjoint testing.",
-          "Impact: Addressed some of the friction points with current plans, and created direction for future plan development for customers’ unmet needs."
+          "Impact: Addressed major friction points with current plans, and created a new plan to address customers' unmet needs."
         ],
         "href": "case-study.html?case=research"
       },
@@ -613,67 +614,6 @@ window.PORTFOLIO_CONTENT = {
       "reflection": ""
     },
     "research": {
-      "title": "Partner with research teams to influence strategic direction.",
-      "role": "Role: Lead experience architect",
-      "context": "Address current friction points in our mobile plans today. Identify opportunities for future direction of mobile plans to distinguish Verizon from the competition.",
-      "problem": "For the first release, we addressed plan clarity and understanding using our research team’s findings - moderated, terminology, and card-sorting studies - alongside customer service feedback from \"Your Voice Matters\" to fix issues with layout and terminology. The second phase focused on uncovering unmet needs to differentiate Verizon. Starting with customer co-creation sessions and an AI-driven conjoint study to rank proposed and existing features, we developed and iteratively tested multiple prototypes. Partnering with an external agency, we tested two prototypes, using that feedback to hone the final launch experience. Overall, this was a 10–12 month initiative spanning two major plan releases.",
-      "summaryImage": {
-        "src": "assets/case-studies/research/summary-image2.png",
-        "alt": "Research informing design direction and confirming results"
-      },
-      "approach": [
-        "In Phase 1, we partnered with research to identify clarity issues through a broad moderated study, and then through terminology, and categorization studies. We redesigned current plans to address these pain points, spot-tested and iterated, and validated the final design with a follow-up moderated study.",
-        "In Phase 2, we set out to uncover unmet market needs. We started with an in-person co-creation session with customers, research, business and agency partners. Based on the direction from that session, we designed and tested 8–10 conceptual prototypes with 400–500 customers. We then integrated high-ranking features from our annual AI-driven conjoint study and partnered with an agency to build and test two full-experience prototypes. The findings shaped our final design, which launched as myPlans and remains our best-selling plan in market today."
-      ],
-      "images": [
-        {
-          "src": "assets/case-studies/research/Research artifact1.png",
-          "alt": "Research methodology framework",
-          "caption": "Phase 1: Our plan terminology is not easily understood by customers, causing issues with transparency and trust."
-        },
-        {
-          "src": "assets/case-studies/research/Research artifact2.png",
-          "alt": "User journey map based on research findings",
-          "caption": "Current state journey map highlighting pain points"
-        },
-        {
-          "src": "assets/case-studies/research/Research artifact3.png",
-          "alt": "Design principles derived from research",
-          "caption": "Updating plans based on clarity research - updated terminology, clearer visual separation of core and other features, reduced tagline, and addition of carets which allowed customers to see feature details in context (previously there was only one link for all details)."
-        },
-        {
-          "src": "assets/case-studies/research/Research artifact_mp3.png",
-          "alt": "Design principles derived from research",
-          "caption": "Surfacing core, unmet needs of the customer in co-creation session."
-        },
-        {
-          "src": "assets/case-studies/research/Research artifact_mp4.png",
-          "alt": "Design principles derived from research",
-          "caption": "One of the early concepts we tested - choice of basic and premium plan, and choice of basic and premium perks which you could swap out. All of the concepts focused on highlighting choice and control for the customer."
-        },
-        {
-          "src": "assets/case-studies/research/Research artifact_mp5.png",
-          "alt": "Design principles derived from research",
-          "caption": "Post plan research shows new plans are a clear improvement over legacy, but we can do even better."
-        }
-      ],
-      "decisions": [
-        {
-          "title": "Research can change the opinion of leadership",
-          "detail": "One of the biggest challenges was pushing back on the language of the current plans, which was created by business and marketing and blessed by leadership. Even though design (and some of the business team) agreed that the language could be more customer-forward, some of the copy had been around for a while and liked by leadership, who was somewhat reluctant to change it. We could not have done this without the support of the research team and their data. That was the push we needed to get leadership buy-in."
-        },
-        {
-          "title": "Customer-driven features win over business-driven features for both the business and customer",
-          "detail": "Our product cadence can be a constant cycle of conflicts  - we need a new thing that will increase revenue, but also don’t change things too much, because we don’t want to alienate customers, and need to get to market quickly. As a result, we often move quickly based on hunches (not research) and don’t substantially change our offerings, or process. If we wanted to truly create a product that customers really wanted, and also would distinguish us in the market - we needed to be bold. We were able to get the OK to start 6-8 months before the release (typically it was 1-2.5 months max from definition to implementation). We were able to test our hunches and research deeply customer’s unmet needs. Additionally, we were able to create and test multiple concepts, and verify with customers at several points."
-        }
-      ],
-      "outcomes": [
-        "Greater alignment among business, design and other teams that customer-driven experiences work for the customer and business.",
-        "We saw a better understanding from customers, which was reflected in better conversion and premium mix rates.",
-        "Through uncovering our customers' deep needs and friction points, we came up with the direction for a new value proposition for plans that differentiated Verizon in the market. This work paved the way for the Simplicity plan, which is even more radically rooted in a customer-driven experience (elimination of key fees, simpler plan features, cheaper base price) ."
-      ]
-    },
-    "protoresearch": {
       "title": "Revamp mobile plans architecture to differentiate Verizon in the market",
       "role": "Role: Lead experience architect",
       "context": "Address current friction points in our mobile plans today. Leverage customer research and prototyping to develop, test, and launch a new kind of plan to differentiate Verizon in the market.",
