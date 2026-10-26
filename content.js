@@ -241,7 +241,7 @@ window.PORTFOLIO_CONTENT = {
       "href": "#work"
     },
     {
-      "label": "How I use AI in my work",
+      "label": "How I use AI",
       "href": "#ai-work"
     },
     {
