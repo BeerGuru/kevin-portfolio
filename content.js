@@ -769,3 +769,34 @@ window.PORTFOLIO_CONTENT = {
     "right": "Strategic Design Leader"
   }
 };
+
+/*
+  ───────────────────────────────────────────────────────────
+  DESIGN EXEMPLARS — commented out by request (workingStyle)
+  ───────────────────────────────────────────────────────────
+  To restore the "Wireframe and design examples" section:
+
+  1. Add this array back into the "workingStyle" object above,
+     right after "collaborationNotes":
+
+    "designExemplars": [
+      {
+        "src": "assets/design-exemplars/wireframes/Lifetime Savings Center.png",
+        "alt": "Show value for customer with Lifetime Savings Center",
+        "caption": "As part of representing value for the customer, showing customer savings in their bill for one month, year to date, or lifetime."
+      },
+      {
+        "src": "assets/design-exemplars/wireframes/Revise plan style and architecture.png",
+        "alt": "Revise plan style and information architecture",
+        "caption": "Changes to plan tile style and information architecture to improve clarity and comprehension."
+      },
+      {
+        "src": "assets/design-exemplars/wireframes/Perk promos.png",
+        "alt": "Perk promo for Netflix and Max",
+        "caption": "Perk promo treatment for logged-in customers and in the sales funnel to entice customers to add the perk to their plan."
+      }
+    ]
+
+  2. Restart the dev server (port 8081) to see the section
+     and its lightbox functionality return.
+*/

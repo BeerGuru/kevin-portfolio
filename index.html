@@ -45,6 +45,9 @@
       <section class="hero reveal" id="hero"></section>
       <section id="work" class="section reveal"></section>
       <section id="ai-work" class="section reveal"></section>
+      <!-- Wireframe & Design Examples — rendered by renderDesignExemplars() from content.designExemplars -->
+      <!-- Add/remove images in content.js; no need to touch this HTML -->
+      <section id="wireframe-examples" class="section reveal"></section>
       <section id="working-style" class="section reveal"></section>
       <section id="testimonials" class="section reveal"></section>
     </main>
@@ -54,6 +57,21 @@
       <h2 id="contact-heading"></h2>
       <div class="contact-links" id="contact-links"></div>
     </section>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close image">&times;</button>
+      <div class="lightbox-nav" aria-label="Artifact navigation">
+        <button type="button" class="lightbox-arrow" id="lightbox-prev" aria-label="Previous artifact">&larr;</button>
+        <button type="button" class="lightbox-arrow" id="lightbox-next" aria-label="Next artifact">&rarr;</button>
+      </div>
+      <figure class="lightbox-figure">
+        <img id="lightbox-img" src="" alt="" />
+        <figcaption id="lightbox-caption-wrap">
+          <span id="lightbox-counter"></span>
+          <span id="lightbox-caption"></span>
+        </figcaption>
+      </figure>
+    </div>
 
     <footer class="site-footer">
       <p id="footer-left"></p>

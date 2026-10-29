@@ -289,6 +289,138 @@ function setupAiNote() {
   });
 }
 
+let wireframeImages = [];
+let wireframelightboxIndex = -1;
+
+function setupWireframeLightbox() {
+  const lightbox = document.getElementById('lightbox');
+  const closeButton = document.getElementById('lightbox-close');
+  const prevButton = document.getElementById('lightbox-prev');
+  const nextButton = document.getElementById('lightbox-next');
+  if (!lightbox || !closeButton) return;
+
+  closeButton.addEventListener('click', closeWireframeLightbox);
+  if (prevButton) {
+    prevButton.addEventListener('click', () => navigateWireframeLightbox(-1));
+  }
+  if (nextButton) {
+    nextButton.addEventListener('click', () => navigateWireframeLightbox(1));
+  }
+
+  lightbox.addEventListener('click', (event) => {
+    if (event.target === lightbox) closeWireframeLightbox();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !lightbox.hidden) closeWireframeLightbox();
+    if (lightbox.hidden) return;
+    if (event.key === 'ArrowLeft') navigateWireframeLightbox(-1);
+    if (event.key === 'ArrowRight') navigateWireframeLightbox(1);
+  });
+}
+
+function renderDesignExemplars() {
+  const section = document.getElementById('wireframe-examples');
+  if (!section) return;
+
+  const items = content.workingStyle?.designExemplars || [];
+
+  // Hide section entirely if no exemplars configured
+  if (items.length === 0) {
+    section.remove();
+    return;
+  }
+  wireframeImages = items.map(item => ({ src: item.src, alt: item.alt, caption: item.caption }));
+
+  const gridHtml = items.map((item, index) => `
+    <article class="case-card">
+      <img class="case-card-thumb" src="${item.src}" alt="${item.alt}" loading="lazy" data-lightbox-index="${index}" />
+      <div><h3>${item.alt}</h3></div>
+    </article>
+  `).join('');
+
+  const sectionHtml = `
+    <div class="section-head">
+      <h2>Wireframe and design examples</h2>
+      <p class="section-intro">A collection of wireframes and visual design explorations from various projects.</p>
+    </div>
+    <div class="card-grid">${gridHtml}</div>
+  `;
+
+  // Replace section content
+  section.innerHTML = sectionHtml;
+
+  // Wire up lightbox on the new images
+  section.querySelectorAll('[data-lightbox-index]').forEach((img) => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => {
+      const index = Number(img.dataset.lightboxIndex);
+      openWireframeLightbox(index);
+    });
+  });
+}
+
+function openWireframeLightbox(index) {
+  const lightbox = document.getElementById('lightbox');
+  const imgEl = document.getElementById('lightbox-img');
+  const captionEl = document.getElementById('lightbox-caption');
+  const counter = document.getElementById('lightbox-counter');
+
+  if (!lightbox || !imgEl || !captionEl) return;
+
+  wireframelightboxIndex = index;
+  const image = wireframeImages[index];
+  if (!image) return;
+
+  imgEl.src = image.src;
+  imgEl.alt = image.alt;
+  captionEl.textContent = image.caption;
+
+  if (counter) {
+    counter.textContent = wireframeImages.length > 1
+      ? `Image ${index + 1} of ${wireframeImages.length}`
+      : 'Image 1 of 1';
+  }
+
+  lightbox.hidden = false;
+  document.body.classList.add('lightbox-open');
+}
+
+function closeWireframeLightbox() {
+  const lightbox = document.getElementById('lightbox');
+  const imgEl = document.getElementById('lightbox-img');
+  const counter = document.getElementById('lightbox-counter');
+  const captionEl = document.getElementById('lightbox-caption');
+
+  if (!lightbox) return;
+
+  lightbox.hidden = true;
+  document.body.classList.remove('lightbox-open');
+  if (imgEl) imgEl.src = '';
+  if (counter) counter.textContent = '';
+  if (captionEl) captionEl.textContent = '';
+  wireframelightboxIndex = -1;
+}
+
+function navigateWireframeLightbox(direction) {
+  if (!wireframeImages.length) return;
+
+  const nextIndex = wireframelightboxIndex + direction;
+  if (nextIndex < 0 || nextIndex >= wireframeImages.length) return;
+
+  const lightbox = document.getElementById('lightbox');
+  const imgEl = document.getElementById('lightbox-img');
+  if (!lightbox || !imgEl) return;
+
+  wireframelightboxIndex = nextIndex;
+  const image = wireframeImages[nextIndex];
+  imgEl.src = image.src;
+  imgEl.alt = image.alt;
+  document.getElementById('lightbox-caption').textContent = image.caption;
+  document.getElementById('lightbox-counter').textContent = wireframeImages.length > 1
+    ? `Image ${nextIndex + 1} of ${wireframeImages.length}`
+    : 'Image 1 of 1';
+}
+
 function init() {
   applyFontTheme();
   applyColorTheme();
@@ -298,6 +430,8 @@ function init() {
   renderHero();
   renderWork();
   renderAIWork();
+  renderDesignExemplars();
+  setupWireframeLightbox();
   renderWorkingStyle();
   renderTestimonials();
   renderContact();
