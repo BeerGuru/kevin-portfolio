@@ -45,9 +45,9 @@ window.PORTFOLIO_CONTENT = {
         "resumeHref": "kevin-trayner-resume-lead.pdf"
       },
       "hero": {
-        "headline": "Strategic design leader delivering end-to-end mobile consumer experiences that balance user needs, business goals, and technical scalability.",
+        "headline": "Principal Product Designer grounded in research, translating complex problems into clear, human-centered experiences.",
         "subhead": "",
-        "subheadHtml": "<ul><li>Lead design for complex products and strategic initiatives in the mobile consumer space, working across channels and teams.</li><li>Partner across Product, CX, Development, Research, Legal, and Marketing to define vision and strategy.</li><li>Own and define the end-to-end experience, solving for ambiguity in complex problem spaces, through storytelling, research, and prototyping.</li><li>Shape the design system with new patterns and reusable components.</li><li>Mentor designers and evolve organizational practices.</li></ul>",
+        "subheadHtml": "<ul><li>Define a common design vision that balances business and customer needs.</li><li>Shape products from high level vision, to detail design, to execution across multiple channels, products and teams.</li><li>Use research, prototyping, early testing and iterative design to incrementally improve, and revamp an experience architecture. </li><li>Champion design craft and evolve organizational practices.</li><li>Incorporate agentic and generative AI (Gemini, Claude Code, Copilot, Figma Make) strategically to improve work flow.</li></ul>", 
         "primaryCta": {
           "label": "See leadership work",
           "href": "#work"
@@ -56,12 +56,11 @@ window.PORTFOLIO_CONTENT = {
       },
       "work": {
         "cases": [
-          "myplan",
-          "research",
-          "protoresearch",
+          "satellite-to-device",
+          "netmax", 
           "fcc-labels",
-          "netmax",
-          "satellite-to-device"
+          "research"
+
         ]
       }
     },
@@ -140,18 +139,17 @@ window.PORTFOLIO_CONTENT = {
         "resumeHref": "kevin-trayner-resume-research.pdf"
       },
       "hero": {
-        "headline": "Principal Product Designer and Experience Architect, grounded in research, making complex enterprise ecosystems into clear, human-centered experiences.",
+        "headline": "Principal Product Designer, grounded in research, making complex enterprise ecosystems into clear, human-centered experiences.",
         "subhead": "",
-        "subheadHtml": "<ul><li> <b> Use research, prototyping, early testing and iteration to incrementally improve, then revamp our mobile plans architecture.</b> </li><li> <b>Create a design strategy, beta test plan and journey map for a new service.</b> </li><li> <b>Partner with business, developers, designers, CX, and legal from high level vision to detail design experience across multiple channels, products and teams.</b> </li><li> <b>Champion design craft and organization-wide process:</b> Mentor junior designers, partner weekly with the Verizon Design System (VDS) team to identify and build forward-looking patterns, work with the accessibility team to ensure compliance in patterns, and lead design critiques to continually elevate team standards and ways of working. </li><li> <b> Incorporate AI into design work:</b> Use agentic and generative AI (Gemini, Claude Code, Copilot, Figma Make) strategically to make work flow better - brief creation, competitive analysis, journey mapping, prototyping, research, and more - but keep the human in the lead. </li></ul>",        
-        "primaryCta": {
-          "label": "View product work",
-          "href": "#work"
+        "subheadHtml": "<ul><li> <b> Use research, prototyping, early testing and iteration to incrementally improve, then revamp our mobile plans architecture.</b> </li><li> <b>Define a common design vision, beta test plan, and service design that balances business and customer needs.</b> </li><li> <b>Partner with business, developers, designers, CX, and legal from high level vision to detailed design experience across multiple channels, products and teams.</b> </li><li> <b>Champion design craft, patterns and processes to elevate team and organizational standards</b> </li><li> <b> Incorporate AI into design work:</b> Use agentic and generative AI (Gemini, Claude Code, Copilot, Figma Make) strategically to make work flow better - but keep the human in the lead. </li></ul>",        "primaryCta": {
+        "label": "View product work",
+        "href": "#work"
         },
         "secondaryCta": ""
       },
       "work": {
         "cases": [
-          "protoresearch",
+          "research",
           "satellite-to-device",
           "fcc-labels",
           "netmax"
