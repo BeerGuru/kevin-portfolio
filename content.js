@@ -792,6 +792,11 @@ window.PORTFOLIO_CONTENT = {
         "alt": "Perk promo for Netflix and Max",
         "caption": "Perk promo treatment for logged-in customers and in the sales funnel to entice customers to add the perk to their plan."
       }
+        {
+        "src": "assets/design-exemplars/wireframes/Perk calculator.png",
+        "alt": "Perk calculator to allow customers explore their potential savings with perks and recognize their value.",
+        "caption": "Customers click Perk calculator link to choose perks, see potential savings, and make an informed decision to add perks to their plan."
+      }
     ]
 
   2. Restart the dev server (port 8081) to see the section
