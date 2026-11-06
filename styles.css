@@ -681,6 +681,22 @@ h2 {
   grid-column: span 2;
 }
 
+.exemplar-badge {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(31, 38, 31, 0.85);
+  color: #fff;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  z-index: 1;
+}
+
+.case-card {
+  position: relative;
+}
+
 
 .case-card h3 {
   line-height: 1.18;

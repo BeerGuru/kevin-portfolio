@@ -723,6 +723,53 @@ window.PORTFOLIO_CONTENT = {
       "I gather broad context and evidence before decisions, then tailor what matters most for each stakeholder group.",
       "I use positivity and emotional awareness to maintain momentum during ambiguity and change.",
       "I intentionally watch for blind spots like overextending support or delaying necessary conflict."
+    ],
+    "designExemplars": [
+      {
+        "src": "assets/design-exemplars/wireframes/Lifetime Savings Center.png",
+        "alt": "Show value for customer with Lifetime Savings Center",
+        "caption": "As part of representing value for the customer, showing customer savings in their bill for one month, year to date, or lifetime."
+      },
+      {
+        "src": "assets/design-exemplars/wireframes/Revise plan style and architecture.png",
+        "alt": "Revise plan style and information architecture",
+        "caption": "Changes to plan tile style and information architecture to improve clarity and comprehension."
+      },
+      {
+        "src": "assets/design-exemplars/wireframes/Perk promos.png",
+        "alt": "Perk promo for Netflix and Max",
+        "caption": "Perk promo treatment for logged-in customers and in the sales funnel to entice customers to add the perk to their plan."
+      },
+      {
+        "src": "assets/design-exemplars/wireframes/Perk calculator.png",
+        "alt": "Perk calculator to allow customers explore their potential savings with perks and recognize their value.",
+        "caption": "Customers click Perk calculator link to choose perks, see potential savings, and make an informed decision to add perks to their plan."
+      },
+      {
+        "title": "Current state promo redemption journey map",
+        "images": [
+          {"src": "assets/design-exemplars/wireframes/Redemption journey.web.png", "alt": "The current state promo redemption journey", "caption": "The current state promo redemption journey"},
+          {"src": "assets/design-exemplars/wireframes/Redemption journey1.png", "alt": "1. Learn step in the promo redemption journey", "caption": "1. Learn step in the promo redemption journey"},
+          {"src": "assets/design-exemplars/wireframes/Redemption journey2.png", "alt": "2. Buy step in the promo redemption journey", "caption": "2. Buy step in the promo redemption journey"},
+          {"src": "assets/design-exemplars/wireframes/Redemption journey3.png", "alt": "3. Get step inthe promo redemption journey", "caption": "3. Get step inthe promo redemption journey"},
+          {"src": "assets/design-exemplars/wireframes/Redemption journey4.png", "alt": "4. Use, Pay, Support steps in the promo redemption journey", "caption": "4. Use, Pay, Support steps in the promo redemption journey"},
+        ]
+      },
+       {
+        "title": "Future (North Star) state promo redemption journey map",
+        "images": [
+          {"src": "assets/design-exemplars/wireframes/Redemption journey to be.png", "alt": "The future (north star) state promo redemption journey", "caption": "The future (north star) state promo redemption journey"},
+          {"src": "assets/design-exemplars/wireframes/Redemption journey to be1.png", "alt": "1. Learn step in the future state promo redemption journey", "caption": "1. Learn step in the future state promo redemption journey"},
+          {"src": "assets/design-exemplars/wireframes/Redemption journey to be2.png", "alt": "2. Buy step in the future state promo redemption journey", "caption": "2. Buy step in the future state promo redemption journey"},
+          {"src": "assets/design-exemplars/wireframes/Redemption journey to be3.png", "alt": "3. Get step in the future state promo redemption journey", "caption": "3. Get step in the future state promo redemption journey"},
+          {"src": "assets/design-exemplars/wireframes/Redemption journey to be4.png", "alt": "4. Use, Pay, Support steps in the future state promo redemption journey", "caption": "4. Use, Pay, Support steps in the future state promo redemption journey"}, 
+          ]
+      },
+      {
+        "src": "assets/design-exemplars/wireframes/Promo taxonomy.png",
+        "alt": "Taxonomy of promo types and states for redemption of promos.",
+        "caption": "Taxonomy of promo types and states for redemption of promos. Part of the promo redemption journey project analysis."
+      }
     ]
   },
   "testimonials": [
@@ -778,26 +825,18 @@ window.PORTFOLIO_CONTENT = {
 
     "designExemplars": [
       {
-        "src": "assets/design-exemplars/wireframes/Lifetime Savings Center.png",
-        "alt": "Show value for customer with Lifetime Savings Center",
-        "caption": "As part of representing value for the customer, showing customer savings in their bill for one month, year to date, or lifetime."
+        "title": "Checkout Flow — FigJam Exploration",
+        "images": [
+          { "src": "...", "alt": "...", "caption": "..." },
+          { "src": "...", "alt": "...", "caption": "..." }
+        ]
       },
-      {
-        "src": "assets/design-exemplars/wireframes/Revise plan style and architecture.png",
-        "alt": "Revise plan style and information architecture",
-        "caption": "Changes to plan tile style and information architecture to improve clarity and comprehension."
-      },
-      {
-        "src": "assets/design-exemplars/wireframes/Perk promos.png",
-        "alt": "Perk promo for Netflix and Max",
-        "caption": "Perk promo treatment for logged-in customers and in the sales funnel to entice customers to add the perk to their plan."
-      }
-        {
-        "src": "assets/design-exemplars/wireframes/Perk calculator.png",
-        "alt": "Perk calculator to allow customers explore their potential savings with perks and recognize their value.",
-        "caption": "Customers click Perk calculator link to choose perks, see potential savings, and make an informed decision to add perks to their plan."
-      }
+      { "src": "...", "alt": "...", "caption": "..." }  // single-image entry
     ]
+
+  Two formats supported:
+  - Multi-image: { "title": "...", "images": [ {src, alt, caption}, ... ] }
+  - Single-image: { "src": "...", "alt": "...", "caption": "..." }
 
   2. Restart the dev server (port 8081) to see the section
      and its lightbox functionality return.

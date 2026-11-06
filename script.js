@@ -289,8 +289,41 @@ function setupAiNote() {
   });
 }
 
+function setupTestimonialsToggle() {
+  const toggle = document.getElementById('testimonials-toggle');
+  if (!toggle) return;
+
+  const workingStyleSection = document.getElementById('working-style');
+  if (!workingStyleSection) return;
+
+  const articles = workingStyleSection.querySelectorAll('.testimonial-card');
+
+  toggle.addEventListener('click', () => {
+    const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!isExpanded));
+
+    const label = toggle.querySelector('.toggle-label');
+    if (label) {
+      label.textContent = isExpanded ? 'Show more' : 'Show less';
+    }
+
+    articles.forEach((article, index) => {
+      if (index < 3) {
+        article.hidden = false;
+        return;
+      }
+      if (isExpanded) {
+        article.hidden = false;
+      } else {
+        article.hidden = true;
+      }
+    });
+  });
+}
+
 let wireframeImages = [];
-let wireframelightboxIndex = -1;
+let wireframeAllImages = []; // flattened: [{src, alt, caption, exemplarIndex, imageIndex}]
+let currentLightboxFlatIndex = -1;
 
 function setupWireframeLightbox() {
   const lightbox = document.getElementById('lightbox');
@@ -322,44 +355,76 @@ function renderDesignExemplars() {
   const section = document.getElementById('wireframe-examples');
   if (!section) return;
 
-  const items = content.workingStyle?.designExemplars || [];
+  const rawItems = content.workingStyle?.designExemplars || [];
+
+  // Normalize: single-image objects become { images: [{...}] }
+  const items = rawItems.map(item => {
+    if (item.src && !item.images) {
+      return { images: [item] };
+    }
+    return item;
+  });
 
   // Hide section entirely if no exemplars configured
   if (items.length === 0) {
     section.remove();
     return;
   }
-  wireframeImages = items.map(item => ({ src: item.src, alt: item.alt, caption: item.caption }));
 
-  const gridHtml = items.map((item, index) => `
-    <article class="case-card">
-      <img class="case-card-thumb" src="${item.src}" alt="${item.alt}" loading="lazy" data-lightbox-index="${index}" />
-      <div><h3>${item.alt}</h3></div>
-    </article>
-  `).join('');
+  wireframeImages = items.map(item => item.images);
+
+  // Build a flat list of all images across all exemplars, in order
+  wireframeAllImages = [];
+  items.forEach((item, exemplarIndex) => {
+    item.images.forEach((image, imageIndex) => {
+      wireframeAllImages.push({
+        src: image.src,
+        alt: image.alt,
+        caption: image.caption,
+        exemplarIndex,
+        imageIndex,
+      });
+    });
+  });
+
+  const gridHtml = items.map((item, exemplarIndex) => {
+    const imageCount = item.images.length;
+    const firstImage = item.images[0];
+    const title = item.title || firstImage.alt;
+    const multiBadge = imageCount > 1 ? `<span class="exemplar-badge">${imageCount} images</span>` : '';
+
+    return `
+      <article class="case-card">
+        ${multiBadge}
+        <img class="case-card-thumb" src="${firstImage.src}" alt="${firstImage.alt}" loading="lazy" data-exemplar-index="${exemplarIndex}" data-image-index="0" />
+        <div>
+          <h3>${escapeHtml(title)}</h3>
+        </div>
+      </article>
+    `;
+  }).join('');
 
   const sectionHtml = `
     <div class="section-head">
-      <h2>Wireframe and design examples</h2>
-      <p class="section-intro">A collection of wireframes and visual design explorations from various projects.</p>
+      <h2>Wireframe and other design examples</h2>
+      <p class="section-intro">A collection of wireframes and other artifacts/explorations from various projects.</p>
     </div>
     <div class="card-grid">${gridHtml}</div>
   `;
 
-  // Replace section content
   section.innerHTML = sectionHtml;
 
   // Wire up lightbox on the new images
-  section.querySelectorAll('[data-lightbox-index]').forEach((img) => {
+  section.querySelectorAll('[data-exemplar-index]').forEach((img) => {
     img.style.cursor = 'pointer';
     img.addEventListener('click', () => {
-      const index = Number(img.dataset.lightboxIndex);
-      openWireframeLightbox(index);
+      const exemplarIndex = Number(img.dataset.exemplarIndex);
+      openWireframeLightbox(exemplarIndex, 0);
     });
   });
 }
 
-function openWireframeLightbox(index) {
+function openWireframeLightbox(exemplarIndex, imageIndex) {
   const lightbox = document.getElementById('lightbox');
   const imgEl = document.getElementById('lightbox-img');
   const captionEl = document.getElementById('lightbox-caption');
@@ -367,18 +432,21 @@ function openWireframeLightbox(index) {
 
   if (!lightbox || !imgEl || !captionEl) return;
 
-  wireframelightboxIndex = index;
-  const image = wireframeImages[index];
-  if (!image) return;
+  // Find this image in the flat list
+  const flatIndex = wireframeAllImages.findIndex((w, i) =>
+    w.exemplarIndex === exemplarIndex && w.imageIndex === imageIndex
+  );
+  if (flatIndex === -1) return;
 
+  currentLightboxFlatIndex = flatIndex;
+
+  const image = wireframeAllImages[flatIndex];
   imgEl.src = image.src;
   imgEl.alt = image.alt;
   captionEl.textContent = image.caption;
 
   if (counter) {
-    counter.textContent = wireframeImages.length > 1
-      ? `Image ${index + 1} of ${wireframeImages.length}`
-      : 'Image 1 of 1';
+    counter.textContent = `Image ${flatIndex + 1} of ${wireframeAllImages.length}`;
   }
 
   lightbox.hidden = false;
@@ -398,27 +466,27 @@ function closeWireframeLightbox() {
   if (imgEl) imgEl.src = '';
   if (counter) counter.textContent = '';
   if (captionEl) captionEl.textContent = '';
-  wireframelightboxIndex = -1;
+  currentLightboxFlatIndex = -1;
 }
 
 function navigateWireframeLightbox(direction) {
-  if (!wireframeImages.length) return;
+  if (currentLightboxFlatIndex === -1) return;
 
-  const nextIndex = wireframelightboxIndex + direction;
-  if (nextIndex < 0 || nextIndex >= wireframeImages.length) return;
+  let flatIndex = currentLightboxFlatIndex + direction;
+  if (flatIndex < 0) flatIndex = wireframeAllImages.length - 1; // wrap last to first
+  if (flatIndex >= wireframeAllImages.length) flatIndex = 0; // wrap first to last
+
+  currentLightboxFlatIndex = flatIndex;
 
   const lightbox = document.getElementById('lightbox');
   const imgEl = document.getElementById('lightbox-img');
   if (!lightbox || !imgEl) return;
 
-  wireframelightboxIndex = nextIndex;
-  const image = wireframeImages[nextIndex];
+  const image = wireframeAllImages[flatIndex];
   imgEl.src = image.src;
   imgEl.alt = image.alt;
   document.getElementById('lightbox-caption').textContent = image.caption;
-  document.getElementById('lightbox-counter').textContent = wireframeImages.length > 1
-    ? `Image ${nextIndex + 1} of ${wireframeImages.length}`
-    : 'Image 1 of 1';
+  document.getElementById('lightbox-counter').textContent = `Image ${flatIndex + 1} of ${wireframeAllImages.length}`;
 }
 
 function init() {
@@ -434,6 +502,7 @@ function init() {
   setupWireframeLightbox();
   renderWorkingStyle();
   renderTestimonials();
+  setupTestimonialsToggle();
   renderContact();
   renderFooter();
   setupReveal();
